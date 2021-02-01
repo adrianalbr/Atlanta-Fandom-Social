@@ -1,0 +1,30 @@
+{
+  "name": "Atlanta-Fandom-Social",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrianalbr/Atlanta-Fandom-Social.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adrianalbr/Atlanta-Fandom-Social/issues"
+  },
+  "homepage": "https://github.com/adrianalbr/Atlanta-Fandom-Social#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.11.14",
+    "if-env": "^1.0.4",
+    "axios": "^0.18.0"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.18.7"
+  }
+}
