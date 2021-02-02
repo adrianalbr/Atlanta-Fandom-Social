@@ -35,14 +35,14 @@ const UserSchema = new Schema({
     validate: [({ length }) => length >= 6, "Password should be longer."],
   },
 
-  DOB: {
-    type: Date,
-    required: true,
-  },
+  // DOB: {
+  //   type: Date,
+  //   required: true,
+  // },
 
   interests: {
-      type: [String],
-      default:["Comic", "Cosplay", "Video Games", "Anime"]
+      type: [String]
+      // default:["Comic", "Cosplay", "Video Games", "Anime"]
   },
 
   followers: {
