@@ -1,7 +1,8 @@
 const express = require("express");
 const path = require("path");
-
 const mongoose = require("mongoose");
+const contentRoutes = require("./routes/contentRoutes");
+
 // const routes = require("./routes");
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -14,8 +15,8 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
-
 require("./routes/userRoutes.js")(app);
+app.use("/api/content", contentRoutes);
 
 // Send every request to the React app
 // Define any API routes before this runs
@@ -26,8 +27,29 @@ app.get("*", function (req, res) {
 // Connect to the Mongo DB
 mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/fandomSocial",
-  { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true, useFindAndModify: false, }
+  {
+    useUnifiedTopology: true,
+    useNewUrlParser: true,
+    useCreateIndex: true,
+    useFindAndModify: false,
+  }
 );
+
+const connection = mongoose.connection;
+
+connection.on("connected", () => {
+  console.log("Mongoose successfully connected!");
+});
+
+connection.on("error", (err) => {
+  console.log("Mongoose connection error: ", err);
+});
+
+app.get("/api/config", (req, res) => {
+  res.json({
+    success: true,
+  });
+});
 
 // Start the API server
 app.listen(PORT, function () {
