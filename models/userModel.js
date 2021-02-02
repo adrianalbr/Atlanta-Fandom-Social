@@ -35,21 +35,27 @@ const UserSchema = new Schema({
     validate: [({ length }) => length >= 6, "Password should be longer."],
   },
 
+  created: {
+    type: Date,
+    default: Date.now,
+  },
+
+  // Since DOB was not 
   // DOB: {
   //   type: Date,
   //   required: true,
   // },
 
   interests: {
-      type: [String]
-      // default:["Comic", "Cosplay", "Video Games", "Anime"]
+    type: [String],
+    // Interest will be selected by user only after sign-up, also it will contain id from interest model not the text.
+    // default:["Comic", "Cosplay", "Video Games", "Anime"]
   },
 
   followers: {
-    type: [String]
-  }
+    type: [String],
+  },
 });
-
 
 const User = mongoose.model("User", UserSchema);
 
