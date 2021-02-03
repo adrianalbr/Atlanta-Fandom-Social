@@ -8,16 +8,13 @@ const Cardpost = () => {
         <div className="col s12 m6">
           <div className="card">
             <div className="card-content white-text">
-              <span className="card-title">Card Title</span>
+              <span className="card-title">Dr Strange</span>
               <p>
-                I am a very simple card. I am good at containing small bits of
-                information. I am convenient because I require little markup to
-                use effectively.
+              Dormammu, I've Come To Bargain!!
               </p>
             </div>
             <div className="card-action">
-              <a href="/">This is a link</a>
-              <a href="/">This is a link</a>
+              <a href="/">Save</a>
             </div>
           </div>
         </div>
