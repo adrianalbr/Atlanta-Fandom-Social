@@ -1,3 +1,18 @@
 .nav-wrapper{
+
     background-color: #392171;
 }
+
+.input-group{
+    display:table;
+    width:100%;
+  }
+  .input-group .input-field{
+
+    display:table-cell;
+  }
+  
+  .input-group .input-group-addon{
+    display:table-cell;
+    background-color: #AA84C7;
+  }
