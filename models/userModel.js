@@ -50,6 +50,26 @@ const UserSchema = new mongoose.Schema({
   },
 });
 
+
+UserSchema.statics.findByCredentials = async (userId, password)=>{
+  const user = await User.findOne({username:userId})
+  
+  if(!user){
+    throw new Error("unable to login")
+  }
+  else {
+    console.log("userFound")
+    const isMatch = await bcrypt.compare(password, user.password)
+    if(!isMatch){
+      throw new Error ("Unable to login")
+    }
+    console.log("match")
+    return user;
+  }
+ 
+}
+
+
 UserSchema.pre("save", async function (next) {
   console.log("before saving");
   //During signup interest and followers should be blank and password is hashed
