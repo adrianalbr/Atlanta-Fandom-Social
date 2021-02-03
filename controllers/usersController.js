@@ -2,9 +2,7 @@ const db = require("../models/");
 
 module.exports = {
   userSignUp: function (req, res) {
-    //During signup interest and followers should be blank
-    req.body.interests = [];
-    req.body.followers = [];
+
     db.User.create(req.body)
       .then((data) => {
         console.log(data);

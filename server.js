@@ -55,3 +55,19 @@ app.get("/api/config", (req, res) => {
 app.listen(PORT, function () {
   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
 });
+
+const bcrypt = require("bcryptjs");
+
+const myFunction = async () => {
+  const password = "red1234";
+  const hashedPass = await bcrypt.hash(password, 8);
+
+  console.log(password);
+  console.log(hashedPass);
+
+  const isMatch = await bcrypt.compare("red", hashedPass);
+  console.log(isMatch);
+
+};
+
+myFunction();
