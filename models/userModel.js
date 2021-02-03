@@ -1,8 +1,7 @@
 const mongoose = require("mongoose");
+const bcrypt = require("bcryptjs");
 
-const Schema = mongoose.Schema;
-
-const UserSchema = new Schema({
+const UserSchema = new mongoose.Schema({
   firstName: {
     type: String,
     trim: true,
@@ -40,12 +39,6 @@ const UserSchema = new Schema({
     default: Date.now,
   },
 
-  // Since DOB was not 
-  // DOB: {
-  //   type: Date,
-  //   required: true,
-  // },
-
   interests: {
     type: [String],
     // Interest will be selected by user only after sign-up, also it will contain id from interest model not the text.
@@ -57,6 +50,34 @@ const UserSchema = new Schema({
   },
 });
 
+
+UserSchema.statics.findByCredentials = async (userId, password)=>{
+  const user = await User.findOne({username:userId})
+  
+  if(!user){
+    throw new Error("unable to login")
+  }
+  else {
+    console.log("userFound")
+    const isMatch = await bcrypt.compare(password, user.password)
+    if(!isMatch){
+      throw new Error ("Unable to login")
+    }
+    console.log("match")
+    return user;
+  }
+ 
+}
+
+
+UserSchema.pre("save", async function (next) {
+  console.log("before saving");
+  //During signup interest and followers should be blank and password is hashed
+  this.interests = [];
+  this.followers = [];
+  this.password = await bcrypt.hash(this.password, 8);
+  next();
+});
 const User = mongoose.model("User", UserSchema);
 
 module.exports = User;
