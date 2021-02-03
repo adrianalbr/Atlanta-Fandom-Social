@@ -5,4 +5,5 @@ module.exports = function (app) {
   app.post("/api/login", userController.userLogin);
   // post route for signup
   app.post("/api/signUp", userController.userSignUp);
+  app.put("/api/user", userController.updateUser);
 };
