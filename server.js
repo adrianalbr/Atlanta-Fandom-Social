@@ -55,3 +55,4 @@ app.get("/api/config", (req, res) => {
 app.listen(PORT, function () {
   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
 });
+
