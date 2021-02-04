@@ -3,6 +3,11 @@ import axios from "axios";
 
 
 const Post = () => {
+
+const [category, setCategory] = useState("");
+const [type, setType] = useState("");
+
+
   return (
     <div>
       <div className="row">
