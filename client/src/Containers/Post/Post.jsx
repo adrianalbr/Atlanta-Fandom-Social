@@ -6,6 +6,9 @@ const Post = () => {
 
 const [category, setCategory] = useState("");
 const [type, setType] = useState("");
+const [title, setTitle] = useState("");
+const [URL, setURL] = useState("");
+const [contentText, setContentText] = useState("");
 
 
   return (
