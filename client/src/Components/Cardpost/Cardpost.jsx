@@ -5,7 +5,7 @@ const Cardpost = () => {
   return (
     <div>
       <div className="row">
-        <div className="col s12 m6">
+        <div className="col s6">
           <div className="card">
             <div className="card-content white-text">
               <span className="card-title">Dr Strange</span>
