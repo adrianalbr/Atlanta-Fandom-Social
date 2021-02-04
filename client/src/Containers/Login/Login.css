@@ -1,57 +1,25 @@
 .titleHeaderContainer {
-    margin: 10% auto;
-    position: relative;
-    min-height: 60%;
-    width: 50%;
-    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.6);
-    background: #aa84c7;
+
 }
 
 .formHeader {
-    text-align: center;
-    font-family: Roboto;
-    font-weight: bold;
-    font-size: 41px;
+
 }
 
 .formContainer {
-    position: relative;
-    margin: 8% auto;
-    min-height: 60%;
-    width: 50%;
-    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.6);
-    background: #ffffff;
-    padding: 0px 0px 5px 15px;
-    box-sizing: border-box;
-    border-radius: 33px;
+
 }
 
 .formContentContainer {
-    margin-top: 15%;
+
 }
 
 .rightSide {
-    position: absolute;
-    right: 0;
-    width: 50%;
-    height: 100%;
-    box-sizing: border-box;
-    background-color: #8ec5fc;
-    background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
-    border-radius: 8px;
+
 }
 
 .formInput {
-    display: block;
-    margin: 0px 0px 15px 20px;
-    padding: 4px;
-    width: 80%;
-    height: 5%;
-    box-sizing: border-box;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid #aaa;
-    font-size: 12px;
+
 }
 
 .submitButton {
@@ -67,9 +35,5 @@
 }
 
 .leftSide {
-    position: absolute;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    box-sizing: border-box;
+
 }
