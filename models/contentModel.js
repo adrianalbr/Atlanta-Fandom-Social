@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 const ContentSchema = new Schema ({
     category: {
         type: [String],
-        default:["Comic", "Cosplay", "Video Games", "Anime"] 
+        // default:["Comic", "Cosplay", "Video Games", "Anime"] 
     },
     
     type: {
@@ -28,7 +28,8 @@ const ContentSchema = new Schema ({
 
     URL: {
         type: String,
-        default: ""
+        default: "",
+        required: false
     },
 
     contentText: {
