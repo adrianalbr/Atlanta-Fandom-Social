@@ -5,6 +5,7 @@ import Login from "./Containers/Login/Login";
 import Signup from "./Containers/Signup/Signup";
 import WelcomeProfile from "./Containers/WelcomeProfile/WelcomeProfile";
 import WelcomeTopics from "./Containers/WelcomeTopics/WelcomeTopics";
+import Post from "./Containers/Post/Post";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/firstprofile" component={WelcomeProfile} />
           <Route path="/signup" component={Signup} />
           <Route path="/login" component={Login} />
+          <Route path="/Post" component= {Post} />
           <Route path="/" component={Home} />
         </Switch>
         {/* <Footer/> */}
