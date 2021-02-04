@@ -5,7 +5,6 @@ import axios from "axios";
 const Post = () => {
 
 const [category, setCategory] = useState("");
-const [type, setType] = useState("");
 const [title, setTitle] = useState("");
 const [URL, setURL] = useState("");
 const [contentText, setContentText] = useState("");
@@ -14,7 +13,6 @@ const handleFormSubmit = (e) => {
     e.preventDefault();
     axios.post("/api/content", {
             category,
-            type,
             title,
             URL,
             contentText
@@ -44,19 +42,6 @@ const handleFormSubmit = (e) => {
                 }}
               />
               <label htmlFor="category">Category</label>
-            </div>
-            <div className="input-field col s6">
-              <input
-                placeholder="Enter a type"
-                id="type"
-                type="text"
-                name="type"
-                value={type}
-                onChange={(e) => {
-                  setType(e.target.value);
-                }}
-              />
-              <label htmlFor="type">Type</label>
             </div>
           </div>
           <div className="row">
