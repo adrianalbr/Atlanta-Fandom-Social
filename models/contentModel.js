@@ -6,11 +6,6 @@ const ContentSchema = new Schema ({
         type: [String],
         // default:["Comic", "Cosplay", "Video Games", "Anime"] 
     },
-    
-    type: {
-        type: String,
-        default: ["Article", "Website", "Image"]
-    },
 
     title: {
         type: String, 
