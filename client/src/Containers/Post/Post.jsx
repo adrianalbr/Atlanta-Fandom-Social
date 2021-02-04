@@ -10,6 +10,22 @@ const [title, setTitle] = useState("");
 const [URL, setURL] = useState("");
 const [contentText, setContentText] = useState("");
 
+const handleFormSubmit = (e) => {
+    e.preventDefault();
+    axios.post("/api/content", {
+            category,
+            type,
+            title,
+            URL,
+            contentText
+    })
+    .then(response => {
+        console.log(response.data);
+    }).catch(err => {
+        console.log(err);
+    })
+
+}
 
   return (
     <div>
