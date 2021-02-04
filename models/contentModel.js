@@ -12,7 +12,7 @@ const ContentSchema = new Schema ({
         default: ["Article", "Website", "Image"]
     },
 
-    subject: {
+    title: {
         type: String, 
     },
 
