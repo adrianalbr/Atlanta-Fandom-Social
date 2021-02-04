@@ -26,11 +26,15 @@
   "homepage": "https://github.com/adrianalbr/Atlanta-Fandom-Social#readme",
   "dependencies": {
     "axios": "^0.18.0",
+    "bootstrap": "^4.6.0",
     "express": "^4.17.1",
     "if-env": "^1.0.4",
     "materialize-css": "^1.0.0-rc.2",
     "mongoose": "^5.11.14",
-    "react-router-dom": "^5.2.0"
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
+    "reactstrap": "^8.9.0"
   },
   "devDependencies": {
     "concurrently": "^4.1.2",

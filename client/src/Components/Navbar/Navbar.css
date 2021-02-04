@@ -1,18 +1,14 @@
-.nav-wrapper{
-
-    background-color: #392171;
+.nav-wrapper {
+  background-color: #392171;
+  display: flex;
+  justify-content: center
 }
 
-.input-group{
-    display:table;
-    width:100%;
-  }
-  .input-group .input-field{
 
-    display:table-cell;
-  }
-  
-  .input-group .input-group-addon{
-    display:table-cell;
-    background-color: #AA84C7;
-  }
+.input-group {
+  display: flex;
+  justify-content: space-evenly;
+  width: 500%;
+}
+
+
