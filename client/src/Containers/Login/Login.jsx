@@ -5,9 +5,7 @@ function Login() {
     const [userName, setUserName] = useState("");
     const [password , setPassword] = useState("");
 
-    const handleChange = event =>{
-        if (name === "email")
-    }
+
 
 return (
     <div>
@@ -23,10 +21,6 @@ return (
                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                 class="formInput"
                 placeholder="Email or Username"
-                value = {userName}
-                onChange = {event =>{
-                    setUserName(event.target.value)
-                }}
                 required
                 />
                 <input
@@ -34,18 +28,13 @@ return (
                 name="password"
                 class="formInput"
                 placeholder="Password"
-                value = {password}
-                onChange = {event =>{
-                    setPassword(event.target.value)
-                }}
                 required
                 />
                 <input
                 type="submit"
                 class="submitButton"
                 name="submitButton"
-                onClick ={handleSubmit}
-                value="Login"
+                 value="Login"
                 />
             </form>
             <h6 className="goToSignUp">Don't have an account</h6>
