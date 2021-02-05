@@ -1,45 +1,70 @@
-import React from "react";
+import axios from "axios";
+import React, { useState } from "react";
 // import "./Login.css";
 
 function Login() {
-return (
+  const [userName, setUserName] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    axios
+      .post("/api/login", { username: userName, password: password })
+      .then((res) => {
+        console.log(res.data);
+      })
+      .catch(err=>{
+        console.log(err);
+    })
+  };
+
+  return (
     <div>
-    <div className="titleHeaderContainer">
+      <div className="titleHeaderContainer">
         <h2 className="formHeader">Welcome to ATL Fandom Social</h2>
         <div className="formContainer">
-        <div className="leftSide">
+          <div className="leftSide">
             <div className="formContentContainer">
-            <form>
+              <form>
                 <input
-                type="text"
-                name="email"
-                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                class="formInput"
-                placeholder="Email or Username"
-                required
+                  type="text"
+                  name="username"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                  class="formInput"
+                  placeholder="Email or Username"
+                  value={userName}
+                  onChange={(event) => {
+                    setUserName(event.target.value);
+                  }}
+                  required
                 />
                 <input
-                type="password"
-                name="password"
-                class="formInput"
-                placeholder="Password"
-                required
+                  type="password"
+                  name="password"
+                  class="formInput"
+                  placeholder="Password"
+                  value={password}
+                  onChange={(event) => {
+                    setPassword(event.target.value);
+                  }}
+                  required
                 />
                 <input
-                type="submit"
-                class="submitButton"
-                name="submitButton"
-                value="Login"
+                  type="submit"
+                  class="submitButton"
+                  name="submitButton"
+                  onClick={handleSubmit}
+                  value="Login"
                 />
-            </form>
-            <h6 className="goToSignUp">Don't have an account</h6>
+              </form>
+              <h6 className="goToSignUp">Don't have an account</h6>
             </div>
+          </div>
         </div>
-        </div>
+      </div>
+      <div class="rightSide"></div>
     </div>
-    <div class="rightSide"></div>
-    </div>
-);
+  );
 }
 
 export default Login;
