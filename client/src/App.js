@@ -17,7 +17,7 @@ function App() {
           <Route path="/firstprofile" component={WelcomeProfile} />
           <Route path="/signup" component={Signup} />
           <Route path="/login" component={Login} />
-          <Route path="/Post" component= {Post} />
+          <Route path="/post" component= {Post} />
           <Route path="/" component={Home} />
         </Switch>
         {/* <Footer/> */}
