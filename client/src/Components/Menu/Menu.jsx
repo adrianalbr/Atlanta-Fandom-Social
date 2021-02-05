@@ -4,14 +4,31 @@ import "./Menu.css";
 const Menu = () => {
     return (
         <div>
+
             <div className="row">
-            <div className="col-sm-3">
-            <a class="waves-effect waves-light btn">Home</a>
+                <div className="col s3 grey darken-1">
+                    <div>
+                        <ul>
+                            <a className="waves-effect waves-light btn">FreePBX initial Setup</a>
+                        </ul>
+                        <ul>
+                            <a className="waves-effect waves-light btn">FreePBX Advanced Setup</a>
+                        </ul>
+                    </div>
+                </div>
+                
+                
             </div>
-            <a className="waves-effect waves-light btn">Saved Posts</a>
-            </div>
+            
         </div>
     );
 };
 
 export default Menu;
+
+<div className="row">
+            <div className="col-sm-3">
+            <a class="waves-effect waves-light btn">Home</a>
+            </div>
+            <a className="waves-effect waves-light btn">Saved Posts</a>
+            </div>

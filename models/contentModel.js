@@ -4,15 +4,10 @@ const Schema = mongoose.Schema;
 const ContentSchema = new Schema ({
     category: {
         type: [String],
-        default:["Comic", "Cosplay", "Video Games", "Anime"] 
-    },
-    
-    type: {
-        type: String,
-        default: ["Article", "Website", "Image"]
+        // default:["Comic", "Cosplay", "Video Games", "Anime"] 
     },
 
-    subject: {
+    title: {
         type: String, 
     },
 
@@ -28,7 +23,8 @@ const ContentSchema = new Schema ({
 
     URL: {
         type: String,
-        default: ""
+        default: "",
+        required: false
     },
 
     contentText: {
