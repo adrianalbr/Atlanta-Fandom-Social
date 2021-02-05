@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
+
 // import "./Login.css";
 
 function Login() {
@@ -13,9 +14,9 @@ function Login() {
       .then((res) => {
         console.log(res.data);
       })
-      .catch(err=>{
+      .catch((err) => {
         console.log(err);
-    })
+      });
   };
 
   return (

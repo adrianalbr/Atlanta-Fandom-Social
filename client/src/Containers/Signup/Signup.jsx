@@ -1,6 +1,6 @@
 import { React, useState } from "react";
 import axios from "axios";
-
+import { Alert } from "reactstrap";
 
 // import "./Signup.css";
 
@@ -13,21 +13,32 @@ const Signup = () => {
     password: "",
   });
 
+  const [errors, setErrors] = useState([]);
+
   const handleChange = (event) => {
-    setUserSignUp({...userSignUp,[event.target.name]:event.target.value} );
+    setUserSignUp({ ...userSignUp, [event.target.name]: event.target.value });
   };
 
-  const handleSubmit = event =>{
+  const handleSubmit = (event) => {
     event.preventDefault();
     // call axios and connect to backend to insert details to our db using express routes
-    axios.post("/api/signUp", userSignUp).then(res=>{
+    axios
+      .post("/api/signUp", userSignUp)
+      .then((res) => {
         console.log(res.data);
-    }).catch(err=>{
-        console.log(err);
-    })
+      })
+      .catch((err) => {
+        console.log(err.response.data);
+        console.log(Object.values(err.response.data));
+        setErrors(Object.values(err.response.data.errors));
+      });
   };
   return (
     <div>
+      {errors.map((error) => (
+        <Alert color="danger">{error.message}!</Alert>
+      ))}
+
       <div className="titleHeaderContainer">
         <h2 className="formHeader">Welcome to ATL Fandom Social</h2>
         <div className="formContainer">
