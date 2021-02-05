@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 // import "./Login.css";
 
 function Login() {
+    const [userName, setUserName] = useState("");
+    const [password , setPassword] = useState("");
+
+    const handleChange = event =>{
+        if (name === "email")
+    }
+
 return (
     <div>
     <div className="titleHeaderContainer">
@@ -12,10 +19,14 @@ return (
             <form>
                 <input
                 type="text"
-                name="email"
+                name="username"
                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                 class="formInput"
                 placeholder="Email or Username"
+                value = {userName}
+                onChange = {event =>{
+                    setUserName(event.target.value)
+                }}
                 required
                 />
                 <input
@@ -23,12 +34,17 @@ return (
                 name="password"
                 class="formInput"
                 placeholder="Password"
+                value = {password}
+                onChange = {event =>{
+                    setPassword(event.target.value)
+                }}
                 required
                 />
                 <input
                 type="submit"
                 class="submitButton"
                 name="submitButton"
+                onClick ={handleSubmit}
                 value="Login"
                 />
             </form>
