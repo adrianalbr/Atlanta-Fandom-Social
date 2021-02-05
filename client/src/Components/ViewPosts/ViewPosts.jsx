@@ -12,7 +12,7 @@ const ViewPosts = () => {
   });
   return (
     <>
-      
+      {posts.map(({ category, title, date, contentText }) => (
         <div className="container">
           <div class="row">
             <div class="col s12 m6">
@@ -29,7 +29,7 @@ const ViewPosts = () => {
             </div>
           </div>
         </div>
-    
+      ))}
     </>
   );
 };
