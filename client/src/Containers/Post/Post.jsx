@@ -37,6 +37,7 @@ const handleFormSubmit = (e) => {
                 type="text"
                 name="category"
                 value={category}
+                required
                 onChange={(e) => {
                   setCategory(e.target.value);
                 }}
@@ -51,6 +52,7 @@ const handleFormSubmit = (e) => {
                 id="title"
                 type="text"
                 name="title"
+                required
                 value={title}
                 onChange={(e) => {
                   setTitle(e.target.value);
@@ -81,6 +83,7 @@ const handleFormSubmit = (e) => {
                 id="contentText"
                 type="text"
                 name="contentText"
+                required
                 value={contentText}
                 onChange={(e) => {
                   setContentText(e.target.value);
