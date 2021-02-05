@@ -26,13 +26,8 @@
   "homepage": "https://github.com/adrianalbr/Atlanta-Fandom-Social#readme",
   "dependencies": {
     "axios": "^0.18.0",
-<<<<<<< HEAD
-    "bootstrap": "^4.6.0",
-    "bcryptjs": "^2.4.3",
-=======
     "bcryptjs": "^2.4.3",
     "bootstrap": "^4.6.0",
->>>>>>> 541f4702aedbc13b498ceaf783beeb1f96ff3160
     "express": "^4.17.1",
     "if-env": "^1.0.4",
     "init": "^0.1.2",
