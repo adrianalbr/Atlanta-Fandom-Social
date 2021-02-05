@@ -1,4 +1,4 @@
-import Axios from "axios";
+import axios from "axios";
 import React, { useState } from "react";
 // import "./Login.css";
 
@@ -13,9 +13,9 @@ function Login() {
       .then((res) => {
         console.log(res.data);
       })
-      .catch((err) => {
-        res.status(422).json(err);
-      });
+      .catch(err=>{
+        console.log(err);
+    })
   };
 
   return (
