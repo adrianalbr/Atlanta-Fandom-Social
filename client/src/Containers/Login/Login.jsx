@@ -1,11 +1,13 @@
 import axios from "axios";
 import React, { useState } from "react";
+import { Alert } from "reactstrap";
 
 // import "./Login.css";
 
 function Login() {
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -15,12 +17,15 @@ function Login() {
         console.log(res.data);
       })
       .catch((err) => {
-        console.log(err);
+        console.log(err.response.data);
+        setError(err.response.data.error);
       });
   };
 
   return (
     <div>
+      {error != "" ? <Alert color="danger">{error}</Alert> : ""}
+
       <div className="titleHeaderContainer">
         <h2 className="formHeader">Welcome to ATL Fandom Social</h2>
         <div className="formContainer">
