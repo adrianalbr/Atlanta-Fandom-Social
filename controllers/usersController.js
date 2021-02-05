@@ -15,7 +15,7 @@ module.exports = {
         });
       })
       .catch((err) => {
-        res.status(422).json(err);
+        res.status(422).json({errors:err.errors});
       });
   },
 
@@ -25,7 +25,7 @@ module.exports = {
       const user = await db.User.findByCredentials(req.body.username, req.body.password);
       res.status(200).json({ status: "successful" });
     }catch(e){
-      res.status(404).json({ status: "failed" });
+      res.status(404).json({ error: "Login failed" });
     }
   },
 
