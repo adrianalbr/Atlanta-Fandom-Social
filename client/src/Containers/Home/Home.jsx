@@ -1,5 +1,3 @@
-import React from 'react';
-import Cardpost from '../../Components/Cardpost/Cardpost';
 import React from "react";
 import Cardpost from "../../Components/Cardpost/Cardpost";
 import Menu from "../../Components/Menu/Menu";
