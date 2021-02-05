@@ -61,8 +61,8 @@ const handleFormSubmit = (e) => {
               <label htmlFor="title">Title</label>
             </div>
           </div>
-          <div class="row">
-            <div class="input-field col s6">
+          <div className="row">
+            <div className="input-field col s6">
               <input
                 placeholder="Enter a URL"
                 id="URL"
@@ -76,8 +76,8 @@ const handleFormSubmit = (e) => {
               <label htmlFor="URL">URL</label>
             </div>
           </div>
-          <div class="row">
-            <div class="input-field col s6">
+          <div className="row">
+            <div className="input-field col s6">
               <input
                 placeholder="Enter your description"
                 id="contentText"
