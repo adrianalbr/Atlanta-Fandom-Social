@@ -1,66 +1,103 @@
-import React from 'react';
+import { React, useState } from "react";
+import axios from "axios";
+
+
 // import "./Signup.css";
 
 const Signup = () => {
-    return (
-        <div>
-        <div className="titleHeaderContainer">
-            <h2 className="formHeader">Welcome to ATL Fandom Social</h2>
-            <div className="formContainer">
-            <div className="leftSide">
-                <div className="formContentContainer">
-                <form>
-                    <input
-                    type="text"
-                    name="firstName"
-                    class="formInput"
-                    placeholder="First Name"
-                    required
-                    />
-                    <input
-                    type="text"
-                    name="lastName"
-                    class="formInput"
-                    placeholder="Last Name"
-                    required
-                    />
-                    <input
-                    type="text"
-                    name="username"
-                    class="formInput"
-                    placeholder="Username"
-                    required
-                    />
-                    <input
-                    type="text"
-                    name="email"
-                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                    class="formInput"
-                    placeholder="Email"
-                    required
-                    />
-                    <input
-                    type="password"
-                    name="password"
-                    class="formInput"
-                    placeholder="Password"
-                    required
-                    />
-                    <input
-                    type="submit"
-                    class="submitButton"
-                    name="submitButton"
-                    value="Login"
-                    />
-                </form>
-                <h6 className="goToSignUp">Already have an account</h6>
-                </div>
+  const [userSignUp, setUserSignUp] = useState({
+    firstName: "",
+    lastName: "",
+    username: "",
+    email: "",
+    password: "",
+  });
+
+  const handleChange = (event) => {
+    console.log(event.target.value);
+    console.log(event.target.name);
+    setUserSignUp({...userSignUp,[event.target.name]:event.target.value} );
+  };
+
+  const handleSubmit = event =>{
+    event.preventDefault();
+    // call axios and connect to backend to insert details to our db using express routes
+    axios.post("/api/signUp", userSignUp).then(res=>{
+        console.log(res.data);
+    }).catch(err=>{
+        console.log(err);
+    })
+  };
+  return (
+    <div>
+      <div className="titleHeaderContainer">
+        <h2 className="formHeader">Welcome to ATL Fandom Social</h2>
+        <div className="formContainer">
+          <div className="leftSide">
+            <div className="formContentContainer">
+              <form>
+                <input
+                  type="text"
+                  name="firstName"
+                  onChange={handleChange}
+                  value={userSignUp.firstName}
+                  className="formInput"
+                  placeholder="First Name"
+                  required
+                />
+                <input
+                  type="text"
+                  name="lastName"
+                  onChange={handleChange}
+                  value={userSignUp.lastName}
+                  className="formInput"
+                  placeholder="Last Name"
+                  required
+                />
+                <input
+                  type="text"
+                  name="username"
+                  onChange={handleChange}
+                  value={userSignUp.username}
+                  className="formInput"
+                  placeholder="Username"
+                  required
+                />
+                <input
+                  type="text"
+                  name="email"
+                  onChange={handleChange}
+                  value={userSignUp.email}
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                  className="formInput"
+                  placeholder="Email"
+                  required
+                />
+                <input
+                  type="password"
+                  name="password"
+                  onChange={handleChange}
+                  value={userSignUp.password}
+                  className="formInput"
+                  placeholder="Password"
+                  required
+                />
+                <input
+                  type="submit"
+                  className="submitButton"
+                  onClick={handleSubmit}
+                  name="submitButton"
+                  value="SignUp"
+                />
+              </form>
+              <h6 className="goToSignUp">Already have an account</h6>
             </div>
-            </div>
+          </div>
         </div>
-        <div class="rightSide"></div>
-        </div>
-    );
+      </div>
+      <div className="rightSide"></div>
+    </div>
+  );
 };
 
 export default Signup;
