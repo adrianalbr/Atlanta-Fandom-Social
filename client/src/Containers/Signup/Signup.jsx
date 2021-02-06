@@ -3,7 +3,7 @@ import axios from "axios";
 import { Alert } from "reactstrap";
 import { Redirect } from "react-router-dom";
 
-// import "./Signup.css";
+import "./Signup.css";
 
 const Signup = () => {
   const [userSignUp, setUserSignUp] = useState({
@@ -47,7 +47,7 @@ const Signup = () => {
       ))}
 
       {/* what displays on the page */}
-      <div className="titleHeaderContainer">
+      <div>
         <h2 className="formHeader">Welcome to ATL Fandom Social</h2>
         <div className="formContainer">
           <div className="leftSide">
