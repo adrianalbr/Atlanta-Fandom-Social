@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { Redirect } from "react-router-dom";
 
 
 const Post = () => {
@@ -8,6 +9,7 @@ const [category, setCategory] = useState("");
 const [title, setTitle] = useState("");
 const [URL, setURL] = useState("");
 const [contentText, setContentText] = useState("");
+const [redirect, setRedirect] = useState(null)
 
 const handleFormSubmit = (e) => {
     e.preventDefault();
