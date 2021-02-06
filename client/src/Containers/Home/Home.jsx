@@ -15,8 +15,8 @@ const Home = () => {
 
                 <Col size="md-6">
                     <Cardpost/>
-                </Col>
                     <ViewPosts/>
+                </Col>
             </Row>
       </Container>
     );

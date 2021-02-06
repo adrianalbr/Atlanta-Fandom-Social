@@ -13,22 +13,18 @@ const ViewPosts = () => {
   return (
     <>
       {posts.map(({ category, title, date, contentText }) => (
-        <div className="container">
-          <div className="row">
-            <div className="col s12 m6">
-              <div className="card blue-grey darken-1">
-                <div className="card-content white-text">
+        <div className="row">
+          <div className="card">
+            <div className="card-content white-text">
                   <span className="card-title">{title}</span>
                   <p>{contentText}</p>
                 </div>
                 <div className="card-action">
-                  <a href="#">{category}</a>
-                  <a href="#">{date}</a>
+                  <p>Category: {category}, Date: {date}</p>
+                 
                 </div>
               </div>
             </div>
-          </div>
-        </div>
       ))}
     </>
   );
