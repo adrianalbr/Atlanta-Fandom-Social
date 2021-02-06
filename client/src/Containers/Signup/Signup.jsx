@@ -1,6 +1,7 @@
 import { React, useState } from "react";
 import axios from "axios";
 import { Alert } from "reactstrap";
+import { Redirect } from "react-router-dom";
 
 // import "./Signup.css";
 
@@ -14,6 +15,7 @@ const Signup = () => {
   });
 
   const [errors, setErrors] = useState([]);
+  const [redirect, setRedirect] = useState(null);
 
   const handleChange = (event) => {
     setUserSignUp({ ...userSignUp, [event.target.name]: event.target.value });
@@ -25,6 +27,8 @@ const Signup = () => {
     axios
       .post("/api/signUp", userSignUp)
       .then((res) => {
+        // after the response is successful redirect to /home
+        setRedirect("/home");
         console.log(res.data);
       })
       .catch((err) => {
@@ -33,6 +37,9 @@ const Signup = () => {
         setErrors(Object.values(err.response.data.errors));
       });
   };
+  if (redirect) {
+    return <Redirect to={redirect} />
+  }
   return (
     <div>
       {errors.map((error) => (
