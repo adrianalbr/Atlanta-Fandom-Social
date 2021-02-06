@@ -63,7 +63,7 @@ function Login() {
                   value="Login"
                 />
               </form>
-              <h6 className="goToSignUp">Don't have an account</h6>
+              <h6 className="goToSignUp">Don't have an account <a href="">Sign Up Here</a> </h6>
             </div>
           </div>
         </div>
