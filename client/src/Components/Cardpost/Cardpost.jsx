@@ -14,6 +14,8 @@ const Cardpost = () => {
             </div>
             <div className="card-action">
               <a href="/">Save</a>
+              <a href="/">Delete</a>
+              <a href="/">Update</a>
             </div>
           </div>
       </div>
@@ -28,6 +30,8 @@ const Cardpost = () => {
             </div>
             <div className="card-action">
               <a href="/">Save</a>
+              <a href="/">Delete</a>
+              <a href="/">Update</a>
             </div>
           </div>
       </div>
@@ -42,6 +46,8 @@ const Cardpost = () => {
             </div>
             <div className="card-action">
               <a href="/">Save</a>
+              <a href="/">Delete</a>
+              <a href="/">Update</a>
             </div>
           </div>
       </div>
