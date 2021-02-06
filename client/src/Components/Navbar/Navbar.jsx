@@ -2,8 +2,10 @@ import React from "react";
 import "./Navbar.css";
 import { InputGroup, Button, InputGroupAddon, Input } from "reactstrap";
 import Cloak from "../../assets-sort/icons/cloak.png";
+import {NavLink} from "react-router-dom";
 
 const Navbar = () => {
+
   return (
     <div>
       <nav>
@@ -32,7 +34,7 @@ const Navbar = () => {
           <div>
             <ul>
               <li>
-                <a href="badges.html">Posts</a>
+                <NavLink to="/post">Post</NavLink>
               </li>
               <li>
                 <a href="badges.html">Profile</a>
