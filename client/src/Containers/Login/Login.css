@@ -10,6 +10,10 @@
 
 }
 
+.leftSide {
+
+}
+
 .formContentContainer {
 
 }
@@ -23,17 +27,13 @@
 }
 
 .submitButton {
-    color: #7a44a4;
-    margin: 10px 20px;
-    width: 80%;
-    height: 8%;
+    background-color: #7a44a4;
+    border-radius: 4px;
     border: none;
-    border-radius: 19px;
-    text-transform: uppercase;
-    cursor: pointer;
-    font-weight: 500;
-}
-
-.leftSide {
-
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }

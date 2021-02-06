@@ -39,12 +39,14 @@ const Signup = () => {
         <Alert color="danger">{error.message}!</Alert>
       ))}
 
+      {/* what displays on the page */}
       <div className="titleHeaderContainer">
         <h2 className="formHeader">Welcome to ATL Fandom Social</h2>
         <div className="formContainer">
           <div className="leftSide">
             <div className="formContentContainer">
               <form>
+              <label htmlFor="firstName">First Name</label>
                 <input
                   type="text"
                   name="firstName"
@@ -54,6 +56,7 @@ const Signup = () => {
                   placeholder="First Name"
                   required
                 />
+                <label htmlFor="lastName">Last Name</label>
                 <input
                   type="text"
                   name="lastName"
@@ -63,6 +66,7 @@ const Signup = () => {
                   placeholder="Last Name"
                   required
                 />
+                <label htmlFor="Username">Username</label>
                 <input
                   type="text"
                   name="username"
@@ -72,6 +76,7 @@ const Signup = () => {
                   placeholder="Username"
                   required
                 />
+                <label htmlFor="email">Email</label>
                 <input
                   type="text"
                   name="email"
@@ -82,6 +87,7 @@ const Signup = () => {
                   placeholder="Email"
                   required
                 />
+                <label htmlFor="password">Password</label>
                 <input
                   type="password"
                   name="password"
