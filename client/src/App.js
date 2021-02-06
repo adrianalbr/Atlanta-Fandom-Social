@@ -9,20 +9,28 @@ import Post from "./Containers/Post/Post";
 
 function App() {
   return (
+    <Router> 
     <div className="App">
-      <Router>
         <Navbar />
         <Switch>
-          <Route path="/firsttopic" component={WelcomeTopics} />
-          <Route path="/firstprofile" component={WelcomeProfile} />
-          <Route path="/signup" component={Signup} />
-          <Route path="/login" component={Login} />
-          <Route path="/post" component= {Post} />
-          <Route path="/" component={Home} />
+          {/* <Route exact path="/signup" component={Signup} /> */}
+          <Route exact path={["/", "/signup"]}>
+            <Signup />
+          </Route>
+          <Route exact path="/login">
+            <Login />
+          </Route>
+          <Route exact path="/Post">
+            <Post />
+          </Route>
+          <Route exact path="/Home">
+          <Home />
+          </Route>
         </Switch>
         {/* <Footer/> */}
-      </Router>
     </div>
+      </Router>
+    
   );
 }
 
