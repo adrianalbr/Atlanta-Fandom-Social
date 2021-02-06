@@ -99,7 +99,7 @@ const Signup = () => {
                   value="SignUp"
                 />
               </form>
-              <h6 className="goToSignUp">Already have an account</h6>
+              <h6 className="goToSignUp">Already have an account <a href="">Login Here</a>  </h6>
             </div>
           </div>
         </div>
