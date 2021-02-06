@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useState } from "react";
 import { Alert } from "reactstrap";
 
-// import "./Login.css";
+import "./Login.css";
 
 function Login() {
   const [userName, setUserName] = useState("");
@@ -24,14 +24,14 @@ function Login() {
 
   return (
     <div>
-      {error != "" ? <Alert color="danger">{error}</Alert> : ""}
-
+      {error !== "" ? <Alert color="danger">{error}</Alert> : ""}
       <div className="titleHeaderContainer">
         <h2 className="formHeader">Welcome to ATL Fandom Social</h2>
         <div className="formContainer">
           <div className="leftSide">
             <div className="formContentContainer">
               <form>
+              <label htmlFor="login">Login</label>
                 <input
                   type="text"
                   name="username"
@@ -44,6 +44,7 @@ function Login() {
                   }}
                   required
                 />
+                <label htmlFor="password">Password</label>
                 <input
                   type="password"
                   name="password"
