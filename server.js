@@ -26,7 +26,7 @@ app.get("*", function (req, res) {
 
 // Connect to the Mongo DB
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/fandomSocial",
+  process.env.MONGODB_URI || "mongodb://localhost/atlfandomsocial",
   {
     useUnifiedTopology: true,
     useNewUrlParser: true,
