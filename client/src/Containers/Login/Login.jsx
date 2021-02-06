@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { Alert } from "reactstrap";
+import { Redirect } from "react-router-dom";
 
 import "./Login.css";
 
@@ -8,12 +9,14 @@ function Login() {
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const [redirect, setRedirect] = useState(null)
 
   const handleSubmit = (event) => {
     event.preventDefault();
     axios
       .post("/api/login", { username: userName, password: password })
       .then((res) => {
+        setRedirect("/home");
         console.log(res.data);
       })
       .catch((err) => {
@@ -21,6 +24,10 @@ function Login() {
         setError(err.response.data.error);
       });
   };
+
+  if(redirect){
+    return <Redirect to ={redirect}/>
+  }
 
   return (
     <div>
@@ -64,7 +71,7 @@ function Login() {
                   value="Login"
                 />
               </form>
-              <h6 className="goToSignUp">Don't have an account <a href="">Sign Up Here</a> </h6>
+              <h6 className="goToSignUp">Don't have an account <a href="/">Sign Up Here</a> </h6>
             </div>
           </div>
         </div>
