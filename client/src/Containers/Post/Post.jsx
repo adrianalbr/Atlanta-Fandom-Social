@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { Redirect } from "react-router-dom";
 
 
 const Post = () => {
@@ -8,6 +9,8 @@ const [category, setCategory] = useState("");
 const [title, setTitle] = useState("");
 const [URL, setURL] = useState("");
 const [contentText, setContentText] = useState("");
+const [redirect, setRedirect] = useState(null);
+
 
 const handleFormSubmit = (e) => {
     e.preventDefault();
@@ -18,11 +21,17 @@ const handleFormSubmit = (e) => {
             contentText
     })
     .then(response => {
+      setRedirect("/home");
         console.log(response.data);
+       
     }).catch(err => {
         console.log(err);
     })
+    
+}
 
+if(redirect){
+  return <Redirect to ={redirect}/>
 }
 
   return (
