@@ -1,4 +1,10 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import { BrowserRouter, BrowserRouter as Router, Route, Switch, withRouter } from "react-router-dom";
+import "./App.css"
 import Home from "./Containers/Home/Home";
 import Navbar from "./Components/Navbar/Navbar";
 import Login from "./Containers/Login/Login";
@@ -7,13 +13,15 @@ import WelcomeProfile from "./Containers/WelcomeProfile/WelcomeProfile";
 import WelcomeTopics from "./Containers/WelcomeTopics/WelcomeTopics";
 import Post from "./Containers/Post/Post";
 
-function App() {
+
+const App = withRouter(({ location })=> {
+  const loginorsignup= location.pathname === '/login' || location.pathname === '/signup'
+
   return (
-    <Router> 
     <div className="App">
-        <Navbar />
-        <Switch>
-          {/* <Route exact path="/signup" component={Signup} /> */}
+      {
+         !loginorsignup && <Navbar/>
+      }
           <Route exact path={["/", "/signup"]}>
             <Signup />
           </Route>
@@ -26,12 +34,18 @@ function App() {
           <Route exact path="/Home">
           <Home />
           </Route>
-        </Switch>
-        {/* <Footer/> */}
     </div>
-      </Router>
-    
-  );
-}
+      
+  )
+})
+
+ReactDOM.render(
+  <React.StrictMode>
+    <Router>
+    <App />
+    </Router>
+  </React.StrictMode>,
+  document.getElementById('root')
+);
 
 export default App;
