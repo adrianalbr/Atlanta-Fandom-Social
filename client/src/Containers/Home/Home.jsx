@@ -9,13 +9,14 @@ const Home = () => {
         <Container fluid>
             <Row>
                 <Col size="md-4">
+                    <br/>
                     <Menu/>
                 </Col>
 
                 <Col size="md-6">
                     <Cardpost/>
                 </Col>
-                    {/* <ViewPosts/> */}
+                    <ViewPosts/>
             </Row>
       </Container>
     );

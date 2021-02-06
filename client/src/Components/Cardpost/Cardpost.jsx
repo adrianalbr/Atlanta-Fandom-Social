@@ -9,7 +9,7 @@ const Cardpost = () => {
             <div className="card-content white-text">
               <span className="card-title">Dr Strange</span>
               <p>
-              Dormammu, I've Come To Bargain!!
+              Dormammu, I've Come To Bargain!!!
               </p>
             </div>
             <div className="card-action">
