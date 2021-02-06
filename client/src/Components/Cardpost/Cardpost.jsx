@@ -5,7 +5,6 @@ const Cardpost = () => {
   return (
     <div>
       <div className="row">
-        <div className="col s6">
           <div className="card">
             <div className="card-content white-text">
               <span className="card-title">Dr Strange</span>
@@ -17,7 +16,34 @@ const Cardpost = () => {
               <a href="/">Save</a>
             </div>
           </div>
-        </div>
+      </div>
+
+      <div className="row">
+          <div className="card">
+            <div className="card-content white-text">
+              <span className="card-title">the Ancient One</span>
+              <p>
+              Have you seen that before in a gift shop?
+              </p>
+            </div>
+            <div className="card-action">
+              <a href="/">Save</a>
+            </div>
+          </div>
+      </div>
+
+      <div className="row">
+          <div className="card">
+            <div className="card-content white-text">
+              <span className="card-title">Kaecilius</span>
+              <p>
+              Mister Doctor...
+              </p>
+            </div>
+            <div className="card-action">
+              <a href="/">Save</a>
+            </div>
+          </div>
       </div>
     </div>
   );
