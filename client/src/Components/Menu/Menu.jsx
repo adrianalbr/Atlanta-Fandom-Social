@@ -8,10 +8,10 @@ const Menu = () => {
             <div className="row">
                     <div className="buttons col s4">
                         <ul>
-                            <a className="waves-effect waves-light btn">Home</a>
+                            <a href = "/home" className="waves-effect waves-light btn">Home</a>
                         </ul>
                         <ul>
-                            <a className="waves-effect waves-light btn">Saved Posts</a>
+                            <a href = "/SavedPosts" className="waves-effect waves-light btn">Saved Posts</a>
                         </ul>
                     </div>
             </div>

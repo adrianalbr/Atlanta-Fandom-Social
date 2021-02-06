@@ -10,11 +10,11 @@ const Navbar = () => {
     <div>
       <nav>
         <div className="nav-wrapper">
-          <a href="/" class="brand-logo"></a>
+          <a href="/Home" class="brand-logo"></a>
           {/* <ul id="nav-mobile" className="center hide-on-med-and-down"> */}
           {/* <li> */}
           <img src={ Cloak } alt="cloak" />
-          <a href="/">Home</a>
+          <a href="/Home">Home</a>
           {/* </li> */}
 
           {/* <li> */}
@@ -37,10 +37,10 @@ const Navbar = () => {
                 <NavLink to="/post">Post</NavLink>
               </li>
               <li>
-                <a href="badges.html">Profile</a>
+                <a href="/">Profile</a>
               </li>
               <li>
-                <a href="collapsible.html">Other little buttons</a>
+                <a href="/signup">LogOut</a>
               </li>
             </ul>
           </div>
