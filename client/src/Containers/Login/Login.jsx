@@ -38,13 +38,13 @@ function Login() {
           <div className="leftSide">
             <div className="formContentContainer">
               <form>
-              <label htmlFor="login">Login</label>
+              <label htmlFor="Username">Username</label>
                 <input
                   type="text"
                   name="username"
                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                   class="formInput"
-                  placeholder="Email or Username"
+                  placeholder="Enter Username"
                   value={userName}
                   onChange={(event) => {
                     setUserName(event.target.value);
@@ -56,7 +56,7 @@ function Login() {
                   type="password"
                   name="password"
                   class="formInput"
-                  placeholder="Password"
+                  placeholder="Enter Password"
                   value={password}
                   onChange={(event) => {
                     setPassword(event.target.value);
