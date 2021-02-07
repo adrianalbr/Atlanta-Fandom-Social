@@ -16,7 +16,7 @@ const Navbar = () => {
           {/* </a> */}
           <ul class="right hide-on-med-and-down">
             <li>
-              <a href="sass.html">
+              <a href="/">
                 <i class="material-icons left">search</i>Search
               </a>
             </li>
