@@ -3,41 +3,42 @@ import axios from "axios";
 import { Redirect } from "react-router-dom";
 import Navbar from "../../Components/Navbar/Navbar";
 
+const Post = (props) => {
+  const [category, setCategory] = useState("");
+  const [title, setTitle] = useState("");
+  const [URL, setURL] = useState("");
+  const [contentText, setContentText] = useState("");
+  const [redirect, setRedirect] = useState(null);
 
-const Post = () => {
-
-const [category, setCategory] = useState("");
-const [title, setTitle] = useState("");
-const [URL, setURL] = useState("");
-const [contentText, setContentText] = useState("");
-const [redirect, setRedirect] = useState(null);
-
-
-const handleFormSubmit = (e) => {
+  const handleFormSubmit = (e) => {
     e.preventDefault();
-    axios.post("/api/content", {
-            category,
-            title,
-            URL,
-            contentText
-    })
-    .then(response => {
-      setRedirect("/home");
+    axios
+      .post("/api/content", {
+        category,
+        title,
+        URL,
+        contentText,
+      })
+      .then((response) => {
+        setRedirect("/home");
         console.log(response.data);
-       
-    }).catch(err => {
+      })
+      .catch((err) => {
         console.log(err);
-    })
-    
-}
+      });
+  };
 
-if(redirect){
-  return <Redirect to ={redirect}/>
-}
+  if (props.token === null) {
+    return <Redirect to="/login" />;
+  }
+
+  if (redirect) {
+    return <Redirect to={redirect} />;
+  }
 
   return (
     <div>
-      <Navbar/>
+      <Navbar />
       <div className="row">
         <form className="col s6" onSubmit={handleFormSubmit}>
           <div className="row">

@@ -4,8 +4,12 @@ import Cardpost from "../../Components/Cardpost/Cardpost";
 import Menu from "../../Components/Menu/Menu";
 import ViewPosts from "../../Components/ViewPosts/ViewPosts";
 import Navbar from "../../Components/Navbar/Navbar";
+import { Redirect } from "react-router-dom";
 
-const Home = () => {
+const Home = (props) => {
+    if(props.token === null){
+        return <Redirect to ="/login"/>
+    }
     return (
 
         <div class="row">

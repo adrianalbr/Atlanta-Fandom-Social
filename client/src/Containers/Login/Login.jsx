@@ -5,7 +5,7 @@ import { Redirect } from "react-router-dom";
 
 import "./Login.css";
 
-function Login() {
+function Login(props) {
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -16,6 +16,7 @@ function Login() {
     axios
       .post("/api/login", { username: userName, password: password })
       .then((res) => {
+        props.setToken(res.data.token);
         setRedirect("/home");
         console.log(res.data);
       })

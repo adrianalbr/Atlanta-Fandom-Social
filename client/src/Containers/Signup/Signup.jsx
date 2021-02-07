@@ -5,7 +5,7 @@ import { Redirect } from "react-router-dom";
 
 import "./Signup.css";
 
-const Signup = () => {
+const Signup = (props) => {
   const [userSignUp, setUserSignUp] = useState({
     firstName: "",
     lastName: "",
@@ -27,9 +27,11 @@ const Signup = () => {
     axios
       .post("/api/signUp", userSignUp)
       .then((res) => {
+        console.log(res.data);
+        props.setToken(res.data.token);
         // after the response is successful redirect to /home
         setRedirect("/home");
-        console.log(res.data);
+
       })
       .catch((err) => {
         console.log(err.response.data);
