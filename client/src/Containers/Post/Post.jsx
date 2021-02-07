@@ -12,13 +12,21 @@ const Post = (props) => {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
+    console.log(props.token);
     axios
-      .post("/api/content", {
-        category,
-        title,
-        URL,
-        contentText,
-      })
+      .post(
+        "/api/content",
+        {
+          category,
+          title,
+          URL,
+          contentText,
+        } ,{
+          headers: {
+            Authorization: props.token,
+          },
+        },
+      )
       .then((response) => {
         setRedirect("/home");
         console.log(response.data);

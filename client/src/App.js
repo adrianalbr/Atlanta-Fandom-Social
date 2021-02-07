@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React, useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import Home from "./Containers/Home/Home";
@@ -11,6 +11,9 @@ import Post from "./Containers/Post/Post";
 
 function App() {
   const [token, setToken] = useState(null);
+  useEffect(() => {
+   
+  }, [token]);
   return (
     <Router>
       <div className="App">
@@ -21,7 +24,7 @@ function App() {
           <Route exact path="/login">
             <Login setToken={setToken} />
           </Route>
-          <Route exact path="/Post">
+          <Route exact path="/post">
             <Post token={token} />
           </Route>
           <Route exact path="/Home">

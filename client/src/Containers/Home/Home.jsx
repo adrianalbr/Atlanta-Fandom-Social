@@ -21,7 +21,7 @@ const Home = (props) => {
             </div>
             <div class="col s6">6-columns (one-half)
             <Cardpost/>
-            <ViewPosts/>
+            <ViewPosts token = {props.token}/>
             </div>
         </div>
         

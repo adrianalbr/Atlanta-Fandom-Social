@@ -1,17 +1,19 @@
 import React from "react";
 import "./Navbar.css";
 import Cloak from "../../assets-sort/icons/cloak.png";
+import { Link } from "react-router-dom";
 
 
 const Navbar = () => {
   return (
     <div>
+
       <nav>
         <div class="nav-wrapper">
           {/* <a href="/Home" class="brand-logo">
             Logo */}
           {/* </a> */}
-          <ul class="right hide-on-med-and-down">
+          {/* <ul class="right hide-on-med-and-down">
             <li>
               <a href="sass.html">
                 <i class="material-icons left">search</i>Search
@@ -23,7 +25,7 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a href="./Post">
+              <a href="/post">
                 <i class="material-icons right"></i>Post
               </a>
             </li>
@@ -32,9 +34,15 @@ const Navbar = () => {
                 <i class="material-icons right"></i>Profile
               </a>
             </li>
-          </ul>
+          </ul> */}
+           <Link to="/search"><span style={{fontWeight:"bold"}}>Search</span></Link>
+           <Link to="/home"><span style={{fontWeight:"bold"}}>Home</span></Link>
+           <Link to="/post"><span style={{fontWeight:"bold"}}>Post</span></Link>
+           <Link to="/profile"><span style={{fontWeight:"bold"}}>Profile</span></Link>
+
         </div>
       </nav>
+     
     </div>
   );
 };
