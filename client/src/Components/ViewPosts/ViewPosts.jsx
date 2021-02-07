@@ -18,13 +18,25 @@ const ViewPosts = () => {
             <div className="card-content white-text">
                   <span className="card-title">{title}</span>
                   <p>{contentText}</p>
-                </div>
+            </div>
                 <div className="card-action">
-                  <p>Category: {category}, Date: {date}</p>
-                 
+                  <button>
+                    <i class="fa fa-heart"></i> Fav
+                  </button>
+                  <button>
+                    <i class="fa fa-pencil"></i> Update
+                  </button>
+                  <button>
+                    <i class="fa fa-trash-o"></i> Delete
+                  </button>
+                <div className="Author">
+                  <h8>Category: {category}, Date: {date}</h8>
+                <div/>
                 </div>
               </div>
-            </div>
+          </div>
+          </div>
+
       ))}
     </>
   );
