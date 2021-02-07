@@ -2,10 +2,8 @@ import React from "react";
 import "./Navbar.css";
 import Cloak from "../../assets-sort/icons/cloak.png";
 import {
-  Route,
   NavLink,
-  BrowserRouter as Router,
-  Switch,
+  BrowserRouter as Router
 } from "react-router-dom";
 
 const Navbar = () => {
