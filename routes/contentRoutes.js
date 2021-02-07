@@ -1,12 +1,14 @@
 const router = require("express").Router();
 const contentController = require("../controllers/contentController");
 
-
-router.route("/")
+router
+  .route("/")
   .get(contentController.findAll)
   .post(contentController.create)
   .put(contentController.update)
   .delete(contentController.remove);
+
+router.route("/user").get(contentController.findByAuthor);
 
 router
   .route("/:id")
@@ -14,5 +16,4 @@ router
   .put(contentController.update)
   .delete(contentController.remove);
 
-  
 module.exports = router;

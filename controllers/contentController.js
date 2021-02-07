@@ -1,9 +1,17 @@
 const db = require("../models/");
 
 module.exports = {
+
+  findByAuthor: function (req, res) {
+  console.log("Find by author");
+    db.Content.find({author : req.user._id})
+      .sort({ date: -1 })
+      .then((dbModel) => res.json(dbModel))
+      .catch((err) => res.status(422).json(err));
+  },
+
+
   findAll: function (req, res) {
-    console.log("in conrnt controller find all");
-    console.log(req.user);
     db.Content.find(req.query)
       .sort({ date: -1 })
       .then((dbModel) => res.json(dbModel))

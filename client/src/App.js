@@ -30,6 +30,9 @@ function App() {
           <Route exact path="/Home">
             <Home token={token} />
           </Route>
+          <Route exact path="/profile">
+            <WelcomeProfile token={token} />
+          </Route>
         </Switch>
       </div>
     </Router>
