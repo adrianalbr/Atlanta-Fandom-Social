@@ -23,12 +23,10 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <NavLink to="./Home"activeStyle={{backgroundColor: "rgba(0,0,0,0.1)"}}>Home</NavLink>
+              <NavLink to="./Home" activeStyle={{backgroundColor: "rgba(0,0,0,0.1)"}}>Home</NavLink>
             </li>
             <li>
-              <a href="./Post">
-                <i class="material-icons right"></i>Post
-              </a>
+              <NavLink to="./Post" activeStyle={{backgroundColor: "rgba(0,0,0,0.1)"}}>Post</NavLink>
             </li>
             <li>
               <a href="./Profile">
