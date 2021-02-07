@@ -5,14 +5,9 @@
 }
 
 
-.input-group {
+/* .input-group {
   display: flex;
   justify-content: space-evenly;
   width: 500%;
-}
+} */
 
-img {
-  /* max-width: 100%; */
-  width: "40";
-   height: "40"
-}

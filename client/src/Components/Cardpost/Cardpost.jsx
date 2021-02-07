@@ -1,4 +1,5 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './Cardpost.css'
 
 const Cardpost = () => {
@@ -13,9 +14,15 @@ const Cardpost = () => {
               </p>
             </div>
             <div className="card-action">
-              <a href="/">Save</a>
-              <a href="/">Delete</a>
-              <a href="/">Update</a>
+                <button>
+                  <i class="fa fa-heart"></i> Fav
+                </button>
+                <button>
+                  <i class="fa fa-pencil"></i> Update
+                </button>
+                <button>
+                  <i class="fa fa-trash-o"></i> Delete
+                </button>
             </div>
           </div>
       </div>
@@ -29,9 +36,15 @@ const Cardpost = () => {
               </p>
             </div>
             <div className="card-action">
-              <a href="/">Save</a>
-              <a href="/">Delete</a>
-              <a href="/">Update</a>
+                <button>
+                  <i class="fa fa-heart"></i> Fav
+                </button>
+                <button>
+                  <i class="fa fa-pencil"></i> Update
+                </button>
+                <button>
+                  <i class="fa fa-trash-o"></i> Delete
+                </button>
             </div>
           </div>
       </div>
@@ -45,9 +58,15 @@ const Cardpost = () => {
               </p>
             </div>
             <div className="card-action">
-              <a href="/">Save</a>
-              <a href="/">Delete</a>
-              <a href="/">Update</a>
+                <button>
+                  <i class="fa fa-heart"></i> Fav
+                </button>
+                <button>
+                  <i class="fa fa-pencil"></i> Update
+                </button>
+                <button>
+                  <i class="fa fa-trash-o"></i> Delete
+                </button>
             </div>
           </div>
       </div>

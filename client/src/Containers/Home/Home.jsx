@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Row, Container } from "../../Components/Grid/Grid"
+// import { Col, Row, Container } from "../../Components/Grid/Grid"
 import Cardpost from "../../Components/Cardpost/Cardpost";
 import Menu from "../../Components/Menu/Menu";
 import ViewPosts from "../../Components/ViewPosts/ViewPosts";
@@ -9,13 +9,16 @@ const Home = () => {
     return (
 
         <div class="row">
-            <div class="col s12">This div is 12-columns wide on all screen sizes
+            {/* This div is 12-columns wide on all screen sizes */}
+            <div class="col m12">
             <Navbar/>
             </div>
-            <div class="col s4">6-columns (one-half)
+            {/* 6-columns (one-half) */}
+            <div class="col s4">
             <Menu/>
             </div>
-            <div class="col s6">6-columns (one-half)
+            {/* 6-columns (one-half) */}
+            <div class="col s5">
             <Cardpost/>
             <ViewPosts/>
             </div>

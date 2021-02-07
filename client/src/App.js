@@ -1,14 +1,18 @@
 
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
 import "./App.css"
 import Home from "./Containers/Home/Home";
-import Navbar from "./Components/Navbar/Navbar";
 import Login from "./Containers/Login/Login";
 import Signup from "./Containers/Signup/Signup";
 import WelcomeProfile from "./Containers/WelcomeProfile/WelcomeProfile";
 import WelcomeTopics from "./Containers/WelcomeTopics/WelcomeTopics";
 import Post from "./Containers/Post/Post";
+
+library.add(fab, faCheckSquare, faCoffee)
 
 function App() {
   return (
