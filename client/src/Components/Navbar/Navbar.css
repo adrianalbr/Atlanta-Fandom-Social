@@ -11,4 +11,8 @@
   width: 500%;
 }
 
-
+img {
+  /* max-width: 100%; */
+  width: "40";
+   height: "40"
+}
