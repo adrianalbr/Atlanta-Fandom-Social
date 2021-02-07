@@ -29,9 +29,7 @@ const Navbar = () => {
               <NavLink to="./Post" activeStyle={{backgroundColor: "rgba(0,0,0,0.1)"}}>Post</NavLink>
             </li>
             <li>
-              <a href="./Profile">
-                <i class="material-icons right"></i>Profile
-              </a>
+            <NavLink to="./Profile" activeStyle={{backgroundColor: "rgba(0,0,0,0.1)"}}>Profile</NavLink>
             </li>
           </ul>
         </div>
