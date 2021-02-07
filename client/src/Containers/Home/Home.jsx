@@ -3,22 +3,25 @@ import { Col, Row, Container } from "../../Components/Grid/Grid"
 import Cardpost from "../../Components/Cardpost/Cardpost";
 import Menu from "../../Components/Menu/Menu";
 import ViewPosts from "../../Components/ViewPosts/ViewPosts";
+import Navbar from "../../Components/Navbar/Navbar";
 
 const Home = () => {
     return (
-        <Container fluid>
-            <Row>
-                <Col size="md-4">
-                    <br/>
-                    <Menu/>
-                </Col>
 
-                <Col size="md-6">
-                    <Cardpost/>
-                    <ViewPosts/>
-                </Col>
-            </Row>
-      </Container>
+        <div class="row">
+            <div class="col s12">This div is 12-columns wide on all screen sizes
+            <Navbar/>
+            </div>
+            <div class="col s4">6-columns (one-half)
+            <Menu/>
+            </div>
+            <div class="col s6">6-columns (one-half)
+            <Cardpost/>
+            <ViewPosts/>
+            </div>
+        </div>
+        
+        
     );
 };
 

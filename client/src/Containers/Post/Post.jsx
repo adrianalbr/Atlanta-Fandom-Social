@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { Redirect } from "react-router-dom";
+import Navbar from "../../Components/Navbar/Navbar";
 
 
 const Post = () => {
@@ -36,6 +37,7 @@ if(redirect){
 
   return (
     <div>
+      <Navbar/>
       <div className="row">
         <form className="col s6" onSubmit={handleFormSubmit}>
           <div className="row">
