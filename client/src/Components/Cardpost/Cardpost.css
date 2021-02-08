@@ -1,14 +1,23 @@
-.card{
- background-color: #aa84c7;
- /* width: 300px;
- height: 100px;
- padding-top: 40px; */
- 
-
+.card {
+    background-color: #aa84c7;
+    /* width: 300px;
+    height: 100px;
+    padding-top: 40px; */
 }
 
-.card-content{
+.card-content {
+    background-color: #aa84c7;
+}
 
-    background-color: #aa84c7
-
+button{
+    background-color: #7a44a4;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
