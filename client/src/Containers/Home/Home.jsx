@@ -8,17 +8,17 @@ import Navbar from "../../Components/Navbar/Navbar";
 const Home = () => {
     return (
 
-        <div class="row">
+        <div className="row">
             {/* This div is 12-columns wide on all screen sizes */}
-            <div class="col m12">
+            <div className="col m12">
             <Navbar/>
             </div>
             {/* 6-columns (one-half) */}
-            <div class="col s4">
+            <div className="col s4">
             <Menu/>
             </div>
             {/* 6-columns (one-half) */}
-            <div class="col s5">
+            <div className="col s5">
             <Cardpost/>
             <ViewPosts/>
             </div>
