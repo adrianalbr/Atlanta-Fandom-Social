@@ -6,7 +6,6 @@ const ViewPosts = () => {
 
   useEffect(() => {
     axios.get("/api/content").then((response) => {
-      console.log(response.data);
       setPosts(response.data);
     });
   },[]);
@@ -21,13 +20,13 @@ const ViewPosts = () => {
             </div>
                 <div className="card-action">
                   <button>
-                    <i class="fa fa-heart"></i> Fav
+                    <i className="fa fa-heart"></i> Fav
                   </button>
                   <button>
-                    <i class="fa fa-pencil"></i> Update
+                    <i className="fa fa-pencil"></i> Update
                   </button>
                   <button>
-                    <i class="fa fa-trash-o"></i> Delete
+                    <i className="fa fa-trash-o"></i> Delete
                   </button>
                 <div className="Author">
                   <h8>Category: {category}, Date: {date}</h8>
