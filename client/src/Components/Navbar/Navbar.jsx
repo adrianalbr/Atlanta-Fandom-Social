@@ -10,14 +10,14 @@ const Navbar = () => {
   return (
     <div>
       <nav>
-        <div class="nav-wrapper">
+        <div className="nav-wrapper">
           {/* <a href="/Home" class="brand-logo">
             Logo */}
           {/* </a> */}
-          <ul class="right hide-on-med-and-down">
+          <ul className="right hide-on-med-and-down">
             <li>
               <a href="/">
-                <i class="material-icons left">search</i>Search
+                <i className="material-icons left">search</i>Search
               </a>
             </li>
             <li>
