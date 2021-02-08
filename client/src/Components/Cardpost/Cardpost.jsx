@@ -13,13 +13,13 @@ const Cardpost = () => {
           </div>
           <div className="card-action">
             <button>
-              <i class="fa fa-heart"></i> Fav
+              <i className="fa fa-heart"></i> Fav
             </button>""
             <button>
-              <i class="fa fa-pencil"></i> Update
+              <i className="fa fa-pencil"></i> Update
             </button>
             <button>
-              <i class="fa fa-trash-o"></i> Delete
+              <i className="fa fa-trash-o"></i> Delete
             </button>
           </div>
         </div>
@@ -33,13 +33,13 @@ const Cardpost = () => {
           </div>
           <div className="card-action">
             <button>
-              <i class="fa fa-heart"></i> Fav
+              <i className="fa fa-heart"></i> Fav
             </button>
             <button>
-              <i class="fa fa-pencil"></i> Update
+              <i className="fa fa-pencil"></i> Update
             </button>
             <button>
-              <i class="fa fa-trash-o"></i> Delete
+              <i className="fa fa-trash-o"></i> Delete
             </button>
           </div>
         </div>
@@ -53,13 +53,13 @@ const Cardpost = () => {
           </div>
           <div className="card-action">
             <button>
-              <i class="fa fa-heart"></i> Fav
+              <i className="fa fa-heart"></i> Fav
             </button>
             <button>
-              <i class="fa fa-pencil"></i> Update
+              <i className="fa fa-pencil"></i> Update
             </button>
             <button>
-              <i class="fa fa-trash-o"></i> Delete
+              <i className="fa fa-trash-o"></i> Delete
             </button>
           </div>
         </div>
