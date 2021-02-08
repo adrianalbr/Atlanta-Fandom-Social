@@ -1,7 +1,10 @@
 import React from "react";
 import "./Navbar.css";
 import Cloak from "../../assets-sort/icons/cloak.png";
-
+import {
+  NavLink,
+  BrowserRouter as Router
+} from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -18,19 +21,13 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a href="./Home">
-                <i class="material-icons right"></i>Home
-              </a>
+              <NavLink to="./Home" activeStyle={{backgroundColor: "rgba(0,0,0,0.1)"}}>Home</NavLink>
             </li>
             <li>
-              <a href="./Post">
-                <i class="material-icons right"></i>Post
-              </a>
+              <NavLink to="./Post" activeStyle={{backgroundColor: "rgba(0,0,0,0.1)"}}>Post</NavLink>
             </li>
             <li>
-              <a href="./Profile">
-                <i class="material-icons right"></i>Profile
-              </a>
+            <NavLink to="./Profile" activeStyle={{backgroundColor: "rgba(0,0,0,0.1)"}}>Profile</NavLink>
             </li>
           </ul>
         </div>
