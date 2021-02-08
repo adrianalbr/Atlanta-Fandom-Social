@@ -43,7 +43,7 @@ function Login() {
                   type="text"
                   name="username"
                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                  class="formInput"
+                  className="formInput"
                   placeholder="Email or Username"
                   value={userName}
                   onChange={(event) => {
@@ -55,7 +55,7 @@ function Login() {
                 <input
                   type="password"
                   name="password"
-                  class="formInput"
+                  className="formInput"
                   placeholder="Password"
                   value={password}
                   onChange={(event) => {
@@ -65,7 +65,7 @@ function Login() {
                 />
                 <input
                   type="submit"
-                  class="submitButton"
+                  className="submitButton"
                   name="submitButton"
                   onClick={handleSubmit}
                   value="Login"
@@ -76,7 +76,7 @@ function Login() {
           </div>
         </div>
       </div>
-      <div class="rightSide"></div>
+      <div className="rightSide"></div>
     </div>
   );
 }
