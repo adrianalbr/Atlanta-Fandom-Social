@@ -21,6 +21,20 @@ const Profile = (props) => {
   }
 
 
+  const handleDelete = () => {
+    axios
+    .delete("/api/content/" + _id, {
+      headers: {
+        Authorization: props.token,
+      },   
+    })
+    .then((response) => {
+     getData();
+    });
+
+  }
+
+
   useEffect(() => {
     // api call to get all posts of that user
     axios
@@ -46,7 +60,7 @@ const Profile = (props) => {
           <Menu />
         </div>
 
-        {posts.map(({ category, title, date, contentText }, index) => (
+        {posts.map(({ category, title, date, contentText,  _id }, index) => (
           <div className="col s5">
             <div className="row" key={index}>
               <div className="card">
