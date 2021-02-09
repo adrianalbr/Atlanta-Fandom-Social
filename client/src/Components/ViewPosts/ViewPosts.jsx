@@ -18,7 +18,7 @@ const ViewPosts = (props) => {
   }, []);
   return (
     <>
-      {posts.map(({ category, title, date, contentText }) => (
+      {posts.map(({ category, title, date, contentText, author }) => (
         <div className="row">
           <div className="card">
             <div className="card-content white-text">
@@ -29,15 +29,15 @@ const ViewPosts = (props) => {
               <button>
                 <i className="fa fa-heart"></i> Fav
               </button>
-              <button>
+              {/* <button>
                 <i className="fa fa-pencil"></i> Update
               </button>
               <button>
                 <i className="fa fa-trash-o"></i> Delete
-              </button>
+              </button> */}
               <div className="Author">
                 <h8>
-                  Category: {category}, Date: {date}
+                  Author: {author} Category: {category}, Date: {date}
                 </h8>
                 <div />
               </div>

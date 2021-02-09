@@ -14,12 +14,6 @@ const Cardpost = () => {
           <div className="card-action">
             <button>
               <i className="fa fa-heart"></i> Fav
-            </button>""
-            <button>
-              <i className="fa fa-pencil"></i> Update
-            </button>
-            <button>
-              <i className="fa fa-trash-o"></i> Delete
             </button>
           </div>
         </div>
@@ -35,12 +29,6 @@ const Cardpost = () => {
             <button>
               <i className="fa fa-heart"></i> Fav
             </button>
-            <button>
-              <i className="fa fa-pencil"></i> Update
-            </button>
-            <button>
-              <i className="fa fa-trash-o"></i> Delete
-            </button>
           </div>
         </div>
       </div>
@@ -54,12 +42,6 @@ const Cardpost = () => {
           <div className="card-action">
             <button>
               <i className="fa fa-heart"></i> Fav
-            </button>
-            <button>
-              <i className="fa fa-pencil"></i> Update
-            </button>
-            <button>
-              <i className="fa fa-trash-o"></i> Delete
             </button>
           </div>
         </div>
