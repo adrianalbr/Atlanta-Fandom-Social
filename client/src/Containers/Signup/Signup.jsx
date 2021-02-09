@@ -31,7 +31,6 @@ const Signup = (props) => {
         props.setToken(res.data.token);
         // after the response is successful redirect to /home
         setRedirect("/home");
-
       })
       .catch((err) => {
         console.log(err.response.data);
@@ -40,7 +39,7 @@ const Signup = (props) => {
       });
   };
   if (redirect) {
-    return <Redirect to={redirect} />
+    return <Redirect to={redirect} />;
   }
   return (
     <div>
@@ -55,7 +54,7 @@ const Signup = (props) => {
           <div className="leftSide">
             <div className="formContentContainer">
               <form>
-              <label htmlFor="firstName">First Name</label>
+                <label htmlFor="firstName">First Name</label>
                 <input
                   type="text"
                   name="firstName"
@@ -114,7 +113,9 @@ const Signup = (props) => {
                   value="SignUp"
                 />
               </form>
-              <h6 className="goToSignUp">Already have an account <a href="/login">Login Here</a>  </h6>
+              <h6 className="goToSignUp">
+                Already have an account <a href="/login">Login Here</a>{" "}
+              </h6>
             </div>
           </div>
         </div>
