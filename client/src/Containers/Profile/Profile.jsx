@@ -3,45 +3,44 @@ import axios from "axios";
 import "./Profile.css";
 import Navbar from "../../Components/Navbar/Navbar";
 import Menu from "../../Components/Menu/Menu";
+import { Redirect } from "react-router-dom";
 
 const Profile = (props) => {
   const [posts, setPosts] = useState([]);
 
   const getData = () => {
     axios
-    .get("/api/content/user", {
-      headers: {
-        Authorization: props.token,
-      },
-    })
-    .then((response) => {
-      console.log(response.data);
-      setPosts(response.data);
-    });
-  }
-
+      .get("/api/content/user", {
+        headers: {
+          Authorization: props.token,
+        },
+      })
+      .then((response) => {
+        console.log(response.data);
+        setPosts(response.data);
+      });
+  };
 
   const handleDelete = (_id) => {
     axios
-    .delete("/api/content/" + _id, {
-      headers: {
-        Authorization: props.token,
-      },   
-    })
-    .then((response) => {
-     getData();
-    });
-
-  }
-
+      .delete("/api/content/" + _id, {
+        headers: {
+          Authorization: props.token,
+        },
+      })
+      .then((response) => {
+        getData();
+      });
+  };
 
   useEffect(() => {
     // api call to get all posts of that user
     getData();
   }, []);
 
-
-
+  if (props.token === null) {
+    return <Redirect to="/login" />;
+  }
 
   return (
     <div>
@@ -60,7 +59,11 @@ const Profile = (props) => {
                   <p>{contentText}</p>
                 </div>
                 <div className="card-action">
-                  <button onClick={()=>{handleDelete(_id)}}>
+                  <button
+                    onClick={() => {
+                      handleDelete(_id);
+                    }}
+                  >
                     <i className="fa fa-trash-o"></i> Delete
                   </button>
                   <button>
