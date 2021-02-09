@@ -32,7 +32,7 @@ function App() {
           <Route exact path="/post">
             <Post token={token} />
           </Route>
-          <Route exact path="/Home">
+          <Route exact path="/home">
             <Home token={token} />
           </Route>
           <Route exact path="/profile">

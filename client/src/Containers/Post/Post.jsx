@@ -21,11 +21,12 @@ const Post = (props) => {
           title,
           URL,
           contentText,
-        } ,{
+        },
+        {
           headers: {
             Authorization: props.token,
           },
-        },
+        }
       )
       .then((response) => {
         setRedirect("/home");
