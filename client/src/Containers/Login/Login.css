@@ -5,6 +5,7 @@
 }
 
 .formContainer {
+    font-family: "Roboto", sans-serif;
     position: relative;
     margin: 8% auto;
     min-height: 60%;
@@ -29,6 +30,7 @@
 } */
 
 .formInput {
+    font-family: "Roboto", sans-serif;
     display: block;
     margin: 0px 0px 15px 20px;
     padding: 4px;
@@ -51,6 +53,7 @@ background-image: linear-gradient(
 }
 
 .submitButton{
+    font-family: "Roboto", sans-serif;
     margin: 10px;
     padding: 15px 45px;
     text-align: center;
@@ -58,7 +61,7 @@ background-image: linear-gradient(
     transition: 0.5s;
     background-size: 200% auto;
     color: white;
-    box-shadow: 0 0 20px #eee;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.6);
     border-radius: 10px;
     display: block;
 }

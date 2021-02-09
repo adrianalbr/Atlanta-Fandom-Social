@@ -45,7 +45,7 @@ function Login(props) {
                   name="username"
                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                   className="formInput"
-                  placeholder="Enter Username"
+                  placeholder="Username"
                   value={userName}
                   onChange={(event) => {
                     setUserName(event.target.value);
@@ -57,7 +57,7 @@ function Login(props) {
                   type="password"
                   name="password"
                   className="formInput"
-                  placeholder="Enter Password"
+                  placeholder="Password"
                   value={password}
                   onChange={(event) => {
                     setPassword(event.target.value);
