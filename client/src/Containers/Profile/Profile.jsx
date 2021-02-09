@@ -6,6 +6,21 @@ import Menu from "../../Components/Menu/Menu";
 
 const Profile = (props) => {
   const [posts, setPosts] = useState([]);
+
+  const getData = () => {
+    axios
+    .get("/api/content/user", {
+      headers: {
+        Authorization: props.token,
+      },
+    })
+    .then((response) => {
+      console.log(response.data);
+      setPosts(response.data);
+    });
+  }
+
+
   useEffect(() => {
     // api call to get all posts of that user
     axios
@@ -19,6 +34,9 @@ const Profile = (props) => {
         setPosts(response.data);
       });
   }, []);
+
+
+
 
   return (
     <div>
