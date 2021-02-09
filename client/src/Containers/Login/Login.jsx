@@ -9,7 +9,7 @@ function Login(props) {
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const [redirect, setRedirect] = useState(null)
+  const [redirect, setRedirect] = useState(null);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -26,8 +26,8 @@ function Login(props) {
       });
   };
 
-  if(redirect){
-    return <Redirect to ={redirect}/>
+  if (redirect) {
+    return <Redirect to={redirect} />;
   }
 
   return (
@@ -39,12 +39,12 @@ function Login(props) {
           <div className="leftSide">
             <div className="formContentContainer">
               <form>
-              <label htmlFor="Username">Username</label>
+                <label htmlFor="Username">Username</label>
                 <input
                   type="text"
                   name="username"
                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                  class="formInput"
+                  className="formInput"
                   placeholder="Enter Username"
                   value={userName}
                   onChange={(event) => {
@@ -56,7 +56,7 @@ function Login(props) {
                 <input
                   type="password"
                   name="password"
-                  class="formInput"
+                  className="formInput"
                   placeholder="Enter Password"
                   value={password}
                   onChange={(event) => {
@@ -66,18 +66,20 @@ function Login(props) {
                 />
                 <input
                   type="submit"
-                  class="submitButton"
+                  className="submitButton"
                   name="submitButton"
                   onClick={handleSubmit}
                   value="Login"
                 />
               </form>
-              <h6 className="goToSignUp">Don't have an account <a href="/">Sign Up Here</a> </h6>
+              <h6 className="goToSignUp">
+                Don't have an account <a href="/">Sign Up Here</a>{" "}
+              </h6>
             </div>
           </div>
         </div>
       </div>
-      <div class="rightSide"></div>
+      <div className="rightSide"></div>
     </div>
   );
 }

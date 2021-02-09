@@ -1,86 +1,52 @@
 import React from "react";
 import "./Navbar.css";
 import Cloak from "../../assets-sort/icons/cloak.png";
-import { Link } from "react-router-dom";
-
+import { NavLink} from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div>
-
       <nav>
-        <div class="nav-wrapper">
+        <div className="nav-wrapper">
           {/* <a href="/Home" class="brand-logo">
             Logo */}
           {/* </a> */}
-          {/* <ul class="right hide-on-med-and-down">
+          <ul className="right hide-on-med-and-down">
             <li>
-              <a href="sass.html">
-                <i class="material-icons left">search</i>Search
+              <a href="/">
+                <i className="material-icons left">search</i>Search
               </a>
             </li>
             <li>
-              <a href="./Home">
-                <i class="material-icons right"></i>Home
-              </a>
+              <NavLink
+                to="/home"
+                activeStyle={{ backgroundColor: "rgba(0,0,0,0.1)" }}
+              >
+                Home
+              </NavLink>
             </li>
             <li>
-              <a href="/post">
-                <i class="material-icons right"></i>Post
-              </a>
+              <NavLink
+                to="/post"
+                activeStyle={{ backgroundColor: "rgba(0,0,0,0.1)" }}
+              >
+                Post
+              </NavLink>
             </li>
             <li>
-              <a href="./Profile">
-                <i class="material-icons right"></i>Profile
-              </a>
+              <NavLink
+                to="/profile"
+                activeStyle={{ backgroundColor: "rgba(0,0,0,0.1)" }}
+              >
+                Profile
+              </NavLink>
             </li>
-          </ul> */}
-           <Link to="/search"><span style={{fontWeight:"bold"}}>Search</span></Link>
-           <Link to="/home"><span style={{fontWeight:"bold"}}>Home</span></Link>
-           <Link to="/post"><span style={{fontWeight:"bold"}}>Post</span></Link>
-           <Link to="/profile"><span style={{fontWeight:"bold"}}>Profile</span></Link>
-
+          </ul>
         </div>
       </nav>
-     
     </div>
   );
 };
 
 export default Navbar;
 
-// <nav>
-//         <div className="nav-wrapper">
-//           <a href="/Home" class="brand-logo"></a>
-
-//           {/* <img src={ Cloak } alt="cloak" /> */}
-//           <a href="/Home">Home</a>
-
-//           <div class="container">
-//             <form id="search-site" action="search" method="get">
-//               <InputGroup>
-//                 <Input className="input-nav" style={{ width: "200px" }} />
-//                 <InputGroupAddon addonType="append">
-//                   <Button color="secondary" style={{ marginTop: "10px" }}>
-//                     Search!
-//                   </Button>
-//                 </InputGroupAddon>
-//               </InputGroup>
-//             </form>
-//           </div>
-//           {/* </li> */}
-//           <div>
-//             <ul>
-//               <li>
-//                 <NavLink to="/post">Post</NavLink>
-//               </li>
-//               <li>
-//                 <a href="/">Profile</a>
-//               </li>
-//               <li>
-//                 <a href="/signup">LogOut</a>
-//               </li>
-//             </ul>
-//           </div>
-//         </div>
-//       </nav>
