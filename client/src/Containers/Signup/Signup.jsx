@@ -62,7 +62,7 @@ const Signup = (props) => {
                   onChange={handleChange}
                   value={userSignUp.firstName}
                   className="formInput"
-                  placeholder="Enter First Name"
+                  placeholder="First Name"
                   required
                 />
                 <label htmlFor="lastName">Last Name</label>
@@ -72,7 +72,7 @@ const Signup = (props) => {
                   onChange={handleChange}
                   value={userSignUp.lastName}
                   className="formInput"
-                  placeholder="Enter Last Name"
+                  placeholder="Last Name"
                   required
                 />
                 <label htmlFor="Username">Username</label>
@@ -82,7 +82,7 @@ const Signup = (props) => {
                   onChange={handleChange}
                   value={userSignUp.username}
                   className="formInput"
-                  placeholder=" EnterUsername"
+                  placeholder=" Username"
                   required
                 />
                 <label htmlFor="email">Email</label>
@@ -93,7 +93,7 @@ const Signup = (props) => {
                   value={userSignUp.email}
                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                   className="formInput"
-                  placeholder="Enter Email"
+                  placeholder="Email"
                   required
                 />
                 <label htmlFor="password">Password</label>
@@ -103,7 +103,7 @@ const Signup = (props) => {
                   onChange={handleChange}
                   value={userSignUp.password}
                   className="formInput"
-                  placeholder="Enter Password"
+                  placeholder="Password"
                   required
                 />
                 <input

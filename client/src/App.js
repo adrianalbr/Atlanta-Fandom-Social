@@ -1,23 +1,24 @@
 import { React, useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
-import "./App.css"
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { faCheckSquare, faCoffee } from "@fortawesome/free-solid-svg-icons";
+import "./App.css";
 import Home from "./Containers/Home/Home";
 import Login from "./Containers/Login/Login";
 import Signup from "./Containers/Signup/Signup";
-import WelcomeProfile from "./Containers/WelcomeProfile/WelcomeProfile";
-import WelcomeTopics from "./Containers/WelcomeTopics/WelcomeTopics";
+import Profile from "./Containers/Profile/Profile";
 import Post from "./Containers/Post/Post";
 
-library.add(fab, faCheckSquare, faCoffee)
+// these are for Bonus when we get MVP working
+// import WelcomeTopics from "./Containers/WelcomeTopics/WelcomeTopics";
+// import WelcomeProfile from "./Containers/WelcomeProfile/WelcomeProfile";
+
+library.add(fab, faCheckSquare, faCoffee);
 
 function App() {
   const [token, setToken] = useState(null);
-  useEffect(() => {
-   
-  }, [token]);
+  useEffect(() => {}, [token]);
   return (
     <Router>
       <div className="App">
@@ -35,7 +36,7 @@ function App() {
             <Home token={token} />
           </Route>
           <Route exact path="/profile">
-            <WelcomeProfile token={token} />
+            <Profile token={token} />
           </Route>
         </Switch>
       </div>
