@@ -3,6 +3,7 @@ import axios from "axios";
 import "./Profile.css";
 import Navbar from "../../Components/Navbar/Navbar";
 import Menu from "../../Components/Menu/Menu";
+import {Link} from "react-router-dom";
 
 const Profile = (props) => {
   const [posts, setPosts] = useState([]);
@@ -63,9 +64,9 @@ const Profile = (props) => {
                   <button onClick={()=>{handleDelete(_id)}}>
                     <i className="fa fa-trash-o"></i> Delete
                   </button>
-                  <button>
+                  <Link to={`/post/${_id}`}>
                     <i className="fa fa-pencil"></i> Update
-                  </button>
+                  </Link>
                   <p>
                     Category: {category}, Date: {date}
                   </p>

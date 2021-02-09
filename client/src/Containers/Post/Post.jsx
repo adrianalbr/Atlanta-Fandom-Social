@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect} from "react";
 import axios from "axios";
-import { Redirect } from "react-router-dom";
+import { Redirect, useParams } from "react-router-dom";
 import Navbar from "../../Components/Navbar/Navbar";
 
 const Post = (props) => {
@@ -9,6 +9,12 @@ const Post = (props) => {
   const [URL, setURL] = useState("");
   const [contentText, setContentText] = useState("");
   const [redirect, setRedirect] = useState(null);
+
+  const {id} = useParams(); 
+
+  useEffect(() => {
+    console.log(id)
+  }, [id])
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
@@ -44,6 +50,8 @@ const Post = (props) => {
   if (redirect) {
     return <Redirect to={redirect} />;
   }
+  
+
 
   return (
     <div>

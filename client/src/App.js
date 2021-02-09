@@ -9,6 +9,7 @@ import Login from "./Containers/Login/Login";
 import Signup from "./Containers/Signup/Signup";
 import Profile from "./Containers/Profile/Profile";
 import Post from "./Containers/Post/Post";
+import EditPost from "./Components/EditPost/EditPost";
 
 // these are for Bonus when we get MVP working
 // import WelcomeTopics from "./Containers/WelcomeTopics/WelcomeTopics";
@@ -37,6 +38,9 @@ function App() {
           </Route>
           <Route exact path="/profile">
             <Profile token={token} />
+          </Route>
+          <Route exact path="/post/:id">
+            <EditPost token={token}/>
           </Route>
         </Switch>
       </div>
