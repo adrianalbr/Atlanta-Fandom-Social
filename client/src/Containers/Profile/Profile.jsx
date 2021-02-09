@@ -55,7 +55,7 @@ const Profile = (props) => {
                   <p>{contentText}</p>
                 </div>
                 <div className="card-action">
-                  <button>
+                  <button onClick={()=>{handleDelete(_id)}}>
                     <i className="fa fa-trash-o"></i> Delete
                   </button>
                   <button>
