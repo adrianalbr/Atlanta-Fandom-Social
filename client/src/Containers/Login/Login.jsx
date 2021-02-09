@@ -5,17 +5,18 @@ import { Redirect } from "react-router-dom";
 
 import "./Login.css";
 
-function Login() {
+function Login(props) {
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const [redirect, setRedirect] = useState(null)
+  const [redirect, setRedirect] = useState(null);
 
   const handleSubmit = (event) => {
     event.preventDefault();
     axios
       .post("/api/login", { username: userName, password: password })
       .then((res) => {
+        props.setToken(res.data.token);
         setRedirect("/home");
         console.log(res.data);
       })
@@ -25,8 +26,8 @@ function Login() {
       });
   };
 
-  if(redirect){
-    return <Redirect to ={redirect}/>
+  if (redirect) {
+    return <Redirect to={redirect} />;
   }
 
   return (
@@ -38,13 +39,13 @@ function Login() {
           <div className="leftSide">
             <div className="formContentContainer">
               <form>
-              <label htmlFor="login">Login</label>
+                <label htmlFor="Username">Username</label>
                 <input
                   type="text"
                   name="username"
                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                   className="formInput"
-                  placeholder="Email or Username"
+                  placeholder="Enter Username"
                   value={userName}
                   onChange={(event) => {
                     setUserName(event.target.value);
@@ -56,7 +57,7 @@ function Login() {
                   type="password"
                   name="password"
                   className="formInput"
-                  placeholder="Password"
+                  placeholder="Enter Password"
                   value={password}
                   onChange={(event) => {
                     setPassword(event.target.value);
@@ -71,7 +72,9 @@ function Login() {
                   value="Login"
                 />
               </form>
-              <h6 className="goToSignUp">Don't have an account <a href="/">Sign Up Here</a> </h6>
+              <h6 className="goToSignUp">
+                Don't have an account <a href="/">Sign Up Here</a>{" "}
+              </h6>
             </div>
           </div>
         </div>

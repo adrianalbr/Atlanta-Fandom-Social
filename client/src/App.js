@@ -1,5 +1,4 @@
-
-import React from 'react';
+import { React, useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
@@ -15,25 +14,33 @@ import Post from "./Containers/Post/Post";
 library.add(fab, faCheckSquare, faCoffee)
 
 function App() {
+  const [token, setToken] = useState(null);
+  useEffect(() => {
+   
+  }, [token]);
   return (
     <Router>
       <div className="App">
         <Switch>
-            <Route exact path={["/", "/signup"]}>
-              <Signup />
-            </Route>
-            <Route exact path="/login">
-              <Login />
-            </Route>
-            <Route exact path="/Post">
-              <Post />
-            </Route>
-            <Route exact path="/Home">
-            <Home />
-            </Route>
-        </Switch>     
+          <Route exact path={["/", "/signup"]}>
+            <Signup setToken={setToken} />
+          </Route>
+          <Route exact path="/login">
+            <Login setToken={setToken} />
+          </Route>
+          <Route exact path="/post">
+            <Post token={token} />
+          </Route>
+          <Route exact path="/Home">
+            <Home token={token} />
+          </Route>
+          <Route exact path="/profile">
+            <WelcomeProfile token={token} />
+          </Route>
+        </Switch>
       </div>
     </Router>
-)}
+  );
+}
 
 export default App;

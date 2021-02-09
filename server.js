@@ -2,6 +2,7 @@ const express = require("express");
 const path = require("path");
 const mongoose = require("mongoose");
 const contentRoutes = require("./routes/contentRoutes");
+const auth = require ("./middleware/auth");
 
 // const routes = require("./routes");
 const app = express();
@@ -16,7 +17,7 @@ if (process.env.NODE_ENV === "production") {
 }
 
 require("./routes/userRoutes.js")(app);
-app.use("/api/content", contentRoutes);
+app.use("/api/content",auth , contentRoutes);
 
 // Send every request to the React app
 // Define any API routes before this runs
