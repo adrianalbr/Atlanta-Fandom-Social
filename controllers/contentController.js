@@ -43,7 +43,7 @@ module.exports = {
   },
 
   update: function (req, res) {
-    db.Content.findByIdAndUpdate(req.para.id, req.body, {new:true})
+    db.Content.findByIdAndUpdate(req.params.id, req.body, {new:true})
       .then((dbModel) => res.json(dbModel))
       .catch((err) => res.status(422).json(err));
   },
