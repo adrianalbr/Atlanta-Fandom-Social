@@ -14,45 +14,61 @@ const EditPost = (props) => {
     
     const {id} = useParams();
 
+    const updatePost = () => {
+        axios
+        .put(`/api/content/${id}`, {
+            headers: {
+                Authorization: props.token,
+              },
+        }).then((response) => {
+            console.log(response.data)
+            setRedirect("/profile");
+        }).catch((err) => {
+            console.log(err);
+        })
+    }
+
     useEffect(() => {
-        if(id){
-            axios
-            .get(`/api/content/${id}`)
-            .then((response) => {
-                console.log(response.data);
-            }).catch((err) => {
-                console.log(err)
-            })
-        }
+     console.log(id)
+     if (id){
+        axios
+        .get(`/api/content/${id}`, {
+            headers: {
+                Authorization: props.token,
+              },
+        })
+        .then((response) => {
+            console.log(response.data);
+            const {category, title, URL, contentText} = response.data; 
+            setCategory(category)
+            setTitle(title)
+            setURL(URL)
+            setContentText(contentText)
+
+        }) 
+        .catch((err) => {
+            console.log(err)
+        })
+     }
     }, [id])
 
-    const handleFormSubmit = (e) => {
+    const handleFormSubmit = (e, id) => {
       e.preventDefault();
-      console.log(props.token);
       axios
-        .post(
-          "/api/content",
-          {
-            category,
-            title,
-            URL,
-            contentText,
-          },
-          {
-            headers: {
+      .put("/api/content/" + id, {
+          headers: {
               Authorization: props.token,
             },
-          }
-        )
-        .then((response) => {
-          setRedirect("/home");
-          console.log(response.data);
-        })
-        .catch((err) => {
+      }).then((response) => {
+          console.log(response.data)
+          setRedirect("/profile");
+      }).catch((err) => {
           console.log(err);
-        });
+      })
     };
-  
+    
+    
+
     if (props.token === null) {
       return <Redirect to="/login" />;
     }
@@ -67,7 +83,7 @@ const EditPost = (props) => {
       <div>
         <Navbar />
         <div className="row">
-          <form className="col s6" onSubmit={handleFormSubmit}>
+          <form className="col s6" onSubmit={() => {handleFormSubmit(id)}}>
             <div className="row">
               <div className="input-field col s6">
                 <input
@@ -132,7 +148,7 @@ const EditPost = (props) => {
               </div>
             </div>
             <button className="waves-effect waves-light btn">
-             Edit Post
+             Update Post
             </button>
           </form>
         </div>
