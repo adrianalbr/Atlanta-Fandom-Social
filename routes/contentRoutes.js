@@ -10,6 +10,8 @@ router
 
 router.route("/user").get(contentController.findByAuthor);
 
+router.route("/savedPosts").get(contentController.fetchSavedPosts);
+
 router
   .route("/:id")
   .get(contentController.findById)

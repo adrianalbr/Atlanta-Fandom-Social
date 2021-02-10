@@ -50,6 +50,11 @@ const UserSchema = new mongoose.Schema({
   followers: {
     type: [String],
   },
+   savedPosts :{
+     type :[mongoose.Schema.Types.ObjectId],
+     ref : "Content",
+     default : []
+   }
 });
 
 

@@ -11,6 +11,7 @@ import Profile from "./Containers/Profile/Profile";
 import Post from "./Containers/Post/Post";
 import SavedPosts from "./Containers/SavedPosts/SavedPosts";
 
+
 // these are for Bonus when we get MVP working
 // import WelcomeTopics from "./Containers/WelcomeTopics/WelcomeTopics";
 // import WelcomeProfile from "./Containers/WelcomeProfile/WelcomeProfile";
@@ -19,7 +20,9 @@ library.add(fab, faCheckSquare, faCoffee);
 
 function App() {
   const [token, setToken] = useState(null);
-  useEffect(() => {}, [token]);
+  useEffect(() => {
+
+  }, [token]);
   return (
     <Router>
       <div className="App">
