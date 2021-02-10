@@ -36,9 +36,9 @@ const ViewPosts = (props) => {
                 <i className="fa fa-trash-o"></i> Delete
               </button> */}
               <div className="Author">
-                <h8>
+                <h7>
                   Author: {author.firstName +" "+ author.lastName}, Category: {category}, Date: {date}
-                </h8>
+                </h7>
                 <div />
               </div>
             </div>
