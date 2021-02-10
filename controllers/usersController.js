@@ -29,4 +29,11 @@ module.exports = {
       .then((dbModel) => res.json(dbModel))
       .catch((err) => res.status(422).json(err));
   },
+
+  addSavedPost: function (req, res) {
+    const user = req.user;
+    db.User.findOneAndUpdate({ _id : user._id }, {$push: {savedPosts : req.params.id}})
+      .then((dbModel) => res.json(dbModel))
+      .catch((err) => res.status(422).json(err));
+  },
 };
