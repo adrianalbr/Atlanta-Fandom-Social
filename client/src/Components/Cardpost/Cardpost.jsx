@@ -12,7 +12,7 @@ const Cardpost = () => {
             <p>Dormammu, I've Come To Bargain!!!</p>
           </div>
           <div className="card-action">
-            <button>
+            <button className="favoriteBTN">
               <i className="fa fa-heart"></i> Fav
             </button>
           </div>
@@ -26,7 +26,7 @@ const Cardpost = () => {
             <p>Have you seen that before in a gift shop?</p>
           </div>
           <div className="card-action">
-            <button>
+            <button className="favoriteBTN">
               <i className="fa fa-heart"></i> Fav
             </button>
           </div>
@@ -40,7 +40,7 @@ const Cardpost = () => {
             <p>Mister Doctor...</p>
           </div>
           <div className="card-action">
-            <button>
+            <button className="favoriteBTN"git >
               <i className="fa fa-heart"></i> Fav
             </button>
           </div>

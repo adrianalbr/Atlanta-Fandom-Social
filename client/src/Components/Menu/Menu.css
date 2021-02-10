@@ -1,13 +1,31 @@
-.buttons{
-    padding-top: 50px;
-
+    .savedPostBTN {
+    background-image: linear-gradient(
+        to right,
+        #9d50bb 0%,
+        #6e48aa 51%,
+        #9d50bb 100%
+    );
+    }
     
-}
-
-.waves-effect{
-    background-color: rebeccapurple;
-
-}
+    .savedPostBTN{
+        font-family: "Roboto", sans-serif;
+        margin: 10px;
+        padding: 15px 45px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        box-shadow: 0 2px 16px rgba(0, 0, 0, 0.6);
+        border-radius: 10px;
+        display: block;
+    }
+    
+    .savedPostBTN:hover {
+        background-position: right center; /* change the direction of the change here */
+        color: #fff;
+        text-decoration: none;
+    }
 
 .list{
     align-content: right;

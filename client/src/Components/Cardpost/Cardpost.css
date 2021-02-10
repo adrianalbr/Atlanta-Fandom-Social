@@ -9,7 +9,7 @@
     background-color: #aa84c7;
 }
 
-button{
+/* .favoriteBTN {
     background-color: #7a44a4;
     border-radius: 4px;
     border: none;
@@ -20,4 +20,32 @@ button{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+} */
+
+.favoriteBTN {
+background-image: linear-gradient(
+    to right,
+    #9d50bb 0%,
+    #6e48aa 51%,
+    #9d50bb 100%
+);
+}
+
+.favoriteBTN{
+    font-family: "Roboto", sans-serif;
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: block;
+}
+
+.favoriteBTN:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
 }

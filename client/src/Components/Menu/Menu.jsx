@@ -8,7 +8,7 @@ const Menu = (props) => {
       <div className="row">
         <div className="buttons col s4">
           <ul>
-            <NavLink to="/savedPosts" className="waves-effect waves-light btn">
+            <NavLink to="/savedPosts" className="savedPostBTN">
               Saved Posts
             </NavLink>
           </ul>
