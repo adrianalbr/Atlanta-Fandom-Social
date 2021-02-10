@@ -4,72 +4,74 @@ import { Redirect, useParams } from "react-router-dom";
 import Navbar from "../../Components/Navbar/Navbar";
 
 const EditPost = (props) => {
-  
-    const [category, setCategory] = useState("");
-    const [title, setTitle] = useState("");
-    const [URL, setURL] = useState("");
-    const [contentText, setContentText] = useState("");
-    const [redirect, setRedirect] = useState(null);
-  
-    
-   const {id} = useParams()
+  const [category, setCategory] = useState("");
+  const [title, setTitle] = useState("");
+  const [URL, setURL] = useState("");
+  const [contentText, setContentText] = useState("");
+  const [redirect, setRedirect] = useState(null);
 
-    useEffect(() => {
-     console.log(id)
-     if (id){
-        axios
+  const { id } = useParams();
+
+  useEffect(() => {
+    console.log(id);
+    console.log(props.token);
+    if (id) {
+      axios
         .get(`/api/content/${id}`, {
-            headers: {
-                Authorization: props.token,
-              },
+          headers: {
+            Authorization: props.token,
+          },
         })
         .then((response) => {
-            console.log(response.data);
-            const {category, title, URL, contentText} = response.data; 
-            setCategory(category)
-            setTitle(title)
-            setURL(URL)
-            setContentText(contentText)
-
-        }) 
-        .catch((err) => {
-            console.log(err)
+          console.log(response.data);
+          const { category, title, URL, contentText } = response.data;
+          setCategory(category);
+          setTitle(title);
+          setURL(URL);
+          setContentText(contentText);
         })
-     }
-    }, [id])
-
-    const handleFormSubmit = (e, id) => {
-      e.preventDefault();
-      axios
-      .put("/api/content/" + id, {
-          headers: {
-              Authorization: props.token,
-            },
-      }).then((response) => {
-          console.log(response.data)
-          setRedirect("/profile");
-      }).catch((err) => {
+        .catch((err) => {
           console.log(err);
+        });
+    }
+  }, []);
+
+  const handleFormSubmit = (event) => {
+    event.preventDefault();
+    console.log(id);
+    axios
+      .put(
+        "/api/content/" + id,
+        { category, title, URL, contentText },
+        {
+          headers: {
+            Authorization: props.token,
+          },
+        }
+      )
+      .then((response) => {
+        console.log(response.data);
+        setRedirect("/profile");
       })
-    };
-    
-    
+      .catch((err) => {
+        console.log(err);
+      });
+  };
 
-    if (props.token === null) {
-      return <Redirect to="/login" />;
-    }
-  
-    if (redirect) {
-      return <Redirect to={redirect} />;
-    }
+  if (props.token === null) {
+    return <Redirect to="/login" />;
+  }
 
-    
-    return (
+  if (redirect) {
+    return <Redirect to={redirect} />;
+  }
+
+  return (
     <>
       <div>
         <Navbar />
         <div className="row">
-          <form className="col s6" onSubmit={() => {handleFormSubmit(id)}}>
+          <form className="col s6">
             <div className="row">
               <div className="input-field col s6">
                 <input
@@ -133,8 +135,11 @@ const EditPost = (props) => {
                 <label htmlFor="contentText">description</label>
               </div>
             </div>
-            <button className="waves-effect waves-light btn">
-             Update Post
+            <button
+              className="waves-effect waves-light btn"
+              onClick={handleFormSubmit}
+            >
+              Update Post
             </button>
           </form>
         </div>
