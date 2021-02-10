@@ -14,20 +14,6 @@ const EditPost = (props) => {
     
     const {id} = useParams();
 
-    const updatePost = () => {
-        axios
-        .put(`/api/content/${id}`, {
-            headers: {
-                Authorization: props.token,
-              },
-        }).then((response) => {
-            console.log(response.data)
-            setRedirect("/profile");
-        }).catch((err) => {
-            console.log(err);
-        })
-    }
-
     useEffect(() => {
      console.log(id)
      if (id){
