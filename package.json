@@ -44,7 +44,8 @@
     "react-materialize": "^3.9.7",
     "react-mdl": "^2.1.0",
     "react-router-dom": "^5.2.0",
-    "reactstrap": "^8.9.0"
+    "reactstrap": "^8.9.0",
+    "styled-components": "^5.2.1"
   },
   "devDependencies": {
     "concurrently": "^4.1.2",
