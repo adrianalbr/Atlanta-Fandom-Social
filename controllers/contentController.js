@@ -43,11 +43,11 @@ module.exports = {
   },
 
   update: function (req, res) {
-    db.Content.findOneAndUpdate({ _id: req.params.id }, req.body)
+    db.Content.findByIdAndUpdate(req.para.id, req.body, {new:true})
       .then((dbModel) => res.json(dbModel))
       .catch((err) => res.status(422).json(err));
   },
-
+  // findOneAndUpdate
   remove: function (req, res) {
     db.Content.findById({ _id: req.params.id })
       .then((dbModel) => dbModel.remove())

@@ -9,6 +9,7 @@ import Login from "./Containers/Login/Login";
 import Signup from "./Containers/Signup/Signup";
 import Profile from "./Containers/Profile/Profile";
 import Post from "./Containers/Post/Post";
+import EditPost from "./Components/EditPost/EditPost";
 import SavedPosts from "./Containers/SavedPosts/SavedPosts";
 
 
@@ -41,6 +42,9 @@ function App() {
           </Route>
           <Route exact path="/profile">
             <Profile token={token} />
+          </Route>
+          <Route exact path="/post/:id">
+            <EditPost token={token}/>
           </Route>
           <Route exact path="/savedPosts">
             <SavedPosts token={token} />

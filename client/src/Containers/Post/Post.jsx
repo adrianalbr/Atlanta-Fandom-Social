@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect} from "react";
 import axios from "axios";
-import { Redirect } from "react-router-dom";
+import { Redirect, } from "react-router-dom";
 import Navbar from "../../Components/Navbar/Navbar";
 
 const Post = (props) => {
@@ -44,6 +44,8 @@ const Post = (props) => {
   if (redirect) {
     return <Redirect to={redirect} />;
   }
+  
+
 
   return (
     <div>
