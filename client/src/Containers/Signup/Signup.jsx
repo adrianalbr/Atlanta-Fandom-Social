@@ -57,7 +57,7 @@ const Signup = (props) => {
                 <label htmlFor="firstName">First Name</label>
                 <input
                   type="text"
-                  id="firstName"
+                  name="firstName"
                   onChange={handleChange}
                   value={userSignUp.firstName}
                   className="formInput"
