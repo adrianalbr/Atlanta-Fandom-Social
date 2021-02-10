@@ -37,7 +37,7 @@ const ViewPosts = (props) => {
               </button> */}
               <div className="Author">
                 <h8>
-                  Author: {author} Category: {category}, Date: {date}
+                  Author: {author.firstName +" "+ author.lastName}, Category: {category}, Date: {date}
                 </h8>
                 <div />
               </div>
