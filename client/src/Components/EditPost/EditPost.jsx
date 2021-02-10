@@ -12,7 +12,7 @@ const EditPost = (props) => {
     const [redirect, setRedirect] = useState(null);
   
     
-    const {id} = useParams();
+   const {id} = useParams()
 
     useEffect(() => {
      console.log(id)

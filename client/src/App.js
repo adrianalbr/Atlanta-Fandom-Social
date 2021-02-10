@@ -10,6 +10,8 @@ import Signup from "./Containers/Signup/Signup";
 import Profile from "./Containers/Profile/Profile";
 import Post from "./Containers/Post/Post";
 import EditPost from "./Components/EditPost/EditPost";
+import SavedPosts from "./Containers/SavedPosts/SavedPosts";
+
 
 // these are for Bonus when we get MVP working
 // import WelcomeTopics from "./Containers/WelcomeTopics/WelcomeTopics";
@@ -19,7 +21,9 @@ library.add(fab, faCheckSquare, faCoffee);
 
 function App() {
   const [token, setToken] = useState(null);
-  useEffect(() => {}, [token]);
+  useEffect(() => {
+
+  }, [token]);
   return (
     <Router>
       <div className="App">
@@ -41,6 +45,9 @@ function App() {
           </Route>
           <Route exact path="/post/:id">
             <EditPost token={token}/>
+          </Route>
+          <Route exact path="/savedPosts">
+            <SavedPosts token={token} />
           </Route>
         </Switch>
       </div>

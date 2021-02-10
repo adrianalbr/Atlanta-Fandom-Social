@@ -9,12 +9,20 @@ module.exports = {
       .catch((err) => res.status(422).json(err));
   },
 
+  fetchSavedPosts: function (req, res) {
+    const savedPostsIds = req.user.savedPosts;
+    db.Content.find({ _id: { $in: savedPostsIds } })
+      .populate("author")
+      .then((dbModel) => res.json(dbModel))
+      .catch((err) => res.status(422).json(err));
+  },
+
   findAll: function (req, res) {
     db.Content.find(req.query)
       .populate("author")
       .sort({ date: -1 })
       .then((dbModel) => res.json(dbModel))
-      .catch((err) => res.status(422).json(err));
+      .catch((err) => res.status(404).json(err));
   },
 
   findById: function (req, res) {
