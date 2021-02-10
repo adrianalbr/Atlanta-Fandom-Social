@@ -57,14 +57,15 @@ const Signup = (props) => {
                 <label htmlFor="firstName">First Name</label>
                 <input
                   type="text"
-                  name="firstName"
+                  id="firstName"
                   onChange={handleChange}
                   value={userSignUp.firstName}
                   className="formInput"
                   placeholder="First Name"
                   required
                 />
-                <label htmlFor="lastName">Last Name</label>
+                
+                {/* <label htmlFor="lastName">Last Name</label> */}
                 <input
                   type="text"
                   name="lastName"
