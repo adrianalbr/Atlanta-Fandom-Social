@@ -69,9 +69,9 @@ const Post = (props) => {
             </div>
           </div>
           <div className="row">
-            <div className="input-field col s6">
+            <div className="input-field col m6">
               <input
-                placeholder="Enter a title"
+                placeholder="Enter a Title"
                 id="title"
                 type="text"
                 name="title"
@@ -115,7 +115,7 @@ const Post = (props) => {
               <label htmlFor="contentText">description</label>
             </div>
           </div>
-          <button className="waves-effect waves-light btn">
+          <button className="createPostBTN">
             Create a Post
           </button>
         </form>

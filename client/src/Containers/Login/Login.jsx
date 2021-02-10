@@ -79,7 +79,6 @@ function Login(props) {
           </div>
         </div>
       </div>
-      <div className="rightSide"></div>
     </div>
   );
 }

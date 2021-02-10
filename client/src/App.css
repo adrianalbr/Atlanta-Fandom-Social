@@ -2,3 +2,41 @@ body{
     background-color: #D6D0E4;
     font-family: "Roboto", sans-serif;
 }
+
+@media only screen and (min-width: 768px) {
+    main {
+        max-width: 100%;
+    }
+    #main-content {
+        width: 130%;
+    }
+    #main-content div img{
+        max-width: 100%;
+        padding-bottom: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    main {
+        width: 100%;
+    }
+    #main-content {
+        width: 205%;
+    }
+    #main-content div img{
+        max-width: 350px;
+        padding-bottom: 40px;
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    main {
+        max-width: 400px;
+    }
+    #main-content div img{
+        max-width: 100%;
+        padding-bottom: 20px;
+    }
+}

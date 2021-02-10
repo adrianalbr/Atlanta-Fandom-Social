@@ -1,7 +1,11 @@
+/* nav{
+  
+} */
+
 .nav-wrapper {
   background-color: #392171;
   display: flex;
-  justify-content: center
+  justify-content: center;
 }
 
 
