@@ -40,7 +40,7 @@ const Cardpost = () => {
             <p>Mister Doctor...</p>
           </div>
           <div className="card-action">
-            <button className="favoriteBTN"git >
+            <button className="favoriteBTN">
               <i className="fa fa-heart"></i> Fav
             </button>
           </div>

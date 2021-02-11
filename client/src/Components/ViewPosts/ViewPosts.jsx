@@ -26,17 +26,26 @@ const ViewPosts = (props) => {
               <p>{contentText}</p>
             </div>
             <div className="card-action">
-              <button onClick = {()=>{
-                axios.put("/api/user/" +_id, {},{headers: {Authorization: props.token},})
-                .then((res)=>{
-                  console.log(res.data)
-                })
-              }}>
+              <button
+              className="favoriteBTN"
+                onClick={() => {
+                  axios
+                    .put(
+                      "/api/user/" + _id,
+                      {},
+                      { headers: { Authorization: props.token } }
+                    )
+                    .then((res) => {
+                      console.log(res.data);
+                    });
+                }}
+              >
                 <i className="fa fa-heart"></i> Fav
               </button>
               <div className="Author">
                 <h7>
-                  Author: {author.firstName +" "+ author.lastName}, Category: {category}, Date: {date}
+                  Author: {author.firstName + " " + author.lastName}, Category:{" "}
+                  {category}, Date: {date}
                 </h7>
                 <div />
               </div>
