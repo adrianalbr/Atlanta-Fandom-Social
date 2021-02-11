@@ -14,7 +14,7 @@ const Home = (props) => {
     <div className="row">
       {/* This div is 12-columns wide on all screen sizes */}
       <div className="col m12">
-        <Navbar />
+        <Navbar token={props.token}/>
       </div>
       {/* 6-columns (one-half) */}
       <div className="col s4">

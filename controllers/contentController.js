@@ -10,6 +10,7 @@ module.exports = {
   },
 
   findAll: function (req, res) {
+    console.log("LOOK HERE", req);
     db.Content.find(req.query)
       .populate("author")
       .sort({ date: -1 })
