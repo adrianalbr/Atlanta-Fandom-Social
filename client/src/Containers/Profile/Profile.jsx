@@ -70,11 +70,11 @@ const Profile = (props) => {
                   >
                     <i className="fa fa-trash-o"></i> Delete
                   </button>
-                  <button className="editBTN">
-                    <Link to={`/post/${_id}`}>
+                  <Link id="test" to={`/post/${_id}`}>
+                    <button className="editBTN">
                       <i className="fa fa-pencil"></i> Edit
-                    </Link>
-                  </button>
+                    </button>
+                  </Link>
                   <p>
                     Category: {category}, Date: {date}
                   </p>
