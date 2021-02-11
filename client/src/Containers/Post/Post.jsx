@@ -8,7 +8,6 @@ const Post = (props) => {
   const [category, setCategory] = useState("");
   const [title, setTitle] = useState("");
   const [imageURL, setImageURL] = useState("");
-  const [URL, setURL] = useState("");
   const [contentText, setContentText] = useState("");
   const [redirect, setRedirect] = useState(null);
 
@@ -88,16 +87,16 @@ const Post = (props) => {
           <div className="row">
             <div className="input-field col s6">
               <input
-                placeholder="Enter a URL"
-                id="URL"
+                placeholder="Enter image URL"
+                id="imageURL"
                 type="text"
-                name="URL"
-                value={URL}
+                name="imageURL"
+                value={imageURL}
                 onChange={(e) => {
-                  setURL(e.target.value);
+                  setImageURL(e.target.value);
                 }}
               />
-              <label htmlFor="URL">URL</label>
+              <label htmlFor="imageURL">Image URL</label>
             </div>
           </div>
           <div className="row">
