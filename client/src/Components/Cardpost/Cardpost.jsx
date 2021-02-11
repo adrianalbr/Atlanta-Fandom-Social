@@ -11,6 +11,7 @@ const Cardpost = () => {
             <span className="card-title">Dr Strange</span>
             <p>Dormammu, I've Come To Bargain!!!</p>
           </div>
+          <img src="https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350" alt="this is car image" />
           <div className="card-action">
             <button className="favoriteBTN">
               <i className="fa fa-heart"></i> Fav
