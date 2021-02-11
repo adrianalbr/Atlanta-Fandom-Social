@@ -8,6 +8,7 @@ import "./Post.css";
 const Post = (props) => {
   const [category, setCategory] = useState("");
   const [title, setTitle] = useState("");
+  const [image, setImage] = useState("");
   const [URL, setURL] = useState("");
   const [contentText, setContentText] = useState("");
   const [redirect, setRedirect] = useState(null);
@@ -21,6 +22,7 @@ const Post = (props) => {
         {
           category,
           title,
+          image,
           URL,
           contentText,
         },
