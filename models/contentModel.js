@@ -11,7 +11,7 @@ const ContentSchema = new Schema ({
         type: String, 
     },
 
-    image: {
+    imageURL: {
         type: String
     },
 
@@ -23,12 +23,6 @@ const ContentSchema = new Schema ({
     date: {
         type: Date,
         default: Date.now
-    },
-
-    URL: {
-        type: String,
-        default: "",
-        required: false
     },
 
     contentText: {

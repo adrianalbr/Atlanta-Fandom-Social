@@ -2,13 +2,12 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Redirect } from "react-router-dom";
 import Navbar from "../../Components/Navbar/Navbar";
-
 import "./Post.css";
 
 const Post = (props) => {
   const [category, setCategory] = useState("");
   const [title, setTitle] = useState("");
-  const [image, setImage] = useState("");
+  const [imageURL, setImageURL] = useState("");
   const [URL, setURL] = useState("");
   const [contentText, setContentText] = useState("");
   const [redirect, setRedirect] = useState(null);
