@@ -1,24 +1,9 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+
 
 const ViewPosts = (props) => {
-  const [posts, setPosts] = useState([]);
-
-  useEffect(() => {
-    axios
-      .get("/api/content", {
-        headers: {
-          Authorization: props.token,
-        },
-      })
-      .then((response) => {
-        console.log(response.data);
-        setPosts(response.data);
-      });
-  }, []);
   return (
     <>
-      {posts.map(({ _id, category, title, date, contentText, author }) => (
+      {props.posts.map(({ _id, category, title, date, contentText, author }) => (
         <div className="row">
           <div className="card">
             <div className="card-content white-text">
@@ -26,12 +11,7 @@ const ViewPosts = (props) => {
               <p>{contentText}</p>
             </div>
             <div className="card-action">
-              <button onClick = {()=>{
-                axios.put("/api/user/" +_id, {},{headers: {Authorization: props.token},})
-                .then((res)=>{
-                  console.log(res.data)
-                })
-              }}>
+              <button onClick = {()=>props.addTofav(_id)}>
                 <i className="fa fa-heart"></i> Fav
               </button>
               <div className="Author">

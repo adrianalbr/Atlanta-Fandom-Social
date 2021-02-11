@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 // import { Col, Row, Container } from "../../Components/Grid/Grid"
 import Cardpost from "../../Components/Cardpost/Cardpost";
 import Menu from "../../Components/Menu/Menu";
@@ -7,6 +8,29 @@ import Navbar from "../../Components/Navbar/Navbar";
 import { Redirect } from "react-router-dom";
 
 const Home = (props) => {
+
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("/api/content", {
+        headers: {
+          Authorization: props.token,
+        },
+      })
+      .then((response) => {
+        console.log(response.data);
+        setPosts(response.data);
+      });
+  }, []);
+
+  const addTofav = (id)=>{
+    axios.put("/api/user/" +id, {},{headers: {Authorization: props.token},})
+    .then((res)=>{
+      console.log(res.data)
+    })
+  }
+
   if (props.token === null) {
     return <Redirect to="/login" />;
   }
@@ -20,8 +44,7 @@ const Home = (props) => {
       </div>
       {/* 6-columns (one-half) */}
       <div className="col s5">
-        <Cardpost />
-        <ViewPosts token={props.token} />
+        <ViewPosts token={props.token} posts = {posts} addTofav = {addTofav} />
       </div>
     </div>
   </div>
