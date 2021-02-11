@@ -25,8 +25,8 @@ const ViewPosts = (props) => {
               <span className="card-title">{title}</span>
               <p>{contentText}</p>
             </div>
-            <div className="card-action">
-              <button>
+            <div className="Action">
+              <button className="favoriteBTN">
                 <i className="fa fa-heart"></i> Fav
               </button>
               {/* <button>
@@ -37,7 +37,8 @@ const ViewPosts = (props) => {
               </button> */}
               <div className="Author">
                 <h8>
-                  Author: {author.firstName +" "+ author.lastName}, Category: {category}, Date: {date}
+                  Author: {author.firstName + " " + author.lastName}, Category:{" "}
+                  {category}, Date: {date}
                 </h8>
                 <div />
               </div>

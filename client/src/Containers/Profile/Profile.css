@@ -1,0 +1,56 @@
+.DeleteBTN {
+    background-image: linear-gradient(
+        to right,
+        #9d50bb 0%,
+        #6e48aa 51%,
+        #9d50bb 100%
+    );
+}
+
+.DeleteBTN {
+    font-family: "Roboto", sans-serif;
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: block;
+}
+
+.DeleteBTN:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.EditBTN {
+    background-image: linear-gradient(
+        to right,
+        #9d50bb 0%,
+        #6e48aa 51%,
+        #9d50bb 100%
+    );
+}
+
+.EditBTN {
+    font-family: "Roboto", sans-serif;
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: block;
+}
+
+.EditBTN:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+

@@ -42,6 +42,7 @@ const Profile = (props) => {
     return <Redirect to="/login" />;
   }
 
+  // Display
   return (
     <div>
       <div className="row">
@@ -49,7 +50,6 @@ const Profile = (props) => {
         <div className="col s4">
           <Menu />
         </div>
-
         {posts.map(({ category, title, date, contentText, _id }, index) => (
           <div className="col s5">
             <div className="row" key={index}>
@@ -58,16 +58,16 @@ const Profile = (props) => {
                   <span className="card-title">{title}</span>
                   <p>{contentText}</p>
                 </div>
-                <div className="card-action">
-                  <button
+                <div className="action">
+                  <button className="DeleteBTN"
                     onClick={() => {
                       handleDelete(_id);
                     }}
                   >
                     <i className="fa fa-trash-o"></i> Delete
                   </button>
-                  <button>
-                    <i className="fa fa-pencil"></i> Update
+                  <button className="EditBTN">
+                    <i className="fa fa-pencil"></i> Edit
                   </button>
                   <p>
                     Category: {category}, Date: {date}
