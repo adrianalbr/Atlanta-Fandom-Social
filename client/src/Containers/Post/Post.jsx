@@ -1,7 +1,9 @@
-import React, { useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Redirect, } from "react-router-dom";
+import { Redirect } from "react-router-dom";
 import Navbar from "../../Components/Navbar/Navbar";
+
+import "./Post.css";
 
 const Post = (props) => {
   const [category, setCategory] = useState("");
@@ -44,8 +46,6 @@ const Post = (props) => {
   if (redirect) {
     return <Redirect to={redirect} />;
   }
-  
-
 
   return (
     <div>
@@ -112,12 +112,10 @@ const Post = (props) => {
                   setContentText(e.target.value);
                 }}
               />
-              <label htmlFor="contentText">description</label>
+              <label htmlFor="contentText">Description</label>
             </div>
           </div>
-          <button className="createPostBTN">
-            Create a Post
-          </button>
+          <button className="createPostBTN">Create a Post</button>
         </form>
       </div>
     </div>
