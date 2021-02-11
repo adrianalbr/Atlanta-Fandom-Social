@@ -1,9 +1,9 @@
 import React from "react";
 import "./Navbar.css";
 import Cloak from "../../assets-sort/icons/cloak.png";
-import { NavLink} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <div>
       <nav>
@@ -13,9 +13,17 @@ const Navbar = () => {
           {/* </a> */}
           <ul className="right hide-on-med-and-down">
             <li>
-              <a href="/">
-                <i className="material-icons left">search</i>Search
-              </a>
+              <div className="input-field col s4">
+                <i className="material-icons prefix">search</i>
+
+                <input
+                  type="text"
+                  placeholder="Search"
+                  id="autocomplete-input"
+                  class="autocomplete red-text"
+                  onChange ={props.handleChange}
+                />
+              </div>
             </li>
             <li>
               <NavLink
@@ -49,4 +57,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
