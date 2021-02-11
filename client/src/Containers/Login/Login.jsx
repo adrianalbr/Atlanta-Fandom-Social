@@ -39,7 +39,6 @@ function Login(props) {
           <div className="leftSide">
             <div className="formContentContainer">
               <form>
-                <label htmlFor="Username">Username</label>
                 <input
                   type="text"
                   name="username"
@@ -52,7 +51,6 @@ function Login(props) {
                   }}
                   required
                 />
-                <label htmlFor="password">Password</label>
                 <input
                   type="password"
                   name="password"

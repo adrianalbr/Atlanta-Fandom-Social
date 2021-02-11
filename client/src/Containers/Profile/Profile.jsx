@@ -3,8 +3,10 @@ import axios from "axios";
 import "./Profile.css";
 import Navbar from "../../Components/Navbar/Navbar";
 import Menu from "../../Components/Menu/Menu";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Redirect } from "react-router-dom";
+
+import "./Profile.css";
 
 const Profile = (props) => {
   const [posts, setPosts] = useState([]);
@@ -61,15 +63,18 @@ const Profile = (props) => {
                 </div>
                 <div className="card-action">
                   <button
+                    className="deleteBTN"
                     onClick={() => {
                       handleDelete(_id);
                     }}
                   >
                     <i className="fa fa-trash-o"></i> Delete
                   </button>
-                  <Link to={`/post/${_id}`}>
-                    <i className="fa fa-pencil"></i> Update
-                  </Link>
+                  <button className="editBTN">
+                    <Link to={`/post/${_id}`}>
+                      <i className="fa fa-pencil"></i> Edit
+                    </Link>
+                  </button>
                   <p>
                     Category: {category}, Date: {date}
                   </p>

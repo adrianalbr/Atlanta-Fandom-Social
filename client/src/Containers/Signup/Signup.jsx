@@ -64,7 +64,7 @@ const Signup = (props) => {
                   placeholder="First Name"
                   required
                 />
-                
+
                 {/* <label htmlFor="lastName">Last Name</label> */}
                 <input
                   type="text"
