@@ -9,19 +9,6 @@
     background-color: #aa84c7;
 }
 
-/* .favoriteBTN {
-    background-color: #7a44a4;
-    border-radius: 4px;
-    border: none;
-    color: white;
-    padding: 15px 30px;
-    margin-right: 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-} */
-
 .favoriteBTN {
 background-image: linear-gradient(
     to right,

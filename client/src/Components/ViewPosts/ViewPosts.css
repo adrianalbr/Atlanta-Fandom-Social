@@ -1,13 +1,13 @@
-.createPostBTN {
-    background-image: linear-gradient(
+.favoriteBTN {
+background-image: linear-gradient(
     to right,
     #9d50bb 0%,
     #6e48aa 51%,
     #9d50bb 100%
-    );
+);
 }
 
-.createPostBTN {
+.favoriteBTN{
     font-family: "Roboto", sans-serif;
     margin: 10px;
     padding: 15px 45px;
@@ -20,7 +20,7 @@
     display: block;
 }
 
-.createPostBTN:hover {
+.favoriteBTN:hover {
     background-position: right center; /* change the direction of the change here */
     color: #fff;
     text-decoration: none;

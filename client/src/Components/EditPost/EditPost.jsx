@@ -136,10 +136,10 @@ const EditPost = (props) => {
               </div>
             </div>
             <button
-              className="waves-effect waves-light btn"
+              className="editPostBTN"
               onClick={handleFormSubmit}
             >
-              Update Post
+              Edit
             </button>
           </form>
         </div>

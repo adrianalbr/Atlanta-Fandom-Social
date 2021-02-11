@@ -1,5 +1,3 @@
-
-
 const ViewPosts = (props) => {
   return (
     <>
@@ -16,7 +14,8 @@ const ViewPosts = (props) => {
               </button>
               <div className="Author">
                 <h7>
-                  Author: {author.firstName +" "+ author.lastName}, Category: {category}, Date: {date}
+                  Author: {author.firstName + " " + author.lastName}, Category:{" "}
+                  {category}, Date: {date}
                 </h7>
                 <div />
               </div>
