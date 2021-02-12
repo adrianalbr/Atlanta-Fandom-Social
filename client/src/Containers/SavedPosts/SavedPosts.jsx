@@ -24,11 +24,12 @@ const SavedPosts = (props) => {
     <div>
       <Navbar />
       {savedPosts.map(
-        ({ category, title, date, contentText, author }, index) => (
+        ({ category, title, imageURL, date, contentText, author }, index) => (
           <div className="row" key={index}>
             <div className="card">
               <div className="card-content white-text">
                 <span className="card-title">{title}</span>
+                <img src={imageURL}/>
                 <p>{contentText}</p>
               </div>
               <div className="card-action">
