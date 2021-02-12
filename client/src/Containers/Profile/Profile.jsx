@@ -53,12 +53,13 @@ const Profile = (props) => {
           <Menu />
         </div>
 
-        {posts.map(({ category, title, date, contentText, _id }, index) => (
+        {posts.map(({ category, title, imageURL, date, contentText, _id }, index) => (
           <div className="col s5">
             <div className="row" key={index}>
               <div className="card">
                 <div className="card-content white-text">
                   <span className="card-title">{title}</span>
+                  <img src={imageURL}/>
                   <p>{contentText}</p>
                 </div>
                 <div className="card-action">
