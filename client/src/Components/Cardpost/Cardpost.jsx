@@ -1,5 +1,5 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Cardpost.css";
 
 const Cardpost = () => {
@@ -11,7 +11,8 @@ const Cardpost = () => {
             <span className="card-title">Dr Strange</span>
             <p>Dormammu, I've Come To Bargain!!!</p>
           </div>
-          <img src="https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350" alt="this is car image" />
+          {/* removed word "image" in alt as per warning */}
+          <img src="https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350" alt="this is car" />
           <div className="card-action">
             <button className="favoriteBTN">
               <i className="fa fa-heart"></i> Fav

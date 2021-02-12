@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.css";
-import Cloak from "../../assets-sort/icons/cloak.png";
+// import Cloak from "../../assets-sort/icons/cloak.png";
 import { NavLink } from "react-router-dom";
 
 const Navbar = (props) => {
@@ -20,7 +20,7 @@ const Navbar = (props) => {
                   type="text"
                   placeholder="Search"
                   id="autocomplete-input"
-                  class="autocomplete red-text"
+                  className="autocomplete red-text"
                   onChange ={props.handleChange}
                 />
               </div>

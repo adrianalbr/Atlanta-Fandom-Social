@@ -1,29 +1,39 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
+
 const ViewPosts = (props) => {
   return (
     <>
-      {props.posts.map(({ _id, category, title, imageURL, date, contentText, author }) => (
-        <div className="row">
-          <div className="card">
-            <div className="card-content white-text">
-              <span className="card-title">{title}</span>
-              <p>{imageURL}</p>
-              <p>{contentText}</p>
-            </div>
-            <div className="card-action">
-              <button onClick = {()=>props.addTofav(_id)}>
-                <i className="fa fa-heart"></i> Fav
-              </button>
-              <div className="Author">
-                <h7>
-                  Author: {author.firstName + " " + author.lastName}, Category:{" "}
-                  {category}, Date: {date}
-                </h7>
-                <div />
+      {props.posts.map(
+        ({ _id, category, title, imageURL, date, contentText, author }, i) => (
+          <div className="row" key={i}>
+            <div className="card">
+              <div className="card-content white-text">
+                <span className="card-title">{title}</span>
+                <p>{imageURL}</p>
+                <p>{contentText}</p>
+              </div>
+              <div className="card-action">
+                <FontAwesomeIcon
+                  onClick={() => props.addTofav(_id)}
+                  icon={faHeart}
+                  style={{ color: "red", height: "25px", width: "25px" }}
+                >
+                  Fav
+                </FontAwesomeIcon>
+
+                <div className="Author">
+                  <h6>
+                    Author: {author.firstName + " " + author.lastName},
+                    Category: {category}, Date: {date}
+                  </h6>
+                  <div />
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      ))}
+        )
+      )}
     </>
   );
 };
