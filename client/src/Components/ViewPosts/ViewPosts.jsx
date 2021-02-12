@@ -26,7 +26,7 @@ const ViewPosts = (props) => {
                 <div className="Author">
                   <h6>
                     Author: {author.firstName + " " + author.lastName},
-                    Category: {category}, Date: {date}
+                    Category: {category}, Date: {date.substring(0, 10)}
                   </h6>
                   <div />
                 </div>
