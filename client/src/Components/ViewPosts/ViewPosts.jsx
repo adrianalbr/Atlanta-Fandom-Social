@@ -1,3 +1,5 @@
+import "./ViewPosts.css";
+
 const ViewPosts = (props) => {
   return (
     <>
@@ -10,8 +12,8 @@ const ViewPosts = (props) => {
               <p>{contentText}</p>
             </div>
             <div className="card-action">
-              <button onClick = {()=>props.addTofav(_id)}>
-                <i className="fa fa-heart"></i> Fav
+              <button className="favoriteBTN" onClick = {()=>props.addTofav(_id)}>
+              <i className="material-icons">star</i> Fav
               </button>
               <div className="Author">
                 <h7>

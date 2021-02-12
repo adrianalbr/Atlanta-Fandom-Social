@@ -6,6 +6,7 @@ import Menu from "../../Components/Menu/Menu";
 import ViewPosts from "../../Components/ViewPosts/ViewPosts";
 import Navbar from "../../Components/Navbar/Navbar";
 import { Redirect } from "react-router-dom";
+import "./Home.css"
 
 const Home = (props) => {
   const [posts, setPosts] = useState([]);
