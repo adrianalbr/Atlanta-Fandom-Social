@@ -1,4 +1,17 @@
-    .savedPostBTN {
+.card-content{
+    border-radius: 25px !important;
+   
+}
+
+.card{
+    border-radius: 25px;
+}
+
+.card-action{
+    border-radius: 25px !important;
+}
+
+favoriteBTN {
     background-image: linear-gradient(
         to right,
         #9d50bb 0%,
@@ -7,28 +20,24 @@
     );
     }
     
-    .savedPostBTN{
+    .favoriteBTN{
         font-family: "Roboto", sans-serif;
         margin: 10px;
         padding: 5px 5px;
-        text-align: center;
+        /* text-align: center; */
         /* text-transform: uppercase; */
         transition: 0.5s;
         background-size: 200% auto;
         color: white;
-        box-shadow: 0 2px 16px rgba(0, 0, 0, 0.6);
         border-radius: 10px;
         display: block;
-        width: 130px;
-        height: 50px ;
+        width: 80px;
+        height: 40px ;
+    
     }
     
-    .savedPostBTN:hover {
+    .favoriteBTN:hover {
         background-position: right center; /* change the direction of the change here */
         color: #fff;
         text-decoration: none;
     }
-
-.list{
-    align-content: right;
-}
