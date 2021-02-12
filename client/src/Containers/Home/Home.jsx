@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 // import { Col, Row, Container } from "../../Components/Grid/Grid"
-import Cardpost from "../../Components/Cardpost/Cardpost";
+// import Cardpost from "../../Components/Cardpost/Cardpost";
+import "../../Components/Cardpost/Cardpost.css";
 import Menu from "../../Components/Menu/Menu";
 import ViewPosts from "../../Components/ViewPosts/ViewPosts";
 import Navbar from "../../Components/Navbar/Navbar";
