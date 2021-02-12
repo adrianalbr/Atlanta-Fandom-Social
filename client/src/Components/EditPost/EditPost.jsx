@@ -6,7 +6,7 @@ import Navbar from "../../Components/Navbar/Navbar";
 const EditPost = (props) => {
   const [category, setCategory] = useState("");
   const [title, setTitle] = useState("");
-  const [URL, setURL] = useState("");
+  const [imageURL, setImageURL] = useState("");
   const [contentText, setContentText] = useState("");
   const [redirect, setRedirect] = useState(null);
 
@@ -24,10 +24,10 @@ const EditPost = (props) => {
         })
         .then((response) => {
           console.log(response.data);
-          const { category, title, URL, contentText } = response.data;
+          const { category, title, imageURL, contentText } = response.data;
           setCategory(category);
           setTitle(title);
-          setURL(URL);
+          setImageURL(imageURL);
           setContentText(contentText);
         })
         .catch((err) => {
@@ -108,15 +108,15 @@ const EditPost = (props) => {
               <div className="input-field col s6">
                 <input
                   placeholder="Enter a URL"
-                  id="URL"
+                  id="imageURL"
                   type="text"
-                  name="URL"
-                  value={URL}
+                  name="imageURL"
+                  value={imageURL}
                   onChange={(e) => {
-                    setURL(e.target.value);
+                    setImageURL(e.target.value);
                   }}
                 />
-                <label htmlFor="URL">URL</label>
+                <label htmlFor="imageURL">Image URL</label>
               </div>
             </div>
             <div className="row">
