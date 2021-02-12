@@ -27,6 +27,7 @@ const Signup = (props) => {
     axios
       .post("/api/signUp", userSignUp)
       .then((res) => {
+        localStorage.setItem("loginKey", res.data.token );
         console.log(res.data);
         props.setToken(res.data.token);
         // after the response is successful redirect to /home

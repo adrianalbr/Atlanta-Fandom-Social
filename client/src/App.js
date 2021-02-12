@@ -20,7 +20,7 @@ import SavedPosts from "./Containers/SavedPosts/SavedPosts";
 library.add(fab, faCheckSquare, faCoffee);
 
 function App() {
-  const [token, setToken] = useState(null);
+  const [token, setToken] = useState(localStorage.getItem("loginKey"));
   useEffect(() => {
 
   }, [token]);
