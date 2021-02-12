@@ -11,6 +11,10 @@ const ContentSchema = new Schema ({
         type: String, 
     },
 
+    imageURL: {
+        type: String
+    },
+
     author: {
         type: mongoose.Schema.Types.ObjectId,
         ref: "User"
@@ -19,12 +23,6 @@ const ContentSchema = new Schema ({
     date: {
         type: Date,
         default: Date.now
-    },
-
-    URL: {
-        type: String,
-        default: "",
-        required: false
     },
 
     contentText: {
