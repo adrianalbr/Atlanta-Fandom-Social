@@ -16,6 +16,7 @@ function Login(props) {
     axios
       .post("/api/login", { username: userName, password: password })
       .then((res) => {
+        localStorage.setItem("loginKey", res.data.token );
         props.setToken(res.data.token);
         setRedirect("/home");
         console.log(res.data);
