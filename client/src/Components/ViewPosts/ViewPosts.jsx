@@ -3,6 +3,8 @@ import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
 const ViewPosts = (props) => {
   return (
+
+    // .substring(0, 5) could be useful later
     <>
       {props.posts.map(
         ({ _id, category, title, imageURL, date, contentText, author }, i) => (
@@ -21,7 +23,6 @@ const ViewPosts = (props) => {
                 >
                   Fav
                 </FontAwesomeIcon>
-
                 <div className="Author">
                   <h6>
                     Author: {author.firstName + " " + author.lastName},
