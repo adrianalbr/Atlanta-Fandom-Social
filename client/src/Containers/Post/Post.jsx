@@ -105,7 +105,6 @@ const Post = (props) => {
                 id="contentText"
                 type="text"
                 name="contentText"
-                required
                 value={contentText}
                 onChange={(e) => {
                   setContentText(e.target.value);
