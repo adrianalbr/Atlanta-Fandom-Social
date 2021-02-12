@@ -1,11 +1,12 @@
 const ViewPosts = (props) => {
   return (
     <>
-      {props.posts.map(({ _id, category, title, date, contentText, author }) => (
+      {props.posts.map(({ _id, category, title, imageURL, date, contentText, author }) => (
         <div className="row">
           <div className="card">
             <div className="card-content white-text">
               <span className="card-title">{title}</span>
+              <p>{imageURL}</p>
               <p>{contentText}</p>
             </div>
             <div className="card-action">

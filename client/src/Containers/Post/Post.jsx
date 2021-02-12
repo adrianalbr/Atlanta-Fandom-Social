@@ -20,8 +20,7 @@ const Post = (props) => {
         {
           category,
           title,
-          image,
-          URL,
+          imageURL,
           contentText,
         },
         {
