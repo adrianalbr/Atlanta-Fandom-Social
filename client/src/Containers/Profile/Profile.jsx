@@ -71,7 +71,7 @@ const Profile = (props) => {
                   >
                     <i className="fa fa-trash-o"></i> Delete
                   </button>
-                  <Link id="test" to={`/post/${_id}`}>
+                  <Link to={`/post/${_id}`}>
                     <button className="editBTN">
                       <i className="fa fa-pencil"></i> Edit
                     </button>
