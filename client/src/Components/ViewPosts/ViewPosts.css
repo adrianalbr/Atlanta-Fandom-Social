@@ -25,34 +25,3 @@
   color: #fff;
   text-decoration: none;
 }
-
-.heart {
-    background-color: red;
-    display: inline-block;
-    height: 20px;
-    margin: 0 10px;
-    position: relative;
-    top: 0;
-    transform: rotate(-45deg);
-    width: 20px;
-  }
-  
-  .heart:before,
-  .heart:after {
-    content: "";
-    background-color: red;
-    border-radius: 50%;
-    height: 20px;
-    position: absolute;
-    width: 20px;
-  }
-  
-  .heart:before {
-    top: -15px;
-    left: 0;
-  }
-  
-  .heart:after {
-    left: 15px;
-    top: 0;
-  }
