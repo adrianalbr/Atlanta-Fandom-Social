@@ -53,3 +53,12 @@ background-image: linear-gradient(
     color: #fff;
     text-decoration: none;
 }
+
+.card{
+    width: 40vw;
+}
+
+.cardImage{
+
+    width: 100%;
+}

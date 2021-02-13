@@ -59,6 +59,8 @@ const Profile = (props) => {
               <div className="card">
                 <div className="card-content white-text">
                   <span className="card-title">{title}</span>
+                  <img className="cardImage" src={imageURL}/>
+                  <a href={url}>URL</a>
                   <img src={imageURL}/>
                   <a href={url}>{url}</a>
                   <p>{contentText}</p>

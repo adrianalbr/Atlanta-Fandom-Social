@@ -12,7 +12,7 @@ const ViewPosts = (props) => {
             <div className="card">
               <div className="card-content white-text">
                 <span className="card-title">{title}</span>
-                <img src={imageURL}/>
+                <img className="cardImage" src={imageURL}/>
                 <p>{contentText}</p>
 
               </div>
