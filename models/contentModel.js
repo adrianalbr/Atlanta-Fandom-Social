@@ -15,6 +15,10 @@ const ContentSchema = new Schema ({
         type: String
     },
 
+    url: {
+        type: String
+    },
+
     author: {
         type: mongoose.Schema.Types.ObjectId,
         ref: "User"
