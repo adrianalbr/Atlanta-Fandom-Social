@@ -37,7 +37,7 @@ const SavedPosts = (props) => {
                   <span className="card-title">{title}</span>
                   <img src={imageURL} />
                   <p>{contentText}</p>
-                  <a href={url}>URL</a>
+                  <a href={url}>{url}</a>
                 </div>
                 <div className="card-action">
                   <div className="Author">

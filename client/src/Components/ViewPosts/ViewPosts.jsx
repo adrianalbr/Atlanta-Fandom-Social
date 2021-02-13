@@ -28,7 +28,7 @@ const ViewPosts = (props) => {
                   <h6>
                     Author: {author.firstName + " " + author.lastName},
                     Category: {category}, Date: {date.substring(0, 10)}
-                    <a href={url}>URL</a>
+                    <a href={url}>{url} </a>
                   </h6>
                   <div />
                 </div>
