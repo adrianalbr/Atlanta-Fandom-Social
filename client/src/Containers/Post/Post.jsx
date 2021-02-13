@@ -50,7 +50,7 @@ const Post = (props) => {
   }
 
   return (
-    <div>
+    <div className="main">
       <Navbar />
       <div className="row">
         <div className="col s4">

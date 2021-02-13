@@ -58,7 +58,7 @@ const Home = (props) => {
     return <Redirect to="/login" />;
   }
   return (
-    <div>
+    <div className="main">
       <Navbar handleChange={handleChange} />
       <div className="row">
         {/* 6-columns (one-half) */}
