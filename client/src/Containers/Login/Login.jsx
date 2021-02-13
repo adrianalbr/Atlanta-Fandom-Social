@@ -34,7 +34,7 @@ function Login(props) {
   }
 
   return (
-    <div>
+    <div className="main">
       {error !== "" ? <Alert color="danger">{error}</Alert> : ""}
       <div className="titleHeaderContainer">
         {/* <h2 className="formHeader">Welcome to ATL Fandom Social</h2> */}
