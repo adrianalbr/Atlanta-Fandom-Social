@@ -77,7 +77,7 @@ const Profile = (props) => {
                     </button>
                   </Link>
                   <p>
-                    Category: {category}, Date: {date}
+                    Category: {category}, Date: {date.substring(0, 10)}
                   </p>
                 </div>
               </div>
