@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
 import "./ViewPosts.css";
 const ViewPosts = (props) => {
   return (
@@ -30,7 +29,6 @@ const ViewPosts = (props) => {
                     Author: {author.firstName + " " + author.lastName},
                     Category: {category}, Date: {date.substring(0, 10)}
                     <a href={url}>URL</a>
-                    <Link to={url}>url</Link>
                   </h6>
                   <div />
                 </div>

@@ -16,7 +16,7 @@ const Menu = (props) => {
             <i class="material-icons">save</i>
               Saved Posts
             </NavLink>
-            <NavLink to="/home" className="savedPostBTN">
+            <NavLink to="/post" className="savedPostBTN">
             <i class="material-icons">create</i>
               Create Post
             </NavLink>
