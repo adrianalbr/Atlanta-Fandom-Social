@@ -46,7 +46,7 @@ const Navbar = (props) => {
                 to="/profile"
                 activeStyle={{ backgroundColor: "rgba(0,0,0,0.1)" }}
               >
-                Profile
+                My Posts
               </NavLink>
             </li>
           </ul>

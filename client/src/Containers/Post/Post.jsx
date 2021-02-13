@@ -57,10 +57,10 @@ const Post = (props) => {
           <Menu token={props.token} />
         </div>
 
-        <div className="col s12">
+        <div className="colForm col s8">
           <form className="col s8" onSubmit={handleFormSubmit}>
             <div className="row">
-              <div className="input-field col s6">
+              <div className="input-field col s8">
                 <input
                   placeholder="Enter a Category"
                   id="category"
@@ -76,7 +76,7 @@ const Post = (props) => {
               </div>
             </div>
             <div className="row">
-              <div className="input-field col m6">
+              <div className="input-field col s8">
                 <input
                   placeholder="Enter a Title"
                   id="title"
@@ -92,7 +92,7 @@ const Post = (props) => {
               </div>
             </div>
             <div className="row">
-              <div className="input-field col s6">
+              <div className="input-field col s8">
                 <input
                   placeholder="Enter image URL"
                   id="imageURL"
@@ -107,7 +107,7 @@ const Post = (props) => {
               </div>
             </div>
             <div className="row">
-              <div className="input-field col s6">
+              <div className="input-field col s8">
                 <input
                   placeholder="Enter your description"
                   id="contentText"
@@ -122,7 +122,7 @@ const Post = (props) => {
               </div>
             </div>
             <div className="row">
-              <div className="input-field col s6">
+              <div className="input-field col s8">
                 <input
                   placeholder="Adding a link?"
                   id="url"
