@@ -60,7 +60,6 @@ const Profile = (props) => {
                 <div className="card-content white-text">
                   <span className="card-title">{title}</span>
                   <img className="cardImage" src={imageURL} alt="Image from Card"/>
-                  <a href={url}>{url}</a>
                   {/* <img src={imageURL}/>
                   <a href={url}>{url}</a> */}
                   <p>{contentText}</p>
@@ -80,8 +79,10 @@ const Profile = (props) => {
                       <i className="fa fa-pencil"></i> Edit
                     </button>
                   </Link>
+                  <a href={url}>{url.substring(0, 66)}</a>
                   <p>
-                    Category: {category}, Date: {date.substring(0, 10)}
+                    {category} <br/>
+                    {date.substring(0, 10)}
                   </p>
                 </div>
               </div>
