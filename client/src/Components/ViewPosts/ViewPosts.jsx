@@ -25,11 +25,11 @@ const ViewPosts = (props) => {
                   Fav
                 </FontAwesomeIcon>
                 <div className="Author">
-                  <h6>
+                 <p>
                     Author: {author.firstName + " " + author.lastName},
                     Category: {category}, Date: {date.substring(0, 10)}
                     <a href={url}>{url} </a>
-                  </h6>
+                  </p>
                   <div />
                 </div>
               </div>
