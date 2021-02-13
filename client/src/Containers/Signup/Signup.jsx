@@ -4,6 +4,7 @@ import { Alert } from "reactstrap";
 import { Redirect } from "react-router-dom";
 
 import "./Signup.css";
+import Logo from "../../assets-sort/logoBanner/logoAFS.png";
 
 const Signup = (props) => {
   const [userSignUp, setUserSignUp] = useState({
@@ -27,7 +28,7 @@ const Signup = (props) => {
     axios
       .post("/api/signUp", userSignUp)
       .then((res) => {
-        localStorage.setItem("loginKey", res.data.token );
+        localStorage.setItem("loginKey", res.data.token);
         console.log(res.data);
         props.setToken(res.data.token);
         // after the response is successful redirect to /home
@@ -50,7 +51,12 @@ const Signup = (props) => {
 
       {/* what displays on the page */}
       <div>
-        <h2 className="formHeader">Welcome to ATL Fandom Social</h2>
+        {/* <h2 className="formHeader">Welcome to ATL Fandom Social</h2> */}
+        <img
+          className="formHeader"
+          src={Logo}
+          alt="Where Fans Come Together"
+        ></img>
         <div className="formContainer">
           <div className="leftSide">
             <div className="formContentContainer">
