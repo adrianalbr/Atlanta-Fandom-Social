@@ -71,13 +71,13 @@ const Profile = (props) => {
                   >
                     <i className="fa fa-trash-o"></i> Delete
                   </button>
-                  <Link id="test" to={`/post/${_id}`}>
+                  <Link to={`/post/${_id}`}>
                     <button className="editBTN">
                       <i className="fa fa-pencil"></i> Edit
                     </button>
                   </Link>
                   <p>
-                    Category: {category}, Date: {date}
+                    Category: {category}, Date: {date.substring(0, 10)}
                   </p>
                 </div>
               </div>
