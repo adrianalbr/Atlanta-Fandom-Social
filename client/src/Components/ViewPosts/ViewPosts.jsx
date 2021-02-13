@@ -31,7 +31,7 @@ const ViewPosts = (props) => {
                   <p className="postInfo">
                   <a href={url}>{url.substring(0, 66)}</a>
                     <br/>
-                    Category: {category}<br/>
+                    {category}<br/>
                     {date.substring(0, 10)}
                   </p>
                   <div />
