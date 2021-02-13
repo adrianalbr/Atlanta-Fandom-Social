@@ -46,9 +46,10 @@ const Profile = (props) => {
   }
 
   return (
-    <div>
+    <div className="main">
+       <Navbar />
       <div className="row">
-        <Navbar />
+       
         <div className="col s4">
           <Menu />
         </div>
