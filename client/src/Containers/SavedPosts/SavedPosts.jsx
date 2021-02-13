@@ -30,13 +30,14 @@ const SavedPosts = (props) => {
         </div>
         <div className="col s5">
         {savedPosts.map(
-          ({ category, title, imageURL, date, contentText, author }, index) => (
+          ({ category, title, imageURL, url, date, contentText, author }, index) => (
             <div className="row" key={index}>
               <div className="card">
                 <div className="card-content white-text">
                   <span className="card-title">{title}</span>
                   <img src={imageURL} />
                   <p>{contentText}</p>
+                  <a href={url}>URL</a>
                 </div>
                 <div className="card-action">
                   <div className="Author">
