@@ -7,6 +7,10 @@
   );
 }
 
+.postInfo{
+  color: #e6e6e6;
+}
+
 .favoriteBTN{
     font-family: "Roboto", sans-serif;
     margin: 10px;
@@ -34,3 +38,8 @@
    
 }
 
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating){
+  color: #00fbe6;
+  text-transform: lowercase;
+
+}
