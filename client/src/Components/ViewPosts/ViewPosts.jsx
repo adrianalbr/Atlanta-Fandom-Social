@@ -3,18 +3,19 @@ import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import "./ViewPosts.css";
 const ViewPosts = (props) => {
   return (
-
     // .substring(0, 5) could be useful later
     <>
       {props.posts.map(
-        ({ _id, category, title, imageURL, url, date, contentText, author }, i) => (
+        (
+          { _id, category, title, imageURL, url, date, contentText, author },
+          i
+        ) => (
           <div className="row" key={i}>
             <div className="card">
               <div className="card-content white-text">
                 <span className="card-title">{title}</span>
-                <img className="cardImage" src={imageURL}/>
+                <img className="cardImage" src={imageURL} />
                 <p>{contentText}</p>
-
               </div>
               <div className="card-action">
                 <FontAwesomeIcon
@@ -25,7 +26,7 @@ const ViewPosts = (props) => {
                   Fav
                 </FontAwesomeIcon>
                 <div className="Author">
-                 <p>
+                  <p className="postInfo">
                     Author: {author.firstName + " " + author.lastName},
                     Category: {category}, Date: {date.substring(0, 10)}
                     <a href={url}>{url} </a>

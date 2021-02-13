@@ -7,6 +7,10 @@
   );
 }
 
+.postInfo{
+  color: #e6e6e6;
+}
+
 .favoriteBTN{
     font-family: "Roboto", sans-serif;
     margin: 10px;
