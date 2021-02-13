@@ -5,6 +5,8 @@ import { Redirect } from "react-router-dom";
 
 import "./Login.css";
 
+import Logo from "../../assets-sort/logoBanner/logoAFS.png";
+
 function Login(props) {
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
@@ -16,7 +18,7 @@ function Login(props) {
     axios
       .post("/api/login", { username: userName, password: password })
       .then((res) => {
-        localStorage.setItem("loginKey", res.data.token );
+        localStorage.setItem("loginKey", res.data.token);
         props.setToken(res.data.token);
         setRedirect("/home");
         console.log(res.data);
@@ -35,7 +37,12 @@ function Login(props) {
     <div>
       {error !== "" ? <Alert color="danger">{error}</Alert> : ""}
       <div className="titleHeaderContainer">
-        <h2 className="formHeader">Welcome to ATL Fandom Social</h2>
+        {/* <h2 className="formHeader">Welcome to ATL Fandom Social</h2> */}
+        <img
+          className="formHeader"
+          src={Logo}
+          alt="Where Fans Come Together"
+        ></img>
         <div className="formContainer">
           <div className="leftSide">
             <div className="formContentContainer">
