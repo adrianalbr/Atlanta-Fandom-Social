@@ -60,7 +60,7 @@ const Profile = (props) => {
                 <div className="card-content white-text">
                   <span className="card-title">{title}</span>
                   <img src={imageURL}/>
-                  <a href={url}>URL</a>
+                  <a href={url}>{url}</a>
                   <p>{contentText}</p>
 
                 </div>
