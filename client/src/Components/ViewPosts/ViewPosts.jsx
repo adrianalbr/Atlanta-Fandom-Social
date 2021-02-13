@@ -29,9 +29,10 @@ const ViewPosts = (props) => {
                 </FontAwesomeIcon>
                 <div className="Author">
                   <p className="postInfo">
+                  <a href={url}>{url.substring(0, 66)}</a>
+                    <br/>
                     Category: {category}<br/>
                     {date.substring(0, 10)}
-                    <a href={url}>{url}dfgdfgssdfgsdfgsdsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgdsfgdsfgsdfgdfgdfgsdfgdfgdfgdfgdfg </a>
                   </p>
                   <div />
                 </div>
