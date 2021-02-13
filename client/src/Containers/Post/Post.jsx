@@ -115,6 +115,21 @@ const Post = (props) => {
               <label htmlFor="contentText">Description</label>
             </div>
           </div>
+          <div className="row">
+            <div className="input-field col s6">
+              <input
+                placeholder="Adding a link?"
+                id="url"
+                type="text"
+                name="url"
+                value={url}
+                onChange={(e) => {
+                  setUrl(e.target.value);
+                }}
+              />
+              <label htmlFor="url">Link</label>
+            </div>
+          </div>
           <button className="createPostBTN">Create a Post</button>
         </form>
       </div>
