@@ -2,6 +2,7 @@ import { React, useState, useEffect } from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import { Redirect } from "react-router-dom";
 import axios from "axios";
+import Menu from "../../Components/Menu/Menu";
 
 const SavedPosts = (props) => {
   const [savedPosts, setSavedPosts] = useState([]);
@@ -23,28 +24,36 @@ const SavedPosts = (props) => {
   return (
     <div>
       <Navbar />
-      {savedPosts.map(
-        ({ category, title, imageURL, date, contentText, author }, index) => (
-          <div className="row" key={index}>
-            <div className="card">
-              <div className="card-content white-text">
-                <span className="card-title">{title}</span>
-                <img src={imageURL}/>
-                <p>{contentText}</p>
-              </div>
-              <div className="card-action">
-                <div className="Author">
-                  <h7>
-                    Author: {author.firstName + " " + author.lastName},
-                    Category: {category}, Date: {date}
-                  </h7>
-                  <div />
+      <div className="row">
+        <div className="col s4">
+          <Menu token={props.token} />
+        </div>
+        <div className="col s5">
+        {savedPosts.map(
+          ({ category, title, imageURL, date, contentText, author }, index) => (
+            <div className="row" key={index}>
+              <div className="card">
+                <div className="card-content white-text">
+                  <span className="card-title">{title}</span>
+                  <img src={imageURL} />
+                  <p>{contentText}</p>
+                </div>
+                <div className="card-action">
+                  <div className="Author">
+                    <h7>
+                      Author: {author.firstName + " " + author.lastName},
+                      Category: {category}, Date: {date}
+                    </h7>
+                    <div />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        )
-      )}
+          )
+        
+        )}
+        </div>
+      </div>
     </div>
   );
 };
