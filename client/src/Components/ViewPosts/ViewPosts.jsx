@@ -14,6 +14,8 @@ const ViewPosts = (props) => {
             <div className="card">
               <div className="card-content white-text">
                 <span className="card-title">{title}</span>
+                <p className="postInfo">Posted by: {author.firstName + " " + author.lastName}</p>
+                <br/> 
                 <img className="cardImage" src={imageURL} />
                 <p>{contentText}</p>
               </div>
@@ -27,9 +29,9 @@ const ViewPosts = (props) => {
                 </FontAwesomeIcon>
                 <div className="Author">
                   <p className="postInfo">
-                    Author: {author.firstName + " " + author.lastName},
-                    Category: {category}, Date: {date.substring(0, 10)}
-                    <a href={url}>{url} </a>
+                    Category: {category}<br/>
+                    {date.substring(0, 10)}
+                    <a href={url}>{url}dfgdfgssdfgsdfgsdsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgdsfgdsfgsdfgdfgdfgsdfgdfgdfgdfgdfg </a>
                   </p>
                   <div />
                 </div>

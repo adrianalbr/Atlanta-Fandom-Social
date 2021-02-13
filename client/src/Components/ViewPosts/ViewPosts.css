@@ -38,3 +38,6 @@
    
 }
 
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating){
+  color: #9d50bb;
+}
