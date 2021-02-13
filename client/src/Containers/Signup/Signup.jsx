@@ -54,7 +54,7 @@ const Signup = (props) => {
           <div className="leftSide">
             <div className="formContentContainer">
               <form>
-                <label htmlFor="firstName">First Name</label>
+                {/* <label htmlFor="firstName">First Name</label> */}
                 <input
                   type="text"
                   name="firstName"
@@ -64,7 +64,6 @@ const Signup = (props) => {
                   placeholder="First Name"
                   required
                 />
-
                 {/* <label htmlFor="lastName">Last Name</label> */}
                 <input
                   type="text"
@@ -75,7 +74,7 @@ const Signup = (props) => {
                   placeholder="Last Name"
                   required
                 />
-                <label htmlFor="Username">Username</label>
+                {/* <label htmlFor="Username">Username</label> */}
                 <input
                   type="text"
                   name="username"
@@ -85,7 +84,7 @@ const Signup = (props) => {
                   placeholder=" Username"
                   required
                 />
-                <label htmlFor="email">Email</label>
+                {/* <label htmlFor="email">Email</label> */}
                 <input
                   type="text"
                   name="email"
@@ -96,7 +95,7 @@ const Signup = (props) => {
                   placeholder="Email"
                   required
                 />
-                <label htmlFor="password">Password</label>
+                {/* <label htmlFor="password">Password</label> */}
                 <input
                   type="password"
                   name="password"
