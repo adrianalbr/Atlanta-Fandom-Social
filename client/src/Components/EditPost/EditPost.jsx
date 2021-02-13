@@ -25,10 +25,11 @@ const EditPost = (props) => {
         })
         .then((response) => {
           console.log(response.data);
-          const { category, title, imageURL, contentText } = response.data;
+          const { category, title, imageURL, url, contentText } = response.data;
           setCategory(category);
           setTitle(title);
           setImageURL(imageURL);
+          setUrl(url)
           setContentText(contentText);
         })
         .catch((err) => {
@@ -43,7 +44,7 @@ const EditPost = (props) => {
     axios
       .put(
         "/api/content/" + id,
-        { category, title, URL, contentText },
+        { category, title, imageURL, url, contentText },
         {
           headers: {
             Authorization: props.token,
