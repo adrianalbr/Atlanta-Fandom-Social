@@ -27,7 +27,7 @@ app.get("*", function (req, res) {
 
 // Connect to the Mongo DB
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/atlfandomsocial4",
+  process.env.MONGODB_URI || "mongodb://localhost/atlfandomsocial5",
   {
     useUnifiedTopology: true,
     useNewUrlParser: true,

@@ -127,7 +127,7 @@ const Post = (props) => {
                   setUrl(e.target.value);
                 }}
               />
-              <label htmlFor="url">Link</label>
+              <label htmlFor="url">Adding a Link?</label>
             </div>
           </div>
           <button className="createPostBTN">Create a Post</button>
