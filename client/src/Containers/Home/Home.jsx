@@ -8,6 +8,7 @@ import ViewPosts from "../../Components/ViewPosts/ViewPosts";
 import Navbar from "../../Components/Navbar/Navbar";
 import { Redirect } from "react-router-dom";
 import "./Home.css"
+import UpcomingEvents from "../../Components/UpcomingEvents/UpcomingEvents";
 
 const Home = (props) => {
   const [posts, setPosts] = useState([]);
@@ -62,13 +63,18 @@ const Home = (props) => {
       <Navbar handleChange={handleChange} />
       <div className="row">
         {/* 6-columns (one-half) */}
-        <div className="col s4">
+        <div className="col s2">
           <Menu token={props.token} />
         </div>
         {/* 6-columns (one-half) */}
-        <div className="col s5">
+        <div className="col s6">
           <ViewPosts token={props.token} posts={filterData(posts)} addTofav={addTofav} />
         </div>
+
+        <div className="col s4">
+          <UpcomingEvents/>
+        </div>
+
       </div>
     </div>
   );
