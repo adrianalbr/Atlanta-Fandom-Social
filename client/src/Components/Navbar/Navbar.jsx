@@ -14,8 +14,6 @@ const Navbar = (props) => {
           <ul className="right hide-on-med-and-down">
             <li>
               <div className="input-field col s4">
-                <i className="material-icons prefix">search</i>
-
                 <input
                   type="text"
                   placeholder="Search"
