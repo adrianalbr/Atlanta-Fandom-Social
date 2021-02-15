@@ -3,10 +3,6 @@
     width: 50%;
 }
 
-rowTwo{
-
-}
-
 #ourLogo{
     max-height: 12rem;
 }
@@ -41,6 +37,15 @@ rowTwo{
 #signUp{
     margin-left: 0rem;
     margin-top: 1.9rem;
+}
+
+#loginButton{
+margin-top: 2.2rem;
+margin-left: 9rem;
+}
+
+#loginAtag{
+    color: white;
 }
 
 

@@ -136,8 +136,8 @@ const Signup = (props) => {
                 <br />
                 Already have an account? <br />
               </h5>
-              <button className="submitButton">
-                <a href="/login">Login Here</a>
+              <button id="loginButton" className="submitButton">
+                <a id="loginAtag" href="/login">Login Here</a>
               </button>
             </div>
           </div>
