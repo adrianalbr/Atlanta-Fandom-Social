@@ -41,8 +41,14 @@ Follow these steps to view the application!
 
 ## Usage
 
-The user signs up or logs in and they are presented with a choice - Football or Futbol. Then the user is directed to a page where they can select a player or create a player with their desired stats. Once this is done the user can select or create a player from the other sport.
-Once both players are selected they battle! Stats from both players are compared and a winner is declared. Users can also create their own players, maybe even create themselves to see how they measure up against PRO athletes. The application includes a database with 200 PRO players that the user can compare.
+Our application is a very pleasant simple experience for our consumers. 
+* Upon loading the application, the user will sign up using our form. 
+* They will then be greeted with a beautiful UI with dozens of posts from already existing users. These posts can range from a variety of categories such as comics, anime, cosplay, video games, conventions, etc. The posts can be anything from an article, memes, upcoming events, convention news, and so much more. 
+* If a user wishes to post and join in on the fun then they can simply click on "Create Post" in the navbar. From there, they can type in their desired fields and even put in a image url. Once they create the post, they will be magically redirected to home and their post will be displayed at the top. 
+* If you wanted to save any particular post that can easily be done with clicking the heart icon near the bottom of the post. To view said post, simply navigate to the saved posts button on the left side of the screen. 
+* Going to the navbar and selecting "My posts" will redirect you to a page with ONLY your created posts. From there you have the ability to edit and delete your post. Selecting delete will simply delete your posts while selecting edit will redirect you to a form page in which you can edit your desired fields.  
+* In home, there is search functionality with the ability to search by author and title. This functionality is also present in the "My posts page."
+* A highly anticipated feature we're glad we incorporated is "upcoming events". This is a section in our home page in which the users can see as the title suggests, upcoming events usually conventions.  
 
 ## Tools Used
 
@@ -88,18 +94,18 @@ If you have any questions contact us through email:
 
 ## Credits
 
-Adriana Bonilla-Ramirez - Front end member: Worked with react to design and bring the application to life using JSX and CSS. Deployed to Heroku, connected to MongoDB Atlas, and worked on Presentation. App testing throughout the project.
-[https://github.com/adrianalbr]
+* Adriana Bonilla-Ramirez - Front end member: Worked with react to design and bring the application to life using JSX and CSS. Deployed to Heroku, connected to MongoDB Atlas, and worked on Presentation. App testing throughout the project.
+    * [https://github.com/adrianalbr]
 
-Shelby Cignetti - Front end member: Worked with react to design and bring the application to life using JSX and CSS. Came up with and designed Atlanta Fandom Social through a well detailed wire frame. Incorporated custom and unique icons. App testing throughout the project.
-[https://github.com/shelb-doc]
+* Shelby Cignetti - Front end member: Worked with react to design and bring the application to life using JSX and CSS. Came up with and designed Atlanta Fandom Social through a well detailed wire frame. Incorporated custom and unique icons. App testing throughout the       project.
+    * [https://github.com/shelb-doc]
 
-Arpita Saha  - Back end member, created controllers, helped with model validations, Mastermind behind the CRUD functionality, wrote a a lot of the logic. App testing throughout the project.  
-[https://github.com/arpita-sahakar]
+* Arpita Saha - Back/Front end member: Gave functionality to the app. Worked on models, built controllers, built routes, created API calls/requests as well as all the front end logic behind the application. Incorporated bycryptJS to handle user authentication along with jsonwebtoken. Worked with CSS and JSX on the front end. App testing throughout the project.  
+    * [https://github.com/arpita-sahakar]
 
 
-Daniel Martinez - Wrote CSV file with 200 players, setup server.js, helped setup the logic behind login.js, validations for the attributes on the front end, wrote ReadME, App testing throughout the project.
-[https://github.com/xdanielmtz]
+* Daniel Martinez - Back/Front member: Gave functionality to the app. Built the models, built controllers, built routes, created API calls/requests as well as all the front end logic behind the application. Worked on the CSS and JSX in the front end. Wrote the readME file. App testing throughout the project.
+    * [https://github.com/xdanielmtz]
 
 
 ## License
