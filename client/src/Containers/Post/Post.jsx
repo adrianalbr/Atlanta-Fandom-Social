@@ -72,7 +72,6 @@ const Post = (props) => {
                     setCategory(e.target.value);
                   }}
                 />
-                <label htmlFor="category">Category</label>
               </div>
             </div>
             <div className="row">
@@ -88,7 +87,6 @@ const Post = (props) => {
                     setTitle(e.target.value);
                   }}
                 />
-                <label htmlFor="title">Title</label>
               </div>
             </div>
             <div className="row">
@@ -103,13 +101,12 @@ const Post = (props) => {
                     setImageURL(e.target.value);
                   }}
                 />
-                <label htmlFor="imageURL">Image URL</label>
               </div>
             </div>
             <div className="row">
               <div className="input-field col s8">
                 <input
-                  placeholder="Enter your description"
+                  placeholder="Enter your Description"
                   id="contentText"
                   type="text"
                   name="contentText"
@@ -118,13 +115,12 @@ const Post = (props) => {
                     setContentText(e.target.value);
                   }}
                 />
-                <label htmlFor="contentText">Description</label>
               </div>
             </div>
             <div className="row">
               <div className="input-field col s8">
                 <input
-                  placeholder="Adding a link?"
+                  placeholder="Adding a Link?"
                   id="url"
                   type="text"
                   name="url"
@@ -133,7 +129,6 @@ const Post = (props) => {
                     setUrl(e.target.value);
                   }}
                 />
-                <label htmlFor="url">Adding a Link?</label>
               </div>
             </div>
             <button className="createPostBTN">Create a Post</button>
