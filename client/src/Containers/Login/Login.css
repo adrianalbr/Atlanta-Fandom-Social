@@ -10,7 +10,16 @@
 }
 
 #ourLogo1{
-    max-height: 6rem;
+    max-height: 4rem;
+}
+
+#aTagLogin{
+    color: white;
+}
+
+#signUpButton{
+margin-top: 1.3rem;
+margin-left: 8.7rem;
 }
 
 .formContainer {

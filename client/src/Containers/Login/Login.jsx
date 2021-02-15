@@ -90,8 +90,11 @@ function Login(props) {
             <img id="ourLogo1" src={ourLogo} />
             <br/>
               Don't have an account? <br/>
-              <a href="/">Sign Up Here</a>{" "}
+              
             </h5>
+            <button id="signUpButton" className="submitButton">
+            <a id="aTagLogin" href="/">Sign Up Here</a>
+            </button>
           </div>
         </div>
       </div>
