@@ -44,19 +44,25 @@ const Signup = (props) => {
     return <Redirect to={redirect} />;
   }
   return (
-    <div className= "main">
+    <div className="main">
       {errors.map((error) => (
         <Alert color="danger">{error.message}!</Alert>
       ))}
 
-      {/* what displays on the page */}
       <div>
         {/* <h2 className="formHeader">Welcome to ATL Fandom Social</h2> */}
-        <img
-          className="formHeader"
-          src={Logo}
-          alt="Where Fans Come Together"
-        ></img>
+        <div className="container center-align">
+          <div className="row">
+            <div className="col s12">
+              <img
+                className="formHeader"
+                src={Logo}
+                alt="Where Fans Come Together"
+              ></img>
+            </div>
+          </div>
+        </div>
+
         <div className="formContainer">
           <div className="leftSide">
             <div className="formContentContainer">
