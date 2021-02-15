@@ -1,90 +1,68 @@
 body {
-    background-image: url("https://github.com/adrianalbr/Atlanta-Fandom-Social/blob/main/client/src/assets-sort/background400.png?raw=true");
-    /* background-position: center; */
-    /* background-size: cover; */
-    background-color: rgb(171, 169, 169);
-    background-blend-mode: overlay;
-    background-repeat: repeat;
+  background-image: url("https://github.com/adrianalbr/Atlanta-Fandom-Social/blob/main/client/src/assets-sort/background400.png?raw=true");
+  /* background-position: center; */
+  /* background-size: cover; */
+  background-color: rgb(171, 169, 169);
+  background-blend-mode: overlay;
+  background-repeat: repeat;
 }
 
-.containerOne{
-    margin-top: -5%;
+.containerOne {
+  margin-top: -5%;
 }
-
 
 .formHeader {
-    min-height: 60%;
-    width: 50%;
+  min-height: 60%;
+  width: 50%;
 }
 
-#ourLogo{
-    max-height: 12rem;
+#ourLogo {
+  max-height: 12rem;
 }
 
 .formContainer {
-    /* position: relative; */
-    margin-top: 0% !important;
-    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.6);
-    background: white;
-    border-radius: 8px;
+  /* position: relative; */
+  margin-top: 0% !important;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.6);
+  background: white;
+  border-radius: 8px;
 }
 
-.formContentContainer {
-    margin-top: 15%;
+#signUp {
+  margin-left: 0rem;
+  margin-top: 1.9rem;
 }
 
-.formInput {
-    display: block;
-    margin: 0px 0px 15px 20px;
-    padding: 4px;
-    width: 80%;
-    height: 5%;
-    box-sizing: border-box;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid #aaa;
-    font-size: 12px;
+#loginButton {
+  margin-top: 2.4rem;
+  margin-left: 9rem;
 }
 
-#signUp{
-    margin-left: 0rem;
-    margin-top: 1.9rem;
+#loginAtag {
+  color: white;
 }
-
-#loginButton{
-margin-top: 2.4rem;
-margin-left: 9rem;
-}
-
-#loginAtag{
-    color: white;
-}
-
 
 .submitButton {
-background-image: linear-gradient(
+  background-image: linear-gradient(
     to right,
     #9d50bb 0%,
     #6e48aa 51%,
     #9d50bb 100%
-);
-}
-.submitButton {
-    margin: 10px;
-    padding: 15px 45px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: white;
-    box-shadow: 0 0 20px #eee;
-    border-radius: 10px;
-    display: block;
+  );
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
 }
 
 .submitButton:hover {
-    background-position: right center; /* change the direction of the change here */
-    color: #fff;
-    text-decoration: none;
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }
-
