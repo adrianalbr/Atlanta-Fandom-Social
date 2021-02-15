@@ -7,6 +7,10 @@ rowTwo{
 
 }
 
+#ourLogo{
+    max-height: 12rem;
+}
+
 .formContainer {
     position: relative;
     margin: 8% auto;

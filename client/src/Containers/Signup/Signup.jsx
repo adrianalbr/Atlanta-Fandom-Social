@@ -2,6 +2,7 @@ import { React, useState } from "react";
 import axios from "axios";
 import { Alert } from "reactstrap";
 import { Redirect } from "react-router-dom";
+import ourLogo from "../.././assets-sort/icons/circle.png";
 
 import "./Signup.css";
 import Logo from "../../assets-sort/logoBanner/logoAFS.png";
@@ -128,9 +129,13 @@ const Signup = (props) => {
               </form>
             </div>
             <div className="col s6">
-            <h6 className="goToSignUp">
-                Already have an account <a href="/login">Login Here</a>{" "}
-              </h6>
+            <h5 className="goToSignUp">
+              <img id="ourLogo" src={ourLogo}/>
+              <br/>
+              <br/>
+                Already have an account? <br/>
+                <a href="/login">Login Here</a>{" "}
+            </h5>
             </div>
           </div>
         </div>
