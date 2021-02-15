@@ -36,7 +36,7 @@ const Navbar = (props) => {
                 to="/post"
                 activeStyle={{ backgroundColor: "rgba(0,0,0,0.1)" }}
               >
-                Post
+                Create Post
               </NavLink>
             </li>
             <li>
