@@ -24,8 +24,6 @@ favoriteBTN {
         font-family: "Roboto", sans-serif;
         margin: 10px;
         padding: 5px 5px;
-        /* text-align: center; */
-        /* text-transform: uppercase; */
         transition: 0.5s;
         background-size: 200% auto;
         color: white;
