@@ -77,10 +77,8 @@ If you have any questions contact us through email:
 * Additionally, you can visit the project repo page for additional information: [https://github.com/adrianalbr/Atlanta-Fandom-Social]
   (Our Presentation) [https://docs.google.com/presentation/d/1jej1qbdBau3Zq3sJx_-SBavpwPNLEUP_2do5RZUwFmo/edit#slide=id.p]
 
-
 ## Screenshot
 ![Futbol Page](documents/football-futbol-ss.jpg)
-
 
 ## Walk-Through-Video
 [https://drive.google.com/file/d/1-RRLd3B21NHkZDXkBkGkTnUuKkntWO8I/view]
@@ -90,14 +88,15 @@ If you have any questions contact us through email:
 
 ## Credits
 
-Adriana Bonilla-Ramirez - Back end member, created the models for our project and wrote model validations, created presentation, wrote Readme, App testing throughout the project.
+Adriana Bonilla-Ramirez - Front end member: Worked with react to design and bring the application to life using JSX and CSS. Deployed to Heroku, connected to MongoDB Atlas, and worked on Presentation. App testing throughout the project.
 [https://github.com/adrianalbr]
+
+Shelby Cignetti - Front end member: Worked with react to design and bring the application to life using JSX and CSS. Came up with and designed Atlanta Fandom Social through a well detailed wire frame. Incorporated custom and unique icons. App testing throughout the project.
+[https://github.com/shelb-doc]
 
 Arpita Saha  - Back end member, created controllers, helped with model validations, Mastermind behind the CRUD functionality, wrote a a lot of the logic. App testing throughout the project.  
 [https://github.com/arpita-sahakar]
 
-Shelby Cignetti - Worked on all things handlebars. Created the UI for our web application, designed and polished a clean interface, deployed to Heroku, App testing throughout the project.
-[https://github.com/shelb-doc]
 
 Daniel Martinez - Wrote CSV file with 200 players, setup server.js, helped setup the logic behind login.js, validations for the attributes on the front end, wrote ReadME, App testing throughout the project.
 [https://github.com/xdanielmtz]
