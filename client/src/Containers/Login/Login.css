@@ -1,91 +1,76 @@
 .formHeader {
-    min-height: 60%;
-    width: 50%;
-    margin-top: 10%;
+  min-height: 60%;
+  width: 50%;
+  margin-top: 10%;
 }
 
-#login{
-    margin-left: 0rem;
-    margin-top: 1.9rem;
+#login {
+  margin-left: 0rem;
+  margin-top: 1.9rem;
 }
 
-#ourLogo1{
-    max-height: 4rem;
+#ourLogo1 {
+  max-height: 4rem;
 }
 
-#aTagLogin{
-    color: white;
+#aTagLogin {
+  color: white;
 }
 
-#signUpButton{
-margin-top: 1.3rem;
-margin-left: 8.7rem;
+#signUpButton {
+  margin-top: 1.3rem;
+  margin-left: 8rem;
 }
 
 .formContainer {
-    font-family: "Roboto", sans-serif;
-    position: relative;
-    margin: 8% auto;
-    min-height: 60%;
-    width: 50%;
-    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.6);
-    background: white;
-    padding: 0px 0px 5px 15px;
-    box-sizing: border-box;
-    border-radius: 8px;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  margin: 8% auto;
+  min-height: 60%;
+  width: 50%;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.6);
+  background: white;
+  padding: 0px 0px 5px 15px;
+  box-sizing: border-box;
+  border-radius: 8px;
 }
-
-/* .leftSide {
-
-} */
-
-.formContentContainer {
-    margin-top: 15%;
-}
-
-/* .rightSide {
-
-} */
 
 .formInput {
-    font-family: "Roboto", sans-serif;
-    display: block;
-    margin: 0px 0px 15px 20px;
-    padding: 4px;
-    width: 80%;
-    height: 5%;
-    box-sizing: border-box;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid #aaa;
-    font-size: 12px;
-    }
+  font-family: "Roboto", sans-serif;
+  display: block;
+  margin: 0px 0px 15px 20px;
+  padding: 4px;
+  width: 80%;
+  height: 5%;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #aaa;
+  font-size: 12px;
+}
 
 .submitButton {
-background-image: linear-gradient(
+  background-image: linear-gradient(
     to right,
     #9d50bb 0%,
     #6e48aa 51%,
     #9d50bb 100%
-);
-}
-
-.submitButton{
-    font-family: "Roboto", sans-serif;
-    margin: 10px;
-    padding: 15px 45px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: white;
-    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
-    display: block;
+  );
+  font-family: "Roboto", sans-serif;
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  display: block;
 }
 
 .submitButton:hover {
-    background-position: right center; /* change the direction of the change here */
-    color: #fff;
-    text-decoration: none;
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }
