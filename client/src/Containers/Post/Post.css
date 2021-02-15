@@ -30,6 +30,10 @@
     padding-top: 70px;
 }
 
+label{
+color: white !important
+}
+
 .row{
     padding-top: 20px;
 }
