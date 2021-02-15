@@ -63,19 +63,19 @@ This application was developed using these brilliant technologies:
 ## Contribution
 
 IF you wish to contribute, here is how:
-GO to my repo and fork my repository.
+GO to the repo and fork the repository.
 CLONE with ssh and view it on your local machine.
-WHEN you have made your contributions, run git push and I will review for a merge.
+WHEN you have made your contributions, run git push and we will review for a merge.
 
 ## Questions
 
 If you have any questions contact us through email:
-    (Daniel Martinez) - [xdanielmtz@gmail.com]
-    (Shelby Cignetti) - [shelbycignetti@gmail.com]
-    (Arpita Sahaa) - [arpita.sahaa@gmail.com]
-    (Adriana Bonilla-Ramirez) - [adrianalbr12@gmail.com]
-Additionally, you can visit the project repo page for additional information: [https://github.com/adrianalbr/football-or-futbol]
-(Our Presentation) [https://docs.google.com/presentation/d/1e-Tn37O0iDVCBre28mQBgSArVxMNkwn5rDT81fks-CY/edit#slide=id.ga93273cbd8_0_9]
+* (Daniel Martinez) - [xdanielmtz@gmail.com]
+* (Shelby Cignetti) - [shelbycignetti@gmail.com]
+* (Arpita Sahaa) - [arpita.sahaa@gmail.com]
+* (Adriana Bonilla-Ramirez) - [adrianalbr12@gmail.com]
+* Additionally, you can visit the project repo page for additional information: [https://github.com/adrianalbr/Atlanta-Fandom-Social]
+  (Our Presentation) [https://docs.google.com/presentation/d/1jej1qbdBau3Zq3sJx_-SBavpwPNLEUP_2do5RZUwFmo/edit#slide=id.p]
 
 
 ## Screenshot
