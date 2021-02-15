@@ -14,8 +14,10 @@ const ViewPosts = (props) => {
             <div className="card">
               <div className="card-content white-text">
                 <span className="card-title">{title}</span>
-                <p className="postInfo">Posted by: {author.firstName + " " + author.lastName}</p>
-                <br/> 
+                <p className="postInfo">
+                  Posted by: {author.firstName + " " + author.lastName}
+                </p>
+                <br />
                 <img className="cardImage" src={imageURL} />
                 <p>{contentText}</p>
               </div>
@@ -29,9 +31,10 @@ const ViewPosts = (props) => {
                 </FontAwesomeIcon>
                 <div className="Author">
                   <p className="postInfo">
-                  <a href={url}>{url.substring(0, 66)}</a>
-                    <br/>
-                    {category}<br/>
+                    <a href={url}>{url.substring(0, 66)}</a>
+                    <br />
+                    {category}
+                    <br />
                     {date.substring(0, 10)}
                   </p>
                   <div />
