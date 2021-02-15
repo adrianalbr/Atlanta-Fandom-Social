@@ -90,7 +90,7 @@ If you have any questions contact us through email:
 [https://drive.google.com/file/d/1-RRLd3B21NHkZDXkBkGkTnUuKkntWO8I/view]
 
 ## Deployment
-[https://football-or-futbol.herokuapp.com/]
+[https://atlfandomsocial.herokuapp.com/]
 
 ## Credits
 
