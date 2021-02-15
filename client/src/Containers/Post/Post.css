@@ -27,11 +27,11 @@
 }
 
 .colForm{
-    padding-top: 70px;
+    padding-top: 30px !important;
 }
 
 label{
-color: white !important
+color: white !important;
 }
 
 .row{

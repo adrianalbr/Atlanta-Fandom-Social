@@ -1,73 +1,104 @@
 .formHeader {
-    min-height: 60%;
-    width: 50%;
-    margin-top: 10%;
+  min-height: 60%;
+  width: 50%;
+  margin-top: 10%;
 }
 
-.formContainer {
-    font-family: "Roboto", sans-serif;
-    position: relative;
-    margin: 8% auto;
-    min-height: 60%;
-    width: 50%;
-    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.6);
-    background: white;
-    padding: 0px 0px 5px 15px;
-    box-sizing: border-box;
-    border-radius: 8px;
+#login {
+  margin-left: 0rem;
+  margin-top: 1.9rem;
 }
 
-/* .leftSide {
-
-} */
-
-.formContentContainer {
-    margin-top: 15%;
+#ourLogo1 {
+  max-height: 4rem;
 }
 
-/* .rightSide {
+#aTagLogin {
+  color: white;
+}
 
-} */
-
-.formInput {
-    font-family: "Roboto", sans-serif;
-    display: block;
-    margin: 0px 0px 15px 20px;
-    padding: 4px;
-    width: 80%;
-    height: 5%;
-    box-sizing: border-box;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid #aaa;
-    font-size: 12px;
-    }
-
-.submitButton {
-background-image: linear-gradient(
+#signUpButton {
+  background-image: linear-gradient(
     to right,
     #9d50bb 0%,
     #6e48aa 51%,
     #9d50bb 100%
-);
+  );
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  margin-top: 2rem;
+  margin-left: 41rem !important
 }
 
-.submitButton{
-    font-family: "Roboto", sans-serif;
-    margin: 10px;
-    padding: 15px 45px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: white;
-    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
-    display: block;
+.formContainer {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  margin: 8% auto;
+  min-height: 60%;
+  width: 50%;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.6);
+  background: white;
+  padding: 0px 0px 5px 15px;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.formInput {
+  font-family: "Roboto", sans-serif;
+  display: block;
+  margin: 0px 0px 15px 20px;
+  padding: 4px;
+  width: 80%;
+  height: 5%;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #aaa;
+  font-size: 12px;
+}
+
+.submitButton {
+  background-image: linear-gradient(
+    to right,
+    #9d50bb 0%,
+    #6e48aa 51%,
+    #9d50bb 100%
+  );
+  font-family: "Roboto", sans-serif;
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  display: block;
 }
 
 .submitButton:hover {
-    background-position: right center; /* change the direction of the change here */
-    color: #fff;
-    text-decoration: none;
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+#account{
+  margin-top: 0rem;
+}
+
+@media screen and (max-width: 1800px){
+  #signUpButton{
+    margin-top: 2.5rem;
+    margin-left: 2rem;
+    padding-left: 3rem; 
+  }
 }
