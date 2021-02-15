@@ -75,6 +75,7 @@ function Login(props) {
                 required
               />
               <input
+                id="login"
                 type="submit"
                 className="submitButton"
                 name="submitButton"
