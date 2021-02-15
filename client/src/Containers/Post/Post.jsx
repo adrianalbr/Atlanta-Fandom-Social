@@ -58,7 +58,7 @@ const Post = (props) => {
         </div>
 
         <div className="colForm col s8">
-          <form className="col s8" onSubmit={handleFormSubmit}>
+          <form className="colText s8" onSubmit={handleFormSubmit}>
             <div className="row">
               <div className="input-field col s8">
                 <input

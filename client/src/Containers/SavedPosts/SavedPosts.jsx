@@ -23,7 +23,7 @@ const SavedPosts = (props) => {
     return <Redirect to="/login" />;
   }
   return (
-    <div>
+    <div className="main">
       <Navbar />
       <div className="row">
         <div className="col s4">
@@ -43,7 +43,7 @@ const SavedPosts = (props) => {
                       Posted by: {author.firstName + " " + author.lastName}
                     </p>
                     <br />
-                    <img src={imageURL} />
+                    <img className="cardImage" src={imageURL} />
                     <p>{contentText}</p>
                     <br />
                     <a className="linkTag" href={url}>{url.substring(0, 66)}</a>
