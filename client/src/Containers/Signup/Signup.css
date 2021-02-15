@@ -1,17 +1,31 @@
+body {
+    background-image: url("https://github.com/adrianalbr/Atlanta-Fandom-Social/blob/main/client/src/assets-sort/background400.png?raw=true");
+    /* background-position: center; */
+    /* background-size: cover; */
+    background-color: rgb(171, 169, 169);
+    background-blend-mode: overlay;
+    background-repeat: repeat;
+}
+
+.containerOne{
+    margin-top: -5%;
+}
+
+
 .formHeader {
     min-height: 60%;
     width: 50%;
 }
 
+#ourLogo{
+    max-height: 12rem;
+}
+
 .formContainer {
-    position: relative;
-    margin: 8% auto;
-    min-height: 60%;
-    width: 50%;
+    /* position: relative; */
+    margin-top: 0% !important;
     box-shadow: 0 2px 16px rgba(0, 0, 0, 0.6);
     background: white;
-    padding: 0px 0px 5px 15px;
-    box-sizing: border-box;
     border-radius: 8px;
 }
 
@@ -31,6 +45,21 @@
     border-bottom: 1px solid #aaa;
     font-size: 12px;
 }
+
+#signUp{
+    margin-left: 0rem;
+    margin-top: 1.9rem;
+}
+
+#loginButton{
+margin-top: 2.2rem;
+margin-left: 9rem;
+}
+
+#loginAtag{
+    color: white;
+}
+
 
 .submitButton {
 background-image: linear-gradient(
@@ -59,11 +88,3 @@ background-image: linear-gradient(
     text-decoration: none;
 }
 
-.main {
-    background-image: url("https://github.com/adrianalbr/Atlanta-Fandom-Social/blob/main/client/src/assets-sort/background400.png?raw=true");
-    /* background-position: center; */
-    /* background-size: cover; */
-    background-color: rgb(171, 169, 169);
-    background-blend-mode: overlay;
-    background-repeat: repeat;
-}
