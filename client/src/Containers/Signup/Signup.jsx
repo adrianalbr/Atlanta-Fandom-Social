@@ -129,7 +129,7 @@ const Signup = (props) => {
               </form>
             </div>
             <div className="col s6 center-align">
-              <h5 className="goToSignUp">
+              <h5 id="signInRedirect" className="goToSignUp">
                 <img id="ourLogo" src={ourLogo} />
                 <br />
                 <br />

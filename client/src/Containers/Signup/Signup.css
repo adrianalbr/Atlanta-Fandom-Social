@@ -63,3 +63,70 @@ body {
   color: #fff;
   text-decoration: none;
 }
+
+
+@media screen and (max-width: 1420px){
+  #loginButton{
+    margin-top: 2.5rem;
+    margin-left: 5rem
+  }
+}
+
+@media screen and (max-width: 1220px){
+  #loginButton{
+    margin-top: 0.8rem;
+    margin-left: 2rem
+  }
+}
+
+@media screen and (max-width: 812px){
+  #loginButton{
+    height: 4rem !important;
+    margin-top: 0.8rem;
+    margin-left: 2rem
+  }
+}
+
+
+@media screen and (max-width: 703px){
+  #loginButton{
+    height: 4rem !important;
+    margin-top: 3.5rem;
+    margin-left: 0.5rem
+  }
+  #loginAtag{
+    padding-top: 0rem !important; 
+    font-size: 13px !important
+  }
+  #ourLogo{
+    max-height: 9rem;
+  }
+}
+
+@media screen and (max-width: 635px){
+#signInRedirect{
+  display: none;
+}
+#loginButton{
+  height: 4rem !important;
+  margin-top: 23.5rem;
+  margin-left: -11.11rem
+}
+}
+
+@media screen and (max-width: 558px){
+  #loginButton{
+    height: 4rem !important;
+    margin-top: 23.5rem;
+    margin-left: -9.5rem
+  }
+  }
+
+  
+@media screen and (min-width: 2270){
+  #loginButton{
+    height: 4rem !important;
+    margin-top: 90rem;
+    margin-right: 90rem !important
+  }
+  }
