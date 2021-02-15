@@ -95,9 +95,10 @@
   margin-top: 0rem;
 }
 
-@media screen and (max-width: 1751px){
+@media screen and (max-width: 1800px){
   #signUpButton{
     margin-top: 2.5rem;
-    margin-right: -500rem !important
+    margin-left: 2rem;
+    padding-left: 3rem; 
   }
 }
