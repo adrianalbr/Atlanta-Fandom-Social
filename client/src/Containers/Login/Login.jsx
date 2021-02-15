@@ -34,64 +34,68 @@ function Login(props) {
   }
 
   return (
-    <div className="main">
-      {error !== "" ? <Alert color="danger">{error}</Alert> : ""}
-      <div className="titleHeaderContainer">
-        {/* <h2 className="formHeader">Welcome to ATL Fandom Social</h2> */}
-        <div className="container center-align">
-          <div className="row">
-            <div className="col s12">
-              <img
-                className="formHeader"
-                src={Logo}
-                alt="Where Fans Come Together"
-              ></img>
+    <>
+     <div className="container containerOne center-align">
+            <div className="row">
+              <div className="col s12">
+                <img
+                  className="formHeader"
+                  src={Logo}
+                  alt="Where Fans Come Together"
+                ></img>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="formContainer">
-          <div className="leftSide">
-            <div className="formContentContainer">
-              <form>
-                <input
-                  type="text"
-                  name="username"
-                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                  className="formInput"
-                  placeholder="Username"
-                  value={userName}
-                  onChange={(event) => {
-                    setUserName(event.target.value);
-                  }}
-                  required
-                />
-                <input
-                  type="password"
-                  name="password"
-                  className="formInput"
-                  placeholder="Password"
-                  value={password}
-                  onChange={(event) => {
-                    setPassword(event.target.value);
-                  }}
-                  required
-                />
-                <input
-                  type="submit"
-                  className="submitButton"
-                  name="submitButton"
-                  onClick={handleSubmit}
-                  value="Login"
-                />
-              </form>
-              <h6 className="goToSignUp">
-                Don't have an account <a href="/">Sign Up Here</a>{" "}
-              </h6>
+
+      <div className="main">
+        {error !== "" ? <Alert color="danger">{error}</Alert> : ""}
+        <div className="titleHeaderContainer">
+          {/* <h2 className="formHeader">Welcome to ATL Fandom Social</h2> */}
+         
+          <div className="formContainer">
+            <div className="leftSide">
+              <div className="formContentContainer">
+                <form>
+                  <input
+                    type="text"
+                    name="username"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                    className="formInput"
+                    placeholder="Username"
+                    value={userName}
+                    onChange={(event) => {
+                      setUserName(event.target.value);
+                    }}
+                    required
+                  />
+                  <input
+                    type="password"
+                    name="password"
+                    className="formInput"
+                    placeholder="Password"
+                    value={password}
+                    onChange={(event) => {
+                      setPassword(event.target.value);
+                    }}
+                    required
+                  />
+                  <input
+                    type="submit"
+                    className="submitButton"
+                    name="submitButton"
+                    onClick={handleSubmit}
+                    value="Login"
+                  />
+                </form>
+                <h6 className="goToSignUp">
+                  Don't have an account <a href="/">Sign Up Here</a>{" "}
+                </h6>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
