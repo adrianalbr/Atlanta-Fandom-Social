@@ -1,11 +1,24 @@
-.upcomingEventsBox {
+.events {
     /* background-color: #aa84c7; */
-    margin-top: 8%;
-    margin-right: 5%;
+    background-color: #f1ecf1;
     border-radius: 25px;
+    /* padding-top: 30px; */
 }
 
-table {
+
+.eventsTitle{
+  font-style: italic;
+  align-content: center;
+  float: left;
+  background-color: #f1ecf1;
+  
+}
+
+.eventImg{
+  width: 50px;
+  /* height: 10%; */
+}
+/* table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
@@ -40,7 +53,7 @@ table {
       background-color: azure;
       
       
-  }
+  } */
   
   /* tr {
     border-radius: 25px !important;
