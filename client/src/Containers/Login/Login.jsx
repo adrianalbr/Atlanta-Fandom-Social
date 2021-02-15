@@ -88,16 +88,14 @@ function Login(props) {
           <div id="column2" className="col s6 center-align">
             <h5 className="goToSignUp">
               <img id="ourLogo1" src={ourLogo} />
-              <p id="account" >
-              Don't have an account?
-              </p>
+              <p id="account">Don't have an account?</p>
             </h5>
-            <button id="signUpButton" className="submitButton">
-              <a id="aTagLogin" href="/">
-                Sign Up Here
-              </a>
-            </button>
           </div>
+          <button id="signUpButton">
+            <a id="aTagLogin" href="/">
+              Sign Up Here
+            </a>
+          </button>
         </div>
       </div>
     </>

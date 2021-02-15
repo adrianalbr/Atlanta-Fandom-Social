@@ -123,10 +123,16 @@ body {
   }
 
   
-@media screen and (min-width: 2270){
+@media screen and (min-width: 2270px){
   #loginButton{
-    height: 4rem !important;
-    margin-top: 90rem;
-    margin-right: 90rem !important
+    margin-top: 2rem;
+    margin-left: 12rem 
   }
   }
+
+  @media screen and (min-width: 2621px){
+    #loginButton{
+      margin-top: 2rem;
+      margin-left: 15rem 
+    }
+    }

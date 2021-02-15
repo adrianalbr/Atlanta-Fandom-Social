@@ -18,8 +18,24 @@
 }
 
 #signUpButton {
-  margin-top: 0rem;
-  margin-left: 8.5rem;
+  background-image: linear-gradient(
+    to right,
+    #9d50bb 0%,
+    #6e48aa 51%,
+    #9d50bb 100%
+  );
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  margin-top: 2rem;
+  margin-left: 41rem !important
 }
 
 .formContainer {
@@ -77,4 +93,11 @@
 
 #account{
   margin-top: 0rem;
+}
+
+@media screen and (max-width: 1751px){
+  #signUpButton{
+    margin-top: 2.5rem;
+    margin-right: -500rem !important
+  }
 }
