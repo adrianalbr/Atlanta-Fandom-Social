@@ -67,7 +67,7 @@ const Signup = (props) => {
         <div className="container center-align formContainer">
           <div className="row rowTwo">
             <div className="col s6">
-            <form>
+              <form>
                 {/* <label htmlFor="firstName">First Name</label> */}
                 <input
                   type="text"
@@ -120,6 +120,7 @@ const Signup = (props) => {
                   required
                 />
                 <input
+                  id="signUp"
                   type="submit"
                   className="submitButton"
                   onClick={handleSubmit}
@@ -128,14 +129,16 @@ const Signup = (props) => {
                 />
               </form>
             </div>
-            <div className="col s6">
-            <h5 className="goToSignUp">
-              <img id="ourLogo" src={ourLogo}/>
-              <br/>
-              <br/>
-                Already have an account? <br/>
-                <a href="/login">Login Here</a>{" "}
-            </h5>
+            <div className="col s6 center-align">
+              <h5 className="goToSignUp">
+                <img id="ourLogo" src={ourLogo} />
+                <br />
+                <br />
+                Already have an account? <br />
+              </h5>
+              <button className="submitButton">
+                <a href="/login">Login Here</a>
+              </button>
             </div>
           </div>
         </div>

@@ -38,6 +38,12 @@ rowTwo{
     font-size: 12px;
 }
 
+#signUp{
+    margin-left: 0rem;
+    margin-top: 1.9rem;
+}
+
+
 .submitButton {
 background-image: linear-gradient(
     to right,
