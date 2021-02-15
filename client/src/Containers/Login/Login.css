@@ -9,6 +9,10 @@
     margin-top: 1.9rem;
 }
 
+#ourLogo1{
+    max-height: 6rem;
+}
+
 .formContainer {
     font-family: "Roboto", sans-serif;
     position: relative;

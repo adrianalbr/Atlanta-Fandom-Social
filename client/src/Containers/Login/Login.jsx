@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useState } from "react";
 import { Alert } from "reactstrap";
 import { Redirect } from "react-router-dom";
+import ourLogo from "../.././assets-sort/icons/circle.png";
 
 import "./Login.css";
 
@@ -84,10 +85,13 @@ function Login(props) {
               />
             </form>
           </div>
-          <div className="col s6">
-            <h6 className="goToSignUp">
-              Don't have an account <a href="/">Sign Up Here</a>{" "}
-            </h6>
+          <div className="col s6 center-align">
+            <h5 className="goToSignUp">
+            <img id="ourLogo1" src={ourLogo} />
+            <br/>
+              Don't have an account? <br/>
+              <a href="/">Sign Up Here</a>{" "}
+            </h5>
           </div>
         </div>
       </div>
