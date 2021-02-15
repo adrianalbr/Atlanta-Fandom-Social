@@ -63,7 +63,7 @@ background-image: linear-gradient(
     background-image: url("https://github.com/adrianalbr/Atlanta-Fandom-Social/blob/main/client/src/assets-sort/background400.png?raw=true");
     /* background-position: center; */
     /* background-size: cover; */
-    /* background-color: rgb(171, 169, 169); */
+    background-color: rgb(171, 169, 169);
     background-blend-mode: overlay;
     background-repeat: repeat;
 }
