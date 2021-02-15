@@ -7,6 +7,9 @@ body {
     background-repeat: repeat;
 }
 
+.containerOne{
+    margin-top: -5%;
+}
 
 .formHeader {
     min-height: 60%;

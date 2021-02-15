@@ -45,14 +45,15 @@ const Signup = (props) => {
     return <Redirect to={redirect} />;
   }
   return (
+
+
     <>
         {errors.map((error) => (
           <Alert color="danger">{error.message}!</Alert>
         ))}
 
         <div>
-          {/* <h2 className="formHeader">Welcome to ATL Fandom Social</h2> */}
-          <div className="container center-align">
+          <div className="container containerOne center-align">
             <div className="row">
               <div className="col s12">
                 <img
@@ -63,6 +64,7 @@ const Signup = (props) => {
               </div>
             </div>
           </div>
+
 
           <div className="container center-align formContainer">
             <div className="row rowTwo">
