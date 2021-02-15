@@ -63,10 +63,10 @@ const Signup = (props) => {
           </div>
         </div>
 
-        <div className="formContainer">
-          <div className="leftSide">
-            <div className="formContentContainer">
-              <form>
+        <div className="container center-align formContainer">
+          <div className="row rowTwo">
+            <div className="col s6">
+            <form>
                 {/* <label htmlFor="firstName">First Name</label> */}
                 <input
                   type="text"
@@ -126,14 +126,15 @@ const Signup = (props) => {
                   value="SignUp"
                 />
               </form>
-              <h6 className="goToSignUp">
+            </div>
+            <div className="col s6">
+            <h6 className="goToSignUp">
                 Already have an account <a href="/login">Login Here</a>{" "}
               </h6>
             </div>
           </div>
         </div>
       </div>
-      <div className="rightSide"></div>
     </div>
   );
 };

@@ -3,15 +3,17 @@
     width: 50%;
 }
 
+rowTwo{
+
+}
+
 .formContainer {
     position: relative;
     margin: 8% auto;
     min-height: 60%;
-    width: 50%;
     box-shadow: 0 2px 16px rgba(0, 0, 0, 0.6);
     background: white;
-    padding: 0px 0px 5px 15px;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     border-radius: 8px;
 }
 
