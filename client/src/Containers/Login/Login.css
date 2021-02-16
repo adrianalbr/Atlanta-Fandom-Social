@@ -25,7 +25,8 @@
     #9d50bb 100%
   );
   margin: 10px;
-  padding: 15px 45px;
+  height: 3.5rem !important;
+  padding: 15px 40px 15px;
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
@@ -34,8 +35,8 @@
   box-shadow: 0 0 20px #eee;
   border-radius: 10px;
   display: block;
-  margin-top: 2rem;
-  margin-left: 41rem !important
+  margin-top: 1rem;
+  margin-left: 9.5rem !important
 }
 
 .formContainer {

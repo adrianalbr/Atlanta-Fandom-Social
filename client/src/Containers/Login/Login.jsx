@@ -96,12 +96,12 @@ function Login(props) {
               <img id="ourLogo1" src={ourLogo} />
               <p id="account">Don't have an account?</p>
             </h5>
-          </div>
-          <button id="signUpButton">
+            <button id="signUpButton">
             <a id="aTagLogin" href="/">
               Sign Up Here
             </a>
           </button>
+          </div>
         </div>
       </div>
     </>
