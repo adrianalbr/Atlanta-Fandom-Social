@@ -2,15 +2,15 @@
 
 .deleteBTN {
     background-image: linear-gradient(
-        to right,
-        #e52d27 0%,
-        #b31217 51%,
-        #e52d27 100%
+    to right,
+    #6a3093 0%,
+    #a044ff 51%,
+    #6a3093 100%
     );
 }
 .deleteBTN {
     margin: 10px;
-    padding: 15px 45px;
+    padding: 15px 35px;
     text-align: center;
     text-transform: uppercase;
     transition: 0.5s;
@@ -38,7 +38,7 @@ background-image: linear-gradient(
 }
 .editBTN {
     margin: 10px;
-    padding: 15px 45px;
+    padding: 15px 35px;
     text-align: center;
     text-transform: uppercase;
     transition: 0.5s;
