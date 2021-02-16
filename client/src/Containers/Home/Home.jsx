@@ -6,9 +6,12 @@ import "../../Components/Cardpost/Cardpost.css";
 import Menu from "../../Components/Menu/Menu";
 import ViewPosts from "../../Components/ViewPosts/ViewPosts";
 import Navbar from "../../Components/Navbar/Navbar";
+import UpcomingEvents from "../../Components/UpcomingEvents/UpcomingEvents";
+import Footer from "../../Components/Footer/Footer";
+
 import { Redirect } from "react-router-dom";
 import "./Home.css"
-import UpcomingEvents from "../../Components/UpcomingEvents/UpcomingEvents";
+
 
 const Home = (props) => {
   const [posts, setPosts] = useState([]);
@@ -74,8 +77,8 @@ const Home = (props) => {
         <div className="col s4">
           <UpcomingEvents/>
         </div>
-
       </div>
+      {/* <Footer /> */}
     </div>
   );
 };
