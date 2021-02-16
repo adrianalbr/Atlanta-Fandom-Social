@@ -66,7 +66,7 @@ const Home = (props) => {
       <Navbar handleChange={handleChange} />
       <div className="row">
         {/* 6-columns (one-half) */}
-        <div className="col s3">
+        <div className="col s2">
           <Menu token={props.token} />
         </div>
         {/* 6-columns (one-half) */}

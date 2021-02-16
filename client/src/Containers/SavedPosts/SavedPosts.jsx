@@ -4,6 +4,7 @@ import { Redirect } from "react-router-dom";
 import axios from "axios";
 import Menu from "../../Components/Menu/Menu";
 import "./SavedPosts.css";
+import UpcomingEvents from "../../Components/UpcomingEvents/UpcomingEvents"
 
 const SavedPosts = (props) => {
   const [savedPosts, setSavedPosts] = useState([]);
@@ -26,7 +27,7 @@ const SavedPosts = (props) => {
     <div className="main">
       <Navbar />
       <div className="row">
-        <div className="col s4">
+        <div className="col s2">
           <Menu token={props.token} />
         </div>
         <div className="col s5">
@@ -56,6 +57,9 @@ const SavedPosts = (props) => {
               </div>
             )
           )}
+        </div>
+        <div className="col s4">
+          <UpcomingEvents/>
         </div>
       </div>
     </div>

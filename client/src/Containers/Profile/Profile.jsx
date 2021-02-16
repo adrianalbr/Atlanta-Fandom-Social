@@ -6,7 +6,7 @@ import Menu from "../../Components/Menu/Menu";
 
 import { Redirect } from "react-router-dom";
 import ViewMyPosts from "../../Components/ViewPosts/ViewMyPosts.jsx";
-
+import UpcomingEvents from "../../Components/UpcomingEvents/UpcomingEvents"
 import "./Profile.css";
 
 const Profile = (props) => {
@@ -71,7 +71,7 @@ const Profile = (props) => {
       <Navbar handleChange={handleChange} />
       <div className="row">
 
-      <div className="col s4">
+      <div className="col s2">
           <Menu token={props.token} />
         </div>
 
@@ -81,6 +81,9 @@ const Profile = (props) => {
             posts={filterData(posts)}
             handleDelete={handleDelete}
           />
+        </div>
+        <div className="col s4">
+          <UpcomingEvents/>
         </div>
 
       </div>
