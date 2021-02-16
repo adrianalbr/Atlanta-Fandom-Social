@@ -17,7 +17,7 @@ const Menu = (props) => {
                 </NavLink>
               </button>
             </li>
-
+            <div className="emptyDiv"></div>
             <li>
               <button className="savedPostBTN ">
                 <NavLink to="/home">
@@ -27,7 +27,7 @@ const Menu = (props) => {
                 </NavLink>
               </button>
             </li>
-
+            <div className="emptyDiv"></div>
             <li>
               <button className="savedPostBTN">
                 <NavLink to="/post">
@@ -37,7 +37,7 @@ const Menu = (props) => {
                 </NavLink>
               </button>
             </li>
-
+            <div className="emptyDiv"></div>
             <li>
               <button className="savedPostBTN">
                 <NavLink to="/savedPosts">
@@ -47,7 +47,7 @@ const Menu = (props) => {
                 </NavLink>
               </button>
             </li>
-
+            <div className="emptyDiv"></div>
             <li>
               <button className="savedPostBTN">
                 <NavLink to="/profile">

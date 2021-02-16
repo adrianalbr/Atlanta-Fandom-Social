@@ -6,6 +6,10 @@
         #9d50bb 100%
     );
     }
+
+    .emptyDiv{
+        height: .2rem;
+    }
     
     .savedPostBTN{
         font-family: "Roboto", sans-serif;
