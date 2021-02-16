@@ -9,53 +9,60 @@ const Menu = (props) => {
         <div className="buttons col s4">
           <ul>
             <li id="testHere">
-              <button className="savedPostBTN ">
-                <NavLink to="/login">
+              <NavLink to="/login">
+                <button className="savedPostBTN ">
                   <i class="material-icons ">logout</i>
                   <br />
                   Logout
-                </NavLink>
-              </button>
+                </button>
+              </NavLink>
             </li>
+
             <div className="emptyDiv"></div>
+
             <li>
-              <button className="savedPostBTN ">
-                <NavLink to="/home">
+              <NavLink to="/home">
+                <button className="savedPostBTN ">
                   <i class="material-icons">home</i>
                   <br />
                   Home
-                </NavLink>
-              </button>
+                </button>
+              </NavLink>
             </li>
+
             <div className="emptyDiv"></div>
+
             <li>
-              <button className="savedPostBTN">
-                <NavLink to="/post">
+              <NavLink to="/post">
+                <button className="savedPostBTN">
                   <i class="material-icons">create</i>
                   <br />
                   Create Post
-                </NavLink>
-              </button>
+                </button>
+              </NavLink>
             </li>
+
             <div className="emptyDiv"></div>
+
             <li>
-              <button className="savedPostBTN">
-                <NavLink to="/savedPosts">
+              <NavLink to="/savedPosts">
+                <button className="savedPostBTN">
                   <i class="material-icons">save</i>
                   <br />
                   Saved Posts
-                </NavLink>
-              </button>
+                </button>
+              </NavLink>
             </li>
+
             <div className="emptyDiv"></div>
             <li>
-              <button className="savedPostBTN">
-                <NavLink to="/profile">
+              <NavLink to="/profile">
+                <button className="savedPostBTN">
                   <i class="material-icons">account_box</i>
                   <br />
                   My Posts
-                </NavLink>
-              </button>
+                </button>
+              </NavLink>
             </li>
           </ul>
         </div>
