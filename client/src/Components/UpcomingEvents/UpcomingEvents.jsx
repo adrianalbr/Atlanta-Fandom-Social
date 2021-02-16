@@ -5,7 +5,7 @@ function UpcomingEvents() {
   return (
     <div className="events" s4>
       <div className="eventsTitle" s4>
-        <h4>Upcoming Events</h4>
+        <h5>Upcoming Events</h5>
       </div>
 
       <table>
@@ -19,19 +19,21 @@ function UpcomingEvents() {
         </thead>
 
         <tbody>
+
+          {/* SEISHUN CON */}
           <tr>
             <td>
               {" "}
-              <img
-                className="eventImg"
-                src="https://www.dragoncon.org/wp-content/uploads/2020/09/Logo_no_backgroundSmall-300x258.png"
-                alt="dragoncon"
-              />
+              <img className="eventImg" src="" alt="" />
             </td>
-            <td>DragonCon</td>
-            <td>Sep 2-6 2021</td>
+            <td>Seishun Con</td>
+            <td>Mar 12-14 2021</td>
             <td>Atlanta, GA</td>
           </tr>
+
+          
+
+          {/* MOMOCON */}
           <tr>
             <td>
               {" "}
@@ -45,19 +47,8 @@ function UpcomingEvents() {
             <td>May 27-30 2021</td>
             <td>Atlanta, GA</td>
           </tr>
-          <tr>
-            <td>
-              {" "}
-              <img
-                className="eventImg"
-                src="https://atlantacomiccon.com/wp-content/uploads/ACC18-DC-Char-pushpin2-OPT.png"
-                alt="comicon"
-              />
-            </td>
-            <td>Comicon</td>
-            <td>Aug 6-8 2021</td>
-            <td>Atlanta, GA</td>
-          </tr>
+
+          {/* GAMEFEST */}
           <tr>
             <td>
               {" "}
@@ -71,6 +62,69 @@ function UpcomingEvents() {
             <td>Jun 3-6 2021</td>
             <td>Alpharetta, GA</td>
           </tr>
+
+          {/* COMICON */}
+          <tr>
+            <td>
+              {" "}
+              <img
+                className="eventImg"
+                src="https://atlantacomiccon.com/wp-content/uploads/ACC18-DC-Char-pushpin2-OPT.png"
+                alt="comicon"
+              />
+            </td>
+            <td>Comicon</td>
+            <td>Aug 6-8 2021</td>
+            <td>Atlanta, GA</td>
+          </tr>
+
+
+          {/* RANGER STOP */}
+          <tr>
+            <td>
+              {" "}
+              <img
+                className="eventImg"
+                src="https://rangerstopatlanta.com/gallery_gen/0414d3e3f2202ad9b1a5d28064a2a12b_1512x893.17647058824.png"
+                alt="RangerStop"
+              />
+            </td>
+            <td>Ranger Stop Atl</td>
+            <td>Aug 27-29 2021</td>
+            <td>Atlanta, GA</td>
+          </tr>
+
+          {/* DRAGONCON */}
+          <tr>
+            <td>
+              {" "}
+              <img
+                className="eventImg"
+                src="https://www.dragoncon.org/wp-content/uploads/2020/09/Logo_no_backgroundSmall-300x258.png"
+                alt="dragoncon"
+              />
+            </td>
+            <td>DragonCon</td>
+            <td>Sep 2-6 2021</td>
+            <td>Atlanta, GA</td>
+          </tr>
+          
+          {/* FANDEMIC */}
+          <tr>
+            <td>
+              {" "}
+              <img
+                className="eventImg"
+                src="https://www.fandemictour.com/wp-content/uploads/2019/11/Fandemic_Dead_Web_Slider_001.jpg"
+                alt="Fandemic"
+              />
+            </td>
+            <td>Fandemic Dead</td>
+            <td>Sep 17-19 2021</td>
+            <td>Atlanta, GA</td>
+          </tr>
+
+
         </tbody>
       </table>
     </div>
