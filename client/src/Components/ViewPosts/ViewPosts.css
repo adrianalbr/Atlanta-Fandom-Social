@@ -34,7 +34,7 @@
 
 .card-content {
   border-radius: 25px !important;
-  overflow: auto;
+  /* overflow: auto; */
 }
 
 .card
