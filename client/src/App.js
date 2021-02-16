@@ -12,7 +12,6 @@ import Post from "./Containers/Post/Post";
 import EditPost from "./Components/EditPost/EditPost";
 import SavedPosts from "./Containers/SavedPosts/SavedPosts";
 
-
 // these are for Bonus when we get MVP working
 // import WelcomeTopics from "./Containers/WelcomeTopics/WelcomeTopics";
 // import WelcomeProfile from "./Containers/WelcomeProfile/WelcomeProfile";
@@ -21,9 +20,29 @@ library.add(fab, faCheckSquare, faCoffee);
 
 function App() {
   const [token, setToken] = useState(localStorage.getItem("loginKey"));
-  useEffect(() => {
 
-  }, [token]);
+  if (token === null) {
+    return (
+      <Router>
+        <div className="App">
+          <Switch>
+            <Route exact path={["/", "/signup"]}>
+              <Signup setToken={setToken} />
+            </Route>
+            <Route exact path="/login">
+              <Login setToken={setToken} />
+            </Route>
+            <Route
+              exact
+              path={["/post", "/home", "/profile", "/post/:id", "/savedPosts"]}
+            >
+              <Login setToken={setToken} />
+            </Route>
+          </Switch>
+        </div>
+      </Router>
+    );
+  }
   return (
     <Router>
       <div className="App">
@@ -44,7 +63,7 @@ function App() {
             <Profile token={token} />
           </Route>
           <Route exact path="/post/:id">
-            <EditPost token={token}/>
+            <EditPost token={token} />
           </Route>
           <Route exact path="/savedPosts">
             <SavedPosts token={token} />
