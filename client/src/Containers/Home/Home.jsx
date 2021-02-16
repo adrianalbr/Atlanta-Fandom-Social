@@ -63,11 +63,11 @@ const Home = (props) => {
       <Navbar handleChange={handleChange} />
       <div className="row">
         {/* 6-columns (one-half) */}
-        <div className="col s2">
+        <div className="col s3">
           <Menu token={props.token} />
         </div>
         {/* 6-columns (one-half) */}
-        <div className="col s6">
+        <div className="col s5">
           <ViewPosts token={props.token} posts={filterData(posts)} addTofav={addTofav} />
         </div>
 

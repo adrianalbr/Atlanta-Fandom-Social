@@ -29,12 +29,12 @@ const ViewMyPosts = (props) => {
                    props.handleDelete(_id);
                   }}
                 >
-                  <i className="fa fa-trash-o"></i> Delete
+                  <i class="material-icons">delete</i>
                 </button>
 
                 <Link to={`/post/${_id}`}>
                   <button className="editBTN">
-                    <i className="fa fa-pencil"></i> Edit
+                  <i class="material-icons">create</i>
                   </button>
                 </Link>
 
