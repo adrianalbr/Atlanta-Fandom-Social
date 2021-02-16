@@ -10,6 +10,7 @@
 .createPostBTN {
     font-family: "Roboto", sans-serif;
     margin: 10px;
+    margin-left: 0rem;
     padding: 15px 45px;
     text-align: center;
     text-transform: uppercase;
