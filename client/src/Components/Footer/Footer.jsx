@@ -2,56 +2,54 @@ import React from "react";
 import "./Footer.css";
 
 const Footer = () => {
-  return (
+return (
     <div>
-      <footer class="page-footer">
-        <div class="container">
-          <div class="row">
-            <div class="col l6 s12">
-              <h5 class="white-text">Footer Content</h5>
-              <p class="grey-text text-lighten-4">
-                You can use rows and columns here to organize your footer
-                content.
-              </p>
+    <footer className="page-footer">
+        <div className="container">
+        <div className="row">
+            <div className="col l6 s12">
+            <h5 className="white-text">Footer Content</h5>
+            <p className="grey-text text-lighten-4">
+            I'm sure me and my team can all agree that inspiration came in abundance when building this application. To simply put it, we live and breathe for this culture, we consume it daily, it's our bread and butter, and so when being presented with the idea,
+            we were ecstatic about moving forward as soon as possible. 
+            ❤️ We made this application using MongoDB, Express, React, and NodeJS. ❤️
+            </p>
             </div>
-            <div class="col l4 offset-l2 s12">
-              <h5 class="white-text">Links</h5>
-              <ul>
+            <div className="col l4 offset-l2 s12">
+            <h5 className="white-text">Links</h5>
+            <ul>
                 <li>
-                  <a class="grey-text text-lighten-3" href="#!">
+                <a className="grey-text text-lighten-3" href="#!">
                     Link 1
-                  </a>
+                </a>
                 </li>
                 <li>
-                  <a class="grey-text text-lighten-3" href="#!">
+                <a className="grey-text text-lighten-3" href="#!">
                     Link 2
-                  </a>
+                </a>
                 </li>
                 <li>
-                  <a class="grey-text text-lighten-3" href="#!">
+                <a className="grey-text text-lighten-3" href="#!">
                     Link 3
-                  </a>
+                </a>
                 </li>
                 <li>
-                  <a class="grey-text text-lighten-3" href="#!">
+                <a className="grey-text text-lighten-3" href="#!">
                     Link 4
-                  </a>
+                </a>
                 </li>
-              </ul>
+            </ul>
             </div>
-          </div>
         </div>
-        <div class="footer-copyright">
-          <div class="container">
+        </div>
+        <div className="footer-copyright">
+        <div className="container">
             © 2021 Copyright Text
-            <a class="grey-text text-lighten-4 right" href="#!">
-              More Links
-            </a>
-          </div>
         </div>
-      </footer>
+        </div>
+    </footer>
     </div>
-  );
+);
 };
 
 export default Footer;
