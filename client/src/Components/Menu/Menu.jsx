@@ -10,44 +10,53 @@ const Menu = (props) => {
           <ul>
             <li id="testHere">
               <button className="savedPostBTN ">
-                <i class="material-icons ">logout</i>
-                <br />
-                <NavLink to="/login">Logout</NavLink>
+                <NavLink to="/login">
+                  <i class="material-icons ">logout</i>
+                  <br />
+                  Logout
+                </NavLink>
               </button>
             </li>
 
             <li>
               <button className="savedPostBTN ">
-                <i class="material-icons">home</i>
-                <br />
-                <NavLink to="/home">Home</NavLink>
+                <NavLink to="/home">
+                  <i class="material-icons">home</i>
+                  <br />
+                  Home
+                </NavLink>
               </button>
             </li>
 
             <li>
               <button className="savedPostBTN">
-                <i class="material-icons">create</i>
-                <br />
-                <NavLink to="/post">Create Post</NavLink>
+                <NavLink to="/post">
+                  <i class="material-icons">create</i>
+                  <br />
+                  Create Post
+                </NavLink>
               </button>
             </li>
 
             <li>
               <button className="savedPostBTN">
-                <i class="material-icons">save</i>
-                <br />
-                <NavLink to="/savedPosts">Saved Posts</NavLink>
+                <NavLink to="/savedPosts">
+                  <i class="material-icons">save</i>
+                  <br />
+                  Saved Posts
+                </NavLink>
               </button>
             </li>
 
             <li>
               <button className="savedPostBTN">
-                <i class="material-icons">account_box</i>
-                <br />
-                <NavLink to="/profile">My Posts</NavLink>
+                <NavLink to="/profile">
+                  <i class="material-icons">account_box</i>
+                  <br />
+                  My Posts
+                </NavLink>
               </button>
             </li>
-            
           </ul>
         </div>
       </div>
