@@ -6,6 +6,10 @@
         #9d50bb 100%
     );
     }
+
+    .emptyDiv{
+        height: .2rem;
+    }
     
     .savedPostBTN{
         font-family: "Roboto", sans-serif;
@@ -28,6 +32,15 @@
         color: #fff;
         text-decoration: none;
     }
+
+button{
+  height: 4rem !important;
+}
+
+a{
+    color: #eee;
+}
+
 
 .list{
     align-content: right;
