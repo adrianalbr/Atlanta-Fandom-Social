@@ -1,8 +1,12 @@
 .events {
-    /* background-color: #aa84c7; */
     background-color: #f1ecf1;
     border-radius: 25px;
-    /* padding-top: 30px; */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 25px;
+    margin-top: 25px;
+
+    
 }
 
 
@@ -11,6 +15,7 @@
   align-content: center;
   float: left;
   background-color: #f1ecf1;
+  border-radius: 25px;
   
 }
 
