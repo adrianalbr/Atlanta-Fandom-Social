@@ -29,18 +29,13 @@
         text-decoration: none;
     }
 
-#iconTest{
-   color: blue;
-   height: -100rem;
-}
-
 button{
   height: 4rem !important;
 }
 
-/* NavLink{
-    font-size: 24px;
-} */
+a{
+    color: #eee;
+}
 
 #testHere{
     max-height: 4rem;

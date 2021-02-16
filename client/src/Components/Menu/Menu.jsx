@@ -7,39 +7,47 @@ const Menu = (props) => {
     <div className="btnDiv">
       <div className="row">
         <div className="buttons col s4">
-
-
           <ul>
-            
             <li id="testHere">
               <button className="savedPostBTN ">
-                <i id="iconTest" class="material-icons ">logout</i>
-                <br/>
-                <NavLink to="/login" >
-                  Logout
-                </NavLink>
+                <i class="material-icons ">logout</i>
+                <br />
+                <NavLink to="/login">Logout</NavLink>
               </button>
             </li>
 
+            <li>
+              <button className="savedPostBTN ">
+                <i class="material-icons">home</i>
+                <br />
+                <NavLink to="/home">Home</NavLink>
+              </button>
+            </li>
 
-              <br/>
+            <li>
+              <button className="savedPostBTN">
+                <i class="material-icons">create</i>
+                <br />
+                <NavLink to="/post">Create Post</NavLink>
+              </button>
+            </li>
+
+            <li>
+              <button className="savedPostBTN">
+                <i class="material-icons">save</i>
+                <br />
+                <NavLink to="/savedPosts">Saved Posts</NavLink>
+              </button>
+            </li>
+
+            <li>
+              <button className="savedPostBTN">
+                <i class="material-icons">account_box</i>
+                <br />
+                <NavLink to="/profile">My Posts</NavLink>
+              </button>
+            </li>
             
-            <NavLink to="/home" className="savedPostBTN">
-              <i class="material-icons">home</i>
-              Home
-            </NavLink>
-            <NavLink to="/post" className="savedPostBTN">
-              <i class="material-icons">create</i>
-              Create Post
-            </NavLink>
-            <NavLink to="/savedPosts" className="savedPostBTN">
-              <i class="material-icons">save</i>
-              Saved Posts
-            </NavLink>
-            <NavLink to="/profile" className="savedPostBTN">
-              <i class="material-icons">account_box</i>
-              My Posts
-            </NavLink>
           </ul>
         </div>
       </div>
