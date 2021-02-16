@@ -130,6 +130,14 @@ body {
   }
   }
 
+  @media screen and (min-width: 2560px){
+    #loginButton{
+      margin-top: 2.5rem;
+      margin-left: 15rem 
+    }
+    }
+
+
   @media screen and (min-width: 2621px){
     #loginButton{
       margin-top: 2.5rem;
