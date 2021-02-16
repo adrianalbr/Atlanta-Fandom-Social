@@ -7,6 +7,10 @@
     );
 }
 
+.inputClass{
+    color: white;
+}
+
 .createPostBTN {
     font-family: "Roboto", sans-serif;
     margin: 10px;
