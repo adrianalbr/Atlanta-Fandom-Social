@@ -50,6 +50,7 @@ const Post = (props) => {
   }
 
   return (
+
     <div className="main">
       <Navbar />
       <div className="row">
@@ -57,7 +58,7 @@ const Post = (props) => {
           <Menu token={props.token} />
         </div>
 
-        <div className="colForm col s8">
+        <div className="colForm col s6">
           <form className="colText s8" onSubmit={handleFormSubmit}>
             <div className="row">
               <div className="input-field col s8">
