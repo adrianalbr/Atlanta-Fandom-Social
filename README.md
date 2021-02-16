@@ -1,4 +1,4 @@
-# Atlanta-Fandom-Social
+# Atlanta Fandom Social
 
 🦸‍♀️ Fans Unite! 🦹‍♂️
 
@@ -19,7 +19,7 @@
 
 ## Welcome to our Project!
 
-Are you a fan of multimedia pop culture and living in Atlanta? Atlanta Fandom Social is built just for you! Sign up and become a member of countless communities alike! From comics, anime, video games, cosplay. and so much more! 
+Are you a fan of multimedia pop culture and living in Atlanta? Atlanta Fandom Social is built just for you! Sign up and become a member of countless communities alike! From comics, anime, video games, cosplay, and so much more!
 We're your one stop social media app for local conventions, pop culture news, and so much more. 🙌
 
 ## Inspiration
@@ -66,9 +66,9 @@ This application was developed using these brilliant technologies:
   
   * Express
   
-  * React 
+  * React
   
-  * Node
+  * NodeJS
 
 * Axios
 
@@ -127,8 +127,8 @@ If you have any questions contact us through email:
 * Adriana Bonilla-Ramirez - Front end member: Worked with react to design and bring the application to life using JSX and CSS. Deployed to Heroku, connected to MongoDB Atlas, and worked on Presentation. App testing throughout the project.
     * [Github Profile](https://github.com/adrianalbr)
 
-* Shelby Cignetti - Front end member: Worked with react to design and bring the application to life using JSX and CSS. Came up with and designed Atlanta Fandom Social through a well detailed wire frame. Incorporated custom and unique icons. App testing throughout the       project.
-    *  [Github Profile](https://github.com/shelb-doc)
+* Shelby Cignetti - Front end member: Worked with react to design and bring the application to life using JSX and CSS. Came up with and designed Atlanta Fandom Social through a well detailed wire frame. Incorporated custom and unique icons. App testing throughout the project.
+    * [Github Profile](https://github.com/shelb-doc)
 
 * Arpita Saha - Back/Front end member: Gave functionality to the app. Worked on models, built controllers, built routes, created API calls/requests as well as all the front end logic behind the application. Incorporated bycryptJS to handle user authentication along with jsonwebtoken. Worked with CSS and JSX on the front end. App testing throughout the project.  
     * [Github Profile](https://github.com/arpita-sahakar)
