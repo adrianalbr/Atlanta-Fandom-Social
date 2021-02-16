@@ -9,8 +9,8 @@ const Menu = (props) => {
         <div className="buttons col s4">
           <ul>
           <NavLink to="/login" className="savedPostBTN">
-            <i class="material-icons">home</i>
-              Logout
+            <i class="material-icons">logout</i>
+             Logout
             </NavLink> 
 
           <NavLink to="/home" className="savedPostBTN">

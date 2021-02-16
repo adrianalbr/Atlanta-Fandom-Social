@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Alert } from "reactstrap";
 import { Redirect } from "react-router-dom";
 import ourLogo from "../.././assets-sort/icons/circle.png";
@@ -13,6 +13,12 @@ function Login(props) {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [redirect, setRedirect] = useState(null);
+
+  useEffect(()=>{
+
+    localStorage.removeItem("loginKey");
+
+  },[])
 
   const handleSubmit = (event) => {
     event.preventDefault();
