@@ -34,10 +34,10 @@ const ViewMyPosts = (props) => {
 
                 <Link to={`/post/${_id}`}>
                   <button className="editBTN">
-                  <i class="material-icons">create</i>
+                  <i class="material-icons editAndDelete">create</i>
                   </button>
                 </Link>
-
+                  <br/>
                 <a href={url}>{url.substring(0, 66)}</a>
                 <p>
                   {category} <br />

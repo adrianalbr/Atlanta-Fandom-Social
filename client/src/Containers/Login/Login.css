@@ -25,7 +25,8 @@
     #9d50bb 100%
   );
   margin: 10px;
-  padding: 15px 45px;
+  height: 3.5rem !important;
+  padding: 15px 40px 15px;
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
@@ -34,8 +35,8 @@
   box-shadow: 0 0 20px #eee;
   border-radius: 10px;
   display: block;
-  margin-top: 2rem;
-  margin-left: 41rem !important
+  margin-top: 1rem;
+  margin-left: 9.5rem !important
 }
 
 .formContainer {
@@ -95,10 +96,145 @@
   margin-top: 0rem;
 }
 
-@media screen and (max-width: 1800px){
+@media screen and (min-width: 2186px){
   #signUpButton{
-    margin-top: 2.5rem;
-    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-left: 11.5rem !important;
     padding-left: 3rem; 
   }
 }
+
+@media screen and (min-width: 2560px){
+  #signUpButton{
+    margin-top: 1rem;
+    margin-left: 14.5rem !important;
+    padding-left: 3rem; 
+  }
+}
+
+
+
+@media screen and (max-width: 1600px){
+  #signUpButton{
+    margin-top: 1rem;
+    margin-left: 6.5rem !important;
+    padding-left: 3rem; 
+  }
+}
+
+@media screen and (max-width: 1153px){
+  #signUpButton{
+    margin-top: 0rem;
+    margin-left: 3rem !important;
+    padding-left: 3rem; 
+  }
+}
+
+@media screen and (max-width: 965px){
+  #signUpButton{
+    margin-top: 1.5rem;
+    margin-left: 2rem !important;
+    padding-left: 3rem; 
+  }
+  #account{
+    font-size: 1.2rem !important;
+  }
+  #aTagLogin{
+    font-size: .8rem !important;
+  }
+}
+
+@media screen and (max-width: 894px){
+  #signUpButton{
+    margin-top: 1.5rem;
+    margin-left: 2.6rem !important;
+    padding-left: 2rem; 
+    padding-right: 2rem;
+  }
+  #account{
+    font-size: 1.2rem !important;
+  }
+  #aTagLogin{
+    font-size: .8rem !important;
+  }
+}
+
+@media screen and (max-width: 823px){
+  #signUpButton{
+    margin-top: 1.5rem;
+    margin-left: 1.6rem !important;
+    padding-left: 2rem; 
+    padding-right: 2rem;
+  }
+  #account{
+    font-size: 1.2rem !important;
+  }
+  #aTagLogin{
+    font-size: .8rem !important;
+  }
+}
+
+@media screen and (max-width: 800px){
+  #signUpButton{
+    margin-top: 1.4rem;
+    margin-left: 1.6rem !important;
+    padding-left: 2rem; 
+    padding-right: 2rem;
+  }
+  #account{
+    font-size: 1rem !important;
+  }
+  #aTagLogin{
+    font-size: .8rem !important;
+  }
+}
+
+@media screen and (max-width: 767px){
+  #signUpButton{
+    margin-top: 1.4rem;
+    margin-left: 2rem !important;
+    padding-left: 1rem; 
+    padding-right: 1rem;
+  }
+  #account{
+    font-size: 1rem !important;
+  }
+  #aTagLogin{
+    font-size: .8rem !important;
+  }
+}
+
+@media screen and (max-width: 679px){
+  #signUpButton{
+    margin-top: 8rem;
+    margin-left: -11.52rem !important;
+    padding-left: 2rem; 
+    padding-right: 2rem;
+  }
+  #account{
+    display: none;
+  }
+  #aTagLogin{
+    font-size: .9rem !important;
+  }
+}
+
+@media screen and (max-width: 500px){
+  #signUpButton{
+    margin-top: 8rem;
+    margin-left: -8.1rem !important;
+    padding-left: 2rem; 
+    padding-right: 2rem;
+  }
+  #account{
+    display: none;
+  }
+  #aTagLogin{
+    font-size: .9rem !important;
+  }
+}
+
+
+
+
+
