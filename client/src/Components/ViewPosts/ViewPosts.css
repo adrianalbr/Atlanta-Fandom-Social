@@ -43,3 +43,13 @@
   color: #00fbe6;
   text-transform: lowercase;
 }
+
+.editBTN{
+  background-image: linear-gradient(
+    to right,
+    #9d50bb 0%,
+    #6e48aa 51%,
+    #9d50bb 100%
+  );
+
+}
