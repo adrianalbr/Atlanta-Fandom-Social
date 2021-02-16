@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Redirect, useParams } from "react-router-dom";
 import Navbar from "../../Components/Navbar/Navbar";
+import Menu from "../../Components/Menu/Menu"
 
 const EditPost = (props) => {
   const [category, setCategory] = useState("");
@@ -29,7 +30,7 @@ const EditPost = (props) => {
           setCategory(category);
           setTitle(title);
           setImageURL(imageURL);
-          setUrl(url)
+          setUrl(url);
           setContentText(contentText);
         })
         .catch((err) => {
@@ -69,13 +70,17 @@ const EditPost = (props) => {
   }
 
   return (
-    <>
-      <div>
-        <Navbar />
-        <div className="row">
-          <form className="col s6">
+    <div className="main">
+      <Navbar />
+      <div className="row">
+        <div className="col s4">
+          <Menu token={props.token} />
+        </div>
+
+        <div className="colForm col s8">
+          <form className="colText s6">
             <div className="row">
-              <div className="input-field col s6">
+              <div className="input-field col s8">
                 <input
                   placeholder="Enter a Category"
                   id="category"
@@ -87,11 +92,10 @@ const EditPost = (props) => {
                     setCategory(e.target.value);
                   }}
                 />
-                <label htmlFor="category">Category</label>
               </div>
             </div>
             <div className="row">
-              <div className="input-field col s6">
+              <div className="input-field col s8">
                 <input
                   placeholder="Enter a title"
                   id="title"
@@ -103,11 +107,10 @@ const EditPost = (props) => {
                     setTitle(e.target.value);
                   }}
                 />
-                <label htmlFor="title">Title</label>
               </div>
             </div>
             <div className="row">
-              <div className="input-field col s6">
+              <div className="input-field col s8">
                 <input
                   placeholder="Enter a URL"
                   id="imageURL"
@@ -118,11 +121,10 @@ const EditPost = (props) => {
                     setImageURL(e.target.value);
                   }}
                 />
-                <label htmlFor="imageURL">Image URL</label>
               </div>
             </div>
             <div className="row">
-              <div className="input-field col s6">
+              <div className="input-field col s8">
                 <input
                   placeholder="Enter your description"
                   id="contentText"
@@ -134,11 +136,10 @@ const EditPost = (props) => {
                     setContentText(e.target.value);
                   }}
                 />
-                <label htmlFor="contentText">description</label>
               </div>
             </div>
             <div className="row">
-              <div className="input-field col s6">
+              <div className="input-field col s8">
                 <input
                   placeholder="Adding a link?"
                   id="url"
@@ -149,19 +150,15 @@ const EditPost = (props) => {
                     setUrl(e.target.value);
                   }}
                 />
-                <label htmlFor="url">Adding a Link?</label>
               </div>
             </div>
-            <button
-              className="editPostBTN"
-              onClick={handleFormSubmit}
-            >
-              Edit
+            <button className="editPostBTN" onClick={handleFormSubmit}>
+              Done
             </button>
           </form>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
