@@ -40,7 +40,7 @@ function App() {
               <Login setToken={setToken} />
             </Route>
           </Switch>
-          <Footer/>
+          <Footer />
         </div>
       </Router>
     );
@@ -71,7 +71,7 @@ function App() {
             <SavedPosts token={token} />
           </Route>
         </Switch>
-        <Footer/>
+        <Footer />
       </div>
     </Router>
   );
