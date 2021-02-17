@@ -8,8 +8,23 @@ background-image: linear-gradient(
 /* } */
 
 .editPostBTN {
-    font-family: "Roboto", sans-serif;
-    background-color: #6e48aa !important;
+    background-image: linear-gradient(
+        to right,
+        #9d50bb 0%,
+        #6e48aa 51%,
+        #9d50bb 100%
+        );
+        font-family: "Roboto", sans-serif;
+        margin: 10px;
+        margin-left: 0rem;
+        padding: 15px 45px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        border-radius: 10px;
+        display: block;
 
 }
 

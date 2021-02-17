@@ -3,6 +3,7 @@ import axios from "axios";
 import { Redirect, useParams } from "react-router-dom";
 import Navbar from "../../Components/Navbar/Navbar";
 import Menu from "../../Components/Menu/Menu";
+import "./EditPost.css"
 
 const EditPost = (props) => {
   const [category, setCategory] = useState("");
