@@ -27,7 +27,7 @@
 
 /* input placeholder text everywhere to be white */
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: white;
+    color: rgb(192, 192, 192);
     opacity: 1; /* Firefox */
   }
 
