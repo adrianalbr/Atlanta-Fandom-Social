@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Redirect, useParams } from "react-router-dom";
 import Navbar from "../../Components/Navbar/Navbar";
-import Menu from "../../Components/Menu/Menu"
+import Menu from "../../Components/Menu/Menu";
 
 const EditPost = (props) => {
   const [category, setCategory] = useState("");
@@ -82,6 +82,7 @@ const EditPost = (props) => {
             <div className="row">
               <div className="input-field col s8">
                 <input
+                  className="inputClass"
                   placeholder="Enter a Category"
                   id="category"
                   type="text"
@@ -97,6 +98,7 @@ const EditPost = (props) => {
             <div className="row">
               <div className="input-field col s8">
                 <input
+                  className="inputClass"
                   placeholder="Enter a title"
                   id="title"
                   type="text"
@@ -112,6 +114,7 @@ const EditPost = (props) => {
             <div className="row">
               <div className="input-field col s8">
                 <input
+                  className="inputClass"
                   placeholder="Enter a URL"
                   id="imageURL"
                   type="text"
@@ -126,6 +129,7 @@ const EditPost = (props) => {
             <div className="row">
               <div className="input-field col s8">
                 <input
+                  className="inputClass"
                   placeholder="Enter your description"
                   id="contentText"
                   type="text"
@@ -141,6 +145,7 @@ const EditPost = (props) => {
             <div className="row">
               <div className="input-field col s8">
                 <input
+                  className="inputClass"
                   placeholder="Adding a link?"
                   id="url"
                   type="text"
