@@ -8,7 +8,6 @@
     
 }
 
-
 .eventsTitle{
   font-style: italic;
   align-content: center;
@@ -20,49 +19,8 @@
 
 .eventImg{
   width: 50px;
-  /* height: 10%; */
+  
 }
-/* table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  td{
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-    text-align: center;
-    border-radius: 25px;
-    margin-top: 10px;
-    background-color: #aa84c7;
-    margin-bottom: 10%;
-    color: white;
-    font-weight: bold;
+
+ 
     
-  }
-
-  th{
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-    text-align: center;
-    background-color: red;
-    background-color: #8f6bf2;
-
-    
-  }
-
-  tr {
-      background-color: azure;
-      
-      
-  } */
-  
-  /* tr {
-    border-radius: 25px !important;
-    margin : 10%;
-  } */
-  /* tr:nth-child(even) {
-    background-color: #dddddd;
-  } */
