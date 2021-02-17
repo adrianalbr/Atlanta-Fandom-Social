@@ -53,14 +53,14 @@ const Post = (props) => {
     <div className="main">
       <Navbar />
       <div className="row">
-        <div className="col s4">
+        <div className="col s2">
           <Menu token={props.token} />
         </div>
 
-        <div className="colForm col s6">
-          <form className="colText s8" onSubmit={handleFormSubmit}>
+        <div className="colForm col s9">
+          <form className="colText s10" onSubmit={handleFormSubmit}>
             <div className="row">
-              <div className="input-field col s8">
+              <div className="input-field col s10">
                 <input
                   className="inputClass"
                   placeholder="Enter a Category"
@@ -76,7 +76,7 @@ const Post = (props) => {
               </div>
             </div>
             <div className="row">
-              <div className="input-field col s8">
+              <div className="input-field col s10">
                 <input
                   className="inputClass"
                   placeholder="Enter a Title"
@@ -92,7 +92,7 @@ const Post = (props) => {
               </div>
             </div>
             <div className="row">
-              <div className="input-field col s8">
+              <div className="input-field col s10">
                 <input
                   className="inputClass"
                   placeholder="Enter image URL"
@@ -107,7 +107,7 @@ const Post = (props) => {
               </div>
             </div>
             <div className="row">
-              <div className="input-field col s8">
+              <div className="input-field col s10">
                 <input
                   className="inputClass"
                   placeholder="Enter your Description"
@@ -122,7 +122,7 @@ const Post = (props) => {
               </div>
             </div>
             <div className="row">
-              <div className="input-field col s8">
+              <div className="input-field col s10">
                 <input
                   className="inputClass"
                   placeholder="Adding a Link?"
