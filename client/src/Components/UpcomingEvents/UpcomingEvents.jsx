@@ -5,7 +5,7 @@ function UpcomingEvents() {
   return (
     <div className="events" s4>
       <div className="eventsTitle" s4>
-        <h5>Upcoming Events</h5>
+        <h5>Upcoming Events!</h5>
       </div>
 
       <table>

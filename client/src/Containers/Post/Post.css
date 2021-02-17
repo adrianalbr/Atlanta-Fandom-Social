@@ -25,6 +25,13 @@
     display: block;
 }
 
+/* input placeholder text everywhere to be white */
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+
+
 .createPostBTN:hover {
     background-position: right center; /* change the direction of the change here */
     color: #fff;
