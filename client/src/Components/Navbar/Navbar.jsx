@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.css";
-// import Cloak from "../../assets-sort/icons/cloak.png";
+import Cloak from "../../assets-sort/icons/cloak.png";
 import { NavLink } from "react-router-dom";
 
 const Navbar = (props) => {
@@ -8,10 +8,14 @@ const Navbar = (props) => {
     <div>
       <nav>
         <div className="nav-wrapper">
-          {/* <a href="/Home" class="brand-logo">
-            Logo */}
-          {/* </a> */}
+          
           <ul className="right hide-on-med-and-down">
+            <li>
+            <div className="cloakDiv col s1">
+            <img className="cloak" src={Cloak} alt="Strange cloak"/>
+          </div>
+            </li>
+            
             <li>
               <div className="input-field col s4">
                 <input

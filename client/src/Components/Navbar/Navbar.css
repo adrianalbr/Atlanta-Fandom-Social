@@ -1,6 +1,4 @@
-/* nav{
-  
-} */
+
 
 .nav-wrapper {
   background-color: #392171;
@@ -8,10 +6,15 @@
   justify-content: center;
 }
 
+.cloak{
 
-/* .input-group {
-  display: flex;
-  justify-content: space-evenly;
-  width: 500%;
-} */
+  width: 50%;
+  padding-top: 8px;
 
+}
+
+.cloakDiv{
+
+  width: 100px;
+  height: 60px
+}
