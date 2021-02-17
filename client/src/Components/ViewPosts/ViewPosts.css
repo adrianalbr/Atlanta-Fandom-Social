@@ -32,6 +32,10 @@
   text-decoration: none;
 }
 
+#categoryText{
+  color: #e6e6e6;
+}
+
 .card-content {
   border-radius: 25px !important;
   /* overflow: auto; */

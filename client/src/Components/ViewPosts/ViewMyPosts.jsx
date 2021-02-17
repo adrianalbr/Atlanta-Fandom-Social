@@ -39,7 +39,7 @@ const ViewMyPosts = (props) => {
                 </Link>
                   <br/>
                 <a href={url}>{url.substring(0, 66)}</a>
-                <p>
+                <p id="categoryText">
                   {category} <br />
                   {date.substring(0, 10)}
                 </p>
