@@ -55,5 +55,11 @@
     #6e48aa 51%,
     #9d50bb 100%
   );
+  margin-left: 7rem !important;
+  margin-top: -4.70rem !important;
 
+}
+
+.deleteBTN{
+  margin-left: -.5rem !important;
 }
