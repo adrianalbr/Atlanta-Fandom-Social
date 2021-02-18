@@ -1,6 +1,5 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { Alert } from "reactstrap";
 import { Redirect } from "react-router-dom";
 import ourLogo from "../.././assets-sort/icons/circle.png";
 
