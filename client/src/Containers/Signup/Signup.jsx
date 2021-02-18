@@ -1,9 +1,8 @@
-import { React, useState } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import { Alert } from "reactstrap";
 import { Redirect } from "react-router-dom";
 import ourLogo from "../.././assets-sort/icons/circle.png";
-
 import "./Signup.css";
 import Logo from "../../assets-sort/logoBanner/logoAFS.png";
 
@@ -18,6 +17,9 @@ const Signup = (props) => {
 
   const [errors, setErrors] = useState([]);
   const [redirect, setRedirect] = useState(null);
+  const [errorMsgVisible, setErrorMsgVisible] = useState(false);
+
+  useEffect(() => {}, [errorMsgVisible]);
 
   const handleChange = (event) => {
     setUserSignUp({ ...userSignUp, [event.target.name]: event.target.value });
@@ -37,8 +39,14 @@ const Signup = (props) => {
       })
       .catch((err) => {
         console.log(err.response.data);
-        console.log(Object.values(err.response.data));
+        console.log(Object.values(err.response.data.errors));
         setErrors(Object.values(err.response.data.errors));
+        setErrorMsgVisible(true);
+
+        setTimeout(() => {
+          console.log("error ms after time out " + errorMsgVisible);
+          setErrorMsgVisible(false);
+        }, 3000);
       });
   };
   if (redirect) {
@@ -46,9 +54,18 @@ const Signup = (props) => {
   }
   return (
     <>
-      {errors.map((error) => (
+      <div
+        className={`alert alert-error`}
+        style={{ display: errorMsgVisible === true ? "block" : "none" }}
+      >
+        {errors.map((error) => (
+          <p color="danger">{error.message}!</p>
+        ))}
+      </div>
+
+      {/* {errors.map((error) => (
         <Alert color="danger">{error.message}!</Alert>
-      ))}
+      ))} */}
 
       <div>
         <div className="container containerOne center-align">
