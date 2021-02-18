@@ -3,10 +3,10 @@ import axios from "axios";
 import "./Profile.css";
 import Navbar from "../../Components/Navbar/Navbar";
 import Menu from "../../Components/Menu/Menu";
-
+import Footer from "../../Components/Footer/Footer";
 import { Redirect } from "react-router-dom";
 import ViewMyPosts from "../../Components/ViewPosts/ViewMyPosts.jsx";
-import UpcomingEvents from "../../Components/UpcomingEvents/UpcomingEvents"
+import UpcomingEvents from "../../Components/UpcomingEvents/UpcomingEvents";
 import "./Profile.css";
 
 const Profile = (props) => {
@@ -26,11 +26,10 @@ const Profile = (props) => {
       (post) =>
         post.category[0].toLowerCase().indexOf(filter) > -1 ||
         post.title.toLowerCase().indexOf(filter) > -1 ||
-        post.contentText.toLowerCase().indexOf(filter) > -1 
+        post.contentText.toLowerCase().indexOf(filter) > -1
     );
     return resultAfterFilter;
-  };  
-
+  };
 
   const getData = () => {
     axios
@@ -70,11 +69,9 @@ const Profile = (props) => {
     <div className="main">
       <Navbar handleChange={handleChange} />
       <div className="row">
-
-      <div className="col s2">
+        <div className="col s2">
           <Menu token={props.token} />
         </div>
-
         <div className="col s5">
           <ViewMyPosts
             token={props.token}
@@ -83,9 +80,11 @@ const Profile = (props) => {
           />
         </div>
         <div className="col s4">
-          <UpcomingEvents/>
+          <UpcomingEvents />
         </div>
-
+      </div>
+      <div className="row">
+        <Footer />
       </div>
     </div>
   );

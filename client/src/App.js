@@ -71,7 +71,6 @@ function App() {
             <SavedPosts token={token} />
           </Route>
         </Switch>
-        <Footer />
       </div>
     </Router>
   );
