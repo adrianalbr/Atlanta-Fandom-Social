@@ -3,6 +3,7 @@ import axios from "axios";
 import { Redirect } from "react-router-dom";
 import Navbar from "../../Components/Navbar/Navbar";
 import Menu from "../../Components/Menu/Menu";
+import Footer from "../../Components/Footer/Footer";
 import "./Post.css";
 
 const Post = (props) => {
@@ -139,6 +140,9 @@ const Post = (props) => {
             <button className="createPostBTN">Create a Post</button>
           </form>
         </div>
+      </div>
+      <div className="row">
+        <Footer />
       </div>
     </div>
   );

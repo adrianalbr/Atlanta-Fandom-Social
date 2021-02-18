@@ -8,10 +8,8 @@ import ViewPosts from "../../Components/ViewPosts/ViewPosts";
 import Navbar from "../../Components/Navbar/Navbar";
 import UpcomingEvents from "../../Components/UpcomingEvents/UpcomingEvents";
 import Footer from "../../Components/Footer/Footer";
-
 import { Redirect } from "react-router-dom";
-import "./Home.css"
-
+import "./Home.css";
 
 const Home = (props) => {
   const [posts, setPosts] = useState([]);
@@ -71,14 +69,20 @@ const Home = (props) => {
         </div>
         {/* 6-columns (one-half) */}
         <div className="col s5">
-          <ViewPosts token={props.token} posts={filterData(posts)} addTofav={addTofav} />
+          <ViewPosts
+            token={props.token}
+            posts={filterData(posts)}
+            addTofav={addTofav}
+          />
         </div>
 
         <div className="col s4">
-          <UpcomingEvents/>
+          <UpcomingEvents />
         </div>
       </div>
-      {/* <Footer /> */}
+      <div className="row">
+        <Footer />
+      </div>
     </div>
   );
 };

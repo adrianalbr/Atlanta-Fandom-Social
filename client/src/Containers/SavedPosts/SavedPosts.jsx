@@ -4,7 +4,8 @@ import { Redirect } from "react-router-dom";
 import axios from "axios";
 import Menu from "../../Components/Menu/Menu";
 import "./SavedPosts.css";
-import UpcomingEvents from "../../Components/UpcomingEvents/UpcomingEvents"
+import UpcomingEvents from "../../Components/UpcomingEvents/UpcomingEvents";
+import Footer from "../../Components/Footer/Footer";
 
 const SavedPosts = (props) => {
   const [savedPosts, setSavedPosts] = useState([]);
@@ -47,7 +48,9 @@ const SavedPosts = (props) => {
                     <img className="cardImage" src={imageURL} />
                     <p>{contentText}</p>
                     <br />
-                    <a className="linkTag" href={url}>{url.substring(0, 66)}</a>
+                    <a className="linkTag" href={url}>
+                      {url.substring(0, 66)}
+                    </a>
                     <br />
                     {category}
                     <br />
@@ -59,8 +62,11 @@ const SavedPosts = (props) => {
           )}
         </div>
         <div className="col s4">
-          <UpcomingEvents/>
+          <UpcomingEvents />
         </div>
+      </div>
+      <div className="row">
+        <Footer />
       </div>
     </div>
   );

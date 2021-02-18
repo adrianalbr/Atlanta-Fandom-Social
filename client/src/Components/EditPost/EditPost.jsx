@@ -3,7 +3,8 @@ import axios from "axios";
 import { Redirect, useParams } from "react-router-dom";
 import Navbar from "../../Components/Navbar/Navbar";
 import Menu from "../../Components/Menu/Menu";
-import "./EditPost.css"
+import "./EditPost.css";
+import Footer from "../../Components/Footer/Footer";
 
 const EditPost = (props) => {
   const [category, setCategory] = useState("");
@@ -163,6 +164,9 @@ const EditPost = (props) => {
             </button>
           </form>
         </div>
+      </div>
+      <div className="row">
+        <Footer />
       </div>
     </div>
   );
