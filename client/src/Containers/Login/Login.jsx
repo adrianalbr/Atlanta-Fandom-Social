@@ -13,10 +13,12 @@ function Login(props) {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [redirect, setRedirect] = useState(null);
+  const [errorMsgVisible, setErrorMsgVisible] = useState(false);
 
   useEffect(() => {
+    console.log("error ms on page render " + errorMsgVisible);
     localStorage.removeItem("loginKey");
-  }, []);
+  }, [errorMsgVisible]);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -29,8 +31,15 @@ function Login(props) {
         console.log(res.data);
       })
       .catch((err) => {
+        setErrorMsgVisible(true);
         console.log(err.response.data);
         setError(err.response.data.error);
+        
+        setTimeout(()=>{
+          console.log("error ms after time out " + errorMsgVisible);
+          setErrorMsgVisible(false);
+        },3000)
+
       });
   };
 
@@ -40,7 +49,7 @@ function Login(props) {
 
   return (
     <>
-      <div className={`alert alert-error`}>
+      <div className={`alert alert-error`} style = {{display : errorMsgVisible === true ? "block" : "none"}}>
         <p>{error}</p>
       </div>
       <div className="container containerOne center-align">
