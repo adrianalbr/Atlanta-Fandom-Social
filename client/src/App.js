@@ -11,7 +11,7 @@ import Profile from "./Containers/Profile/Profile";
 import Post from "./Containers/Post/Post";
 import EditPost from "./Components/EditPost/EditPost";
 import SavedPosts from "./Containers/SavedPosts/SavedPosts";
-import Footer from "./Components/Footer/Footer";
+
 
 // these are for Bonus when we get MVP working
 // import WelcomeTopics from "./Containers/WelcomeTopics/WelcomeTopics";
@@ -40,7 +40,6 @@ function App() {
               <Login setToken={setToken} />
             </Route>
           </Switch>
-          <Footer />
         </div>
       </Router>
     );
