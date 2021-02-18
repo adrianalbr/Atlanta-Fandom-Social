@@ -24,9 +24,9 @@ const Profile = (props) => {
     console.log(posts);
     let resultAfterFilter = posts.filter(
       (post) =>
-        post.category[0].toLowerCase().indexOf(filter) > -1 ||
-        post.title.toLowerCase().indexOf(filter) > -1 ||
-        post.contentText.toLowerCase().indexOf(filter) > -1
+        post.category[0].toLowerCase().indexOf(filter.toLowerCase()) > -1 ||
+        post.title.toLowerCase().indexOf(filter.toLowerCase()) > -1 ||
+        post.contentText.toLowerCase().indexOf(filter.toLowerCase()) > -1
     );
     return resultAfterFilter;
   };
