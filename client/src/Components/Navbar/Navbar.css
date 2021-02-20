@@ -2,7 +2,7 @@
 
 .nav-wrapper {
   background-color: #392171;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
 }
 
@@ -20,6 +20,7 @@
 }
 
 .nameDiv{
-  margin: auto;
-  padding-right: 20px;
+  /* margin: auto; */
+  padding-right: 100px;
+  color: aquamarine;
 }
