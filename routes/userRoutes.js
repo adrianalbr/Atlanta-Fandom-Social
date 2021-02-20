@@ -8,4 +8,5 @@ module.exports = function (app) {
   app.post("/api/signUp", userController.userSignUp);
   app.put("/api/user", auth,  userController.updateUser);
   app.put("/api/user/:id", auth,  userController.addSavedPost);
+  app.get("/api/user",auth,userController.fetchFirstName);
 };

@@ -8,14 +8,18 @@ const Navbar = (props) => {
     <div>
       <nav>
         <div className="nav-wrapper">
-          
           <ul className="right hide-on-med-and-down">
             <li>
-            <div className="cloakDiv col s1">
-            <img className="cloak" src={Cloak} alt="Strange cloak"/>
-          </div>
+              <div className="nameDiv l1">
+                <h4> {props.name}</h4>
+              </div>
             </li>
-            
+            <li>
+              <div className="cloakDiv col s1">
+                <img className="cloak" src={Cloak} alt="Strange cloak" />
+              </div>
+            </li>
+
             <li>
               <div className="input-field col s4">
                 <input
@@ -23,7 +27,7 @@ const Navbar = (props) => {
                   placeholder="Search"
                   id="autocomplete-input"
                   className="autocomplete red-text"
-                  onChange ={props.handleChange}
+                  onChange={props.handleChange}
                 />
               </div>
             </li>

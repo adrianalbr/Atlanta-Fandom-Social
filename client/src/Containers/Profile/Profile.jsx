@@ -67,7 +67,7 @@ const Profile = (props) => {
 
   return (
     <div className="main">
-      <Navbar handleChange={handleChange} />
+      <Navbar handleChange={handleChange} name={props.name}/>
       <div className="row">
         <div className="col s2">
           <Menu token={props.token} />

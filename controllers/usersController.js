@@ -36,4 +36,11 @@ module.exports = {
       .then((dbModel) => res.json(dbModel))
       .catch((err) => res.status(422).json(err));
   },
+
+  fetchFirstName : function (req, res){
+    const user = req.user;
+    let firstName = req.user.firstName;
+    firstName = firstName.charAt(0).toUpperCase() + firstName.slice(1).toLowerCase();
+    res.send({firstName :firstName});
+  }
 };

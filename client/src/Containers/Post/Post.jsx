@@ -52,7 +52,7 @@ const Post = (props) => {
 
   return (
     <div className="main">
-      <Navbar />
+      <Navbar name={props.name}/>
       <div className="row">
         <div className="col s2">
           <Menu token={props.token} />

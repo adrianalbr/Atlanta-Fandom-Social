@@ -11,7 +11,7 @@ import Profile from "./Containers/Profile/Profile";
 import Post from "./Containers/Post/Post";
 import EditPost from "./Components/EditPost/EditPost";
 import SavedPosts from "./Containers/SavedPosts/SavedPosts";
-
+import Axios from "axios";
 
 // these are for Bonus when we get MVP working
 // import WelcomeTopics from "./Containers/WelcomeTopics/WelcomeTopics";
@@ -21,6 +21,20 @@ library.add(fab, faCheckSquare, faCoffee);
 
 function App() {
   const [token, setToken] = useState(localStorage.getItem("loginKey"));
+  const [name, setName] = useState("Welcome");
+
+  useEffect(() => {
+    if (token) {
+      Axios.get("/api/user", {
+        headers: {
+          Authorization: token,
+        },
+      }).then((response) => {
+        console.log(response.data.firstName);
+        setName(response.data.firstName);
+      });
+    }
+  }, []);
 
   if (token === null) {
     return (
@@ -55,19 +69,19 @@ function App() {
             <Login setToken={setToken} />
           </Route>
           <Route exact path="/post">
-            <Post token={token} />
+            <Post token={token} name={name} />
           </Route>
           <Route exact path="/home">
-            <Home token={token} />
+            <Home token={token} name={name} />
           </Route>
           <Route exact path="/profile">
-            <Profile token={token} />
+            <Profile token={token} name={name} />
           </Route>
           <Route exact path="/post/:id">
-            <EditPost token={token} />
+            <EditPost token={token} name={name} />
           </Route>
           <Route exact path="/savedPosts">
-            <SavedPosts token={token} />
+            <SavedPosts token={token} name={name} />
           </Route>
         </Switch>
       </div>

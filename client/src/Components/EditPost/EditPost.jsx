@@ -73,7 +73,7 @@ const EditPost = (props) => {
 
   return (
     <div className="main">
-      <Navbar />
+      <Navbar name={props.name}/>
       <div className="row">
         <div className="col s4">
           <Menu token={props.token} />
