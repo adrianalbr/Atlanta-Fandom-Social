@@ -11,6 +11,10 @@
   color: #e6e6e6;
 }
 
+.heartIcon{
+  cursor: pointer;
+}
+
 .favoriteBTN {
   font-family: "Roboto", sans-serif;
   margin: 10px;

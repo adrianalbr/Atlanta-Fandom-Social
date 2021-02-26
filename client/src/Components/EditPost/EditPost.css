@@ -8,6 +8,7 @@
         #9d50bb 100%
         );
         font-family: "Roboto", sans-serif;
+        cursor: pointer;
         margin: 10px;
         margin-left: 0rem;
         padding: 15px 45px;
@@ -25,4 +26,6 @@
     background-position: right center; /* change the direction of the change here */
     color: #fff;
     text-decoration: none;
+    cursor: pointer;
+
 }
