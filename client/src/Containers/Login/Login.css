@@ -67,6 +67,7 @@
 }
 
 .submitButton {
+  cursor: pointer;
   background-image: linear-gradient(
     to right,
     #9d50bb 0%,
