@@ -23,6 +23,7 @@ const ViewPosts = (props) => {
               </div>
               <div className="card-action">
                 <FontAwesomeIcon
+                  className="heartIcon"
                   onClick={() => props.addTofav(_id)}
                   icon={faHeart}
                   style={{ color: "red", height: "25px", width: "25px" }}
