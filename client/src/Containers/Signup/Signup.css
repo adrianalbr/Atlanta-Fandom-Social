@@ -102,26 +102,47 @@ body {
     max-height: 9rem;
   }
 }
-
+ /* ======================================================================  */
 @media screen and (max-width: 635px){
-#signInRedirect{
+/* #signInRedirect{
   display: none;
-}
+} */
 #loginButton{
-  height: 4rem !important;
-  margin-top: 23.5rem;
-  margin-left: -11.11rem
+  height: 3.7rem !important;
+  margin-top: 3.7rem;
+  margin-left: 3.5rem
+}
+.formContainer{
+  width: 90% !important;
 }
 }
-
+ /* ======================================================================  */
+@media screen and (max-width: 564px){
+  #loginButton{
+    margin-left: 2.5rem;
+  }
+}
+ /* ======================================================================  */
 @media screen and (max-width: 558px){
   #loginButton{
-    height: 4rem !important;
-    margin-top: 23.5rem;
-    margin-left: -9.5rem
+    height: 3.5rem !important;
+    margin-top: 3.8rem;
+    margin-left: 1.8rem
   }
+}
+ /* ======================================================================  */
+@media screen and (max-width: 540px){
+
+  .formContainer{
+    width: 90% !important;
   }
 
+  .formInput{
+    width: 100% !important;
+  }
+
+
+}
  /* ======================================================================  */
 @media screen and (max-width: 375px){
   .formContainer{
@@ -135,39 +156,14 @@ body {
   button{
     margin-left:  -13rem !important;
   }
-
-
-
-
-
-
-
-
 }
 /* ====================================================================== */
 @media screen and (max-width: 280px){
   button{
     margin-left: -9.5rem !important;
   }
-
-
 }
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ /* ======================================================================  */
 @media screen and (min-width: 2270px){
   #loginButton{
     margin-top: 2rem;
