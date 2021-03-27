@@ -129,7 +129,7 @@ body {
   }
 
   .formInput{
-    width: 23rem !important;
+    width: 100% !important;
   }
   
   button{
@@ -145,8 +145,29 @@ body {
 
 }
 /* ====================================================================== */
+@media screen and (max-width: 280px){
+  button{
+    margin-left: -9.5rem !important;
+  }
+
+
+}
 
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 2270px){
   #loginButton{
     margin-top: 2rem;
