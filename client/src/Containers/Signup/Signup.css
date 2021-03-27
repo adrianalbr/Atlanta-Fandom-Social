@@ -122,6 +122,30 @@ body {
   }
   }
 
+ /* ======================================================================  */
+@media screen and (max-width: 375px){
+  .formContainer{
+    width: 100%
+  }
+
+  .formInput{
+    width: 23rem !important;
+  }
+  
+  button{
+    margin-left:  -13rem !important;
+  }
+
+
+
+
+
+
+
+
+}
+/* ====================================================================== */
+
   
 @media screen and (min-width: 2270px){
   #loginButton{
