@@ -222,8 +222,62 @@ body {
   }
 }
 /* ======================================================================  */
-@media
+@media screen and (max-width: 436px){
+  #loginAtag{
+    margin-left: -6rem !important;
+    padding-right: -1rem !important;
+    padding-left: -5rem !important;
+  }
+}
 /* ======================================================================  */
+@media screen and (max-width: 427px){
+  #loginAtag{
+    margin-left: -6.1rem !important;
+    padding-right: 0rem !important;
+    padding-left: 4rem !important;
+  }
+}
+/* ======================================================================  */
+@media screen and (max-width: 424px){
+ #signInRedirect{
+   display: none;
+ }
+
+ #loginButton{
+   margin-top: 24rem;
+   margin-left: -13.1rem !important;
+ }
+
+ #loginAtag{
+   margin-right: 0rem !important;
+   margin-left: -4rem !important;
+ }
+}
+/* ======================================================================  */
+@media screen and (max-width: 409px){
+  #loginButton{
+    margin-top: 24rem;
+    margin-left: -12.5rem !important;
+  }
+ 
+  #loginAtag{
+    margin-right: 0rem !important;
+    margin-left: -4rem !important;
+  }
+ }
+ /* ======================================================================  */
+ @media screen and (max-width: 391px){
+  #loginButton{
+    margin-top: 24rem;
+    margin-left: -12rem !important;
+  }
+ 
+  #loginAtag{
+    margin-right: 0rem !important;
+    margin-left: -4rem !important;
+  }
+ }
+ /* ======================================================================  */
 @media screen and (max-width: 375px){
   .formContainer{
     width: 100%
@@ -233,14 +287,68 @@ body {
     width: 100% !important;
   }
   
-  button{
-    margin-left:  -13rem !important;
+  #loginButton{
+    margin-left: -11.5rem !important;
   }
 }
 /* ====================================================================== */
+@media screen and (max-width: 364px){
+  #loginButton{
+    margin-left: -11rem !important;
+  }
+}
+ /* ======================================================================  */
+ @media screen and (max-width: 344px){
+  #loginButton{
+    margin-left: -10.5rem !important;
+  }
+}
+ /* ======================================================================  */
+ @media screen and (max-width: 327px){
+  #loginButton{
+    margin-left: -10rem !important;
+  }
+}
+ /* ======================================================================  */
+ @media screen and (max-width: 311px){
+  #loginButton{
+    margin-left: -9.5rem !important;
+  }
+}
+ /* ======================================================================  */
+ @media screen and (max-width: 292px){
+  #loginButton{
+    margin-left: -8.8rem !important;
+  }
+}
+ /* ======================================================================  */
+ @media screen and (max-width: 276px){
+  #loginButton{
+    margin-left: -8.4rem !important;
+  }
+}
+ /* ======================================================================  */
 @media screen and (max-width: 280px){
   button{
     margin-left: -9.5rem !important;
+  }
+}
+ /* ======================================================================  */
+ @media screen and (max-width: 263px){
+  #loginButton{
+    margin-left: -8rem !important;
+  }
+}
+ /* ======================================================================  */
+ @media screen and (max-width: 248px){
+  #loginButton{
+    margin-left: -7.5rem !important;
+  }
+}
+ /* ======================================================================  */
+ @media screen and (max-width: 229px){
+  #loginButton{
+    margin-left: -7rem !important;
   }
 }
  /* ======================================================================  */
