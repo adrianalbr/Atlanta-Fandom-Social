@@ -78,20 +78,33 @@ body {
     margin-left: 2rem
   }
 }
-
+/* ======================================================================  */
 @media screen and (max-width: 812px){
   #loginButton{
     height: 4rem !important;
     margin-top: 0.8rem;
     margin-left: 2rem
   }
+
+  #loginATag{
+    font-size: 2px !important;
+  }
 }
-
-
+/* ======================================================================  */
+@media screen and (max-width: 704px){
+  .formContainer{
+    width: 90%;
+  }
+  #loginButton{
+    margin-top: 2.5rem;
+    margin-left: 4.5rem !important;
+  }
+}
+/* ======================================================================  */
 @media screen and (max-width: 703px){
   #loginButton{
     height: 4rem !important;
-    margin-top: 3.5rem;
+    margin-top:5.5rem;
     margin-left: 0.5rem
   }
   #loginAtag{
@@ -101,6 +114,25 @@ body {
   #ourLogo{
     max-height: 9rem;
   }
+  .formContainer{
+    width: 90% !important;
+  }
+}
+/* ======================================================================  */
+@media screen and (max-width: 641px){
+  #loginButton{
+    margin-top: 3.5rem;
+    margin-left: 3.5rem !important;
+  }
+}
+/* ======================================================================  */
+@media screen and (max-width: 636px){
+  #loginButton{
+    margin-left: 3rem;
+    height: 3.5rem !important;
+    margin-top: 3.8rem;
+  }
+
 }
  /* ======================================================================  */
 @media screen and (max-width: 635px){
@@ -119,7 +151,7 @@ body {
  /* ======================================================================  */
 @media screen and (max-width: 564px){
   #loginButton{
-    margin-left: 2.5rem;
+    margin-left: 2rem !important;
   }
 }
  /* ======================================================================  */
@@ -140,10 +172,58 @@ body {
   .formInput{
     width: 100% !important;
   }
-
-
 }
  /* ======================================================================  */
+ @media screen and (max-width: 517px){
+   #loginButton{
+     margin-left: 1rem !important;
+   }
+ }
+ /* ======================================================================  */
+ @media screen and (max-width: 511px){
+  #loginAtag{
+    font-size: 12px !important;
+  }
+ }
+ /* ======================================================================  */
+@media screen and (max-width: 474px){
+  #loginAtag{
+    font-size: 12px !important;
+    text-align:center;
+    margin-left: -2rem !important;
+    padding-right: -1rem;
+    padding-left: 1.4rem;
+  }
+  
+  #loginButton{
+    margin-left: 1.5rem !important;
+  }
+}
+ /* ======================================================================  */
+@media screen and (max-width: 471px){
+  #loginAtag{
+    margin-left: -3rem !important;
+    padding-right: -1rem !important;
+    padding-left: 2.3rem !important;
+  }
+}
+/* ======================================================================  */
+@media screen and (max-width: 467px){
+  #loginAtag{
+    margin-left: -4rem !important;
+    padding-left: 3.2rem !important;
+  }
+}
+/* ======================================================================  */
+@media screen and (max-width: 464px){
+  #loginAtag{
+    margin-left: -5rem !important;
+    padding-left: 4rem !important;
+  }
+}
+/* ======================================================================  */
+@media
+/* ======================================================================  */
 @media screen and (max-width: 375px){
   .formContainer{
     width: 100%
@@ -170,18 +250,19 @@ body {
     margin-left: 12rem 
   }
   }
-
+ /* ======================================================================  */
   @media screen and (min-width: 2560px){
     #loginButton{
       margin-top: 2.5rem;
       margin-left: 15rem 
     }
     }
-
-
+/* ======================================================================  */
   @media screen and (min-width: 2621px){
     #loginButton{
       margin-top: 2.5rem;
       margin-left: 15rem 
     }
     }
+/* ======================================================================  */
+
