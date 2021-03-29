@@ -128,7 +128,24 @@
     padding-left: 3rem;
   }
 }
+/* ================================================ */
+@media screen and (max-width: 1089px){
+  #account{
+    font-size: 19px !important;
+  }
 
+  #signUpButton{
+    margin-top: 1.5rem !important;
+    margin-right: 0rem !important;
+    margin-left: 2.5rem !important;
+  }
+
+}
+/* ================================================ */
+@media screen and (max-width: 1035px){
+
+}
+/* ================================================ */
 @media screen and (max-width: 965px) {
   #signUpButton {
     margin-top: 1.5rem;
@@ -143,7 +160,7 @@
   }
 }
 
-@media screen and (max-width: 894px) {
+@media screen and (max-widt: 894px) {
   #signUpButton {
     margin-top: 1.5rem;
     margin-left: 2.6rem !important;
@@ -187,7 +204,17 @@
     font-size: 0.8rem !important;
   }
 }
+/* ========================================================= */
+@media screen and (max-width: 704px){
+  #signUpButton{
+    
+  }
 
+  #aTagLogin{
+
+  }
+}
+/* ========================================================== */
 @media screen and (max-width: 767px) {
   #signUpButton {
     margin-top: 1.4rem;
