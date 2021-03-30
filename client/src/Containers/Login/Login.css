@@ -96,15 +96,64 @@
 #account {
   margin-top: 0rem;
 }
+/* ================================================ */
+@media screen and (max-width: 2559px){
+  #signUpButton{
+    transform: translate(26%, -4%);
 
+  }
+}
+/* ================================================ */
+@media screen and (max-width: 2438px){
+  #signUpButton{
+    transform: translate(16.5%, -4%);
+
+  }
+}
+/* ================================================ */
+@media screen and (max-width: 2366px){
+  #signUpButton{
+    transform: translate(14%, -4%);
+
+  }
+}
+/* ================================================ */
+@media screen and (max-width: 2298px){
+  #signUpButton{
+    transform: translate(9%, -4%);
+
+  }
+}
+/* ================================================ */
+@media screen and (max-width: 2224px){
+  #signUpButton{
+    transform: translate(5%, -4%);
+
+  }
+}
+/* ================================================ */
 @media screen and (min-width: 2186px) {
   #signUpButton {
     margin-top: 1rem;
-    margin-left: 11.5rem !important;
+    margin-left: 11rem !important;
     padding-left: 3rem;
   }
 }
+/* ================================================ */
+@media screen and (max-width: 2185px){
+  #signUpButton{
+    transform: translate(16%, -4%);
 
+  }
+}
+/* ================================================ */
+@media screen and (max-width: 2096px){
+  #signUpButton{
+    transform: translate(12%, -4%);
+
+  }
+}
+/* ================================================ */
 @media screen and (min-width: 2560px) {
   #signUpButton {
     margin-top: 1rem;
@@ -112,43 +161,126 @@
     padding-left: 3rem;
   }
 }
+/* ================================================ */
+@media screen and (max-width: 1996px){
+  #signUpButton{
+    transform: translate(5%, -4%);
+
+  }
+}
+/* ================================================ */
+@media screen and (max-width: 1939px){
+  #signUpButton{
+    transform: translate(2%, -4%);
+
+  }
+}
+/* ================================================ */
+@media screen and (max-width: 1856px){
+  #signUpButton{
+    transform: translate(-3%, -4%);
+
+  }
+}
+/* ================================================ */
+@media screen and (max-width: 1781px){
+  #signUpButton{
+    transform: translate(-11%, -4%);
+
+  }
+}
+/* ================================================ */
+@media screen and (max-width: 1704px){
+  #signUpButton{
+    transform: translate(-15%, -4%);
+
+  }
+}
+/* ================================================ */
+@media screen and (max-width: 1632px){
+  #signUpButton{
+    transform: translate(-22%, -2%);
+
+  }
+}
+/* ================================================ */
 @media screen and (max-width: 1600px) {
   #signUpButton {
     margin-top: 1rem;
-    margin-left: 6.5rem !important;
+    margin-left: 9rem !important;
     padding-left: 3rem;
   }
 }
-/* ====================================================== */
+/* ================================================ */
+@media screen and (max-width: 1507px){
+  #signUpButton{
+    transform: translate(-25%, -2%);
+
+  }
+}
+/* ================================================ */
+@media screen and (max-width: 1451px){
+  #signUpButton{
+    transform: translate(-28%, -2%);
+
+  }
+}
+/* ================================================ */
+@media screen and (max-width: 1436px){
+  #signUpButton{
+    transform: translate(-29%, -2%);
+
+  }
+  #aTagLogin{
+    font-size: 14px;
+  }
+}
+/* ================================================ */
+@media screen and (max-width: 1411px){
+  #signUpButton{
+    transform: translate(-32%, -2%);
+    width: 12rem;
+  }
+  #aTagLogin{
+    font-size: 13px;
+  }
+}
+/* ================================================ */
+@media screen and (max-width: 1359px){
+  #signUpButton{
+    transform: translate(-36%, -6%);
+
+  }
+}
+/* ================================================ */
 @media screen and (max-width: 1286px){
   #signUpButton{
     margin-top:0rem;
-    margin-left: 4.2rem !important;
+    margin-left: 7.9rem !important;
   }
 }
 /* ====================================================== */
 @media screen and (max-width: 1216px){
   #signUpButton{
-    margin-left: 3rem !important;
+    margin-left: 7.5rem !important;
   }
 }
 /* ====================================================== */
 @media screen and (max-width: 1153px) {
   #signUpButton {
     margin-top: 0rem;
-    margin-left: 3rem !important;
+    margin-left: 7.4rem !important;
     padding-left: 3rem;
   }
 }
 /* ================================================ */
 @media screen and (max-width: 1099px){
   #signUpButton{
-    margin-top: 0rem !important;
-    margin-left: 2.5rem !important;
+    margin-top: 0.5rem !important;
+    margin-left: 6.6rem !important;
   }
 } 
 /* ====================================================== */
-
 @media screen and (max-width: 1089px){
   #account{
     font-size: 19px !important;
@@ -156,15 +288,37 @@
 
   #signUpButton{
     margin-top: 1.5rem !important;
-    margin-right: 0rem !important;
-    margin-left: 2.5rem !important;
+    margin-left: 6.6rem !important;
+  }
+
+}
+/* ================================================ */
+@media screen and (max-width: 1009px){
+  #account{
+    font-size: 19px !important;
+  }
+
+  #signUpButton{
+    margin-top: 1.5rem !important;
+    margin-left: 6rem !important;
   }
 
 }
 /* ================================================ */
 @media screen and (max-width: 995px){
   #signUpButton{
-    margin-left: 1.6rem !important;
+    margin-left: 5.8rem !important;
+    margin-top: 1.6rem !important;
+  }
+}
+/* ================================================ */
+@media screen and (max-width: 991px){
+  #signUpButton{
+    margin-left: 6rem !important;
+    margin-top: 1.6rem !important;
+  }
+  #aTagLogin{
+    font-size: 12.5px !important;
   }
 }
 /* ================================================ */
@@ -235,10 +389,17 @@
 /* ========================================================= */
 @media screen and (max-width: 704px){
   #signUpButton{
-    margin-left: 8rem !important;
+    transform: translate(42%, 2%);
+    width: 45%;
   }
 
   #aTagLogin{
+
+  }
+}
+/* ========================================================== */
+@media screen and (max-width: 679px){
+  #signUpButton{
 
   }
 }
