@@ -63,7 +63,7 @@ function Login(props) {
         </div>
       </div>
 
-      <div className="container formContainer">
+      <div id="loginContainer" className="container formContainer">
         <div className="row">
           <div className="col s6">
             <form>

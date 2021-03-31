@@ -325,21 +325,22 @@
 @media screen and (max-width: 965px) {
   #signUpButton {
     margin-top: 1.5rem;
-    margin-left: 2rem !important;
+    margin-left: 5.79rem !important;
     padding-left: 3rem;
+    width: 11.89rem !important;
   }
   #account {
-    font-size: 1.2rem !important;
+    font-size: 1.3rem !important;
   }
   #aTagLogin {
-    font-size: 0.8rem !important;
+    font-size: 0.9rem !important;
   }
 }
-
+/* ================================================ */
 @media screen and (max-width: 894px) {
   #signUpButton {
     margin-top: 1.5rem;
-    margin-left: 2.6rem !important;
+    margin-left: 5rem !important;
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -353,14 +354,15 @@
 /* ================================================ */
 @media screen and (max-width: 844px){
   #signUpButton{
-    margin-left: 2rem !important;
+    margin-left: 4.5rem !important;
+    margin-top: 1.6rem !important;
   }
 }
 /* ================================================ */
 @media screen and (max-width: 823px) {
   #signUpButton {
     margin-top: 1.5rem;
-    margin-left: 1.6rem !important;
+    margin-left: 4.4rem !important;
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -371,30 +373,55 @@
     font-size: 0.8rem !important;
   }
 }
-
+/* ========================================================= */
 @media screen and (max-width: 800px) {
   #signUpButton {
     margin-top: 1.4rem;
-    margin-left: 1.6rem !important;
+    margin-left: 4.3rem !important;
     padding-left: 2rem;
     padding-right: 2rem;
   }
   #account {
-    font-size: 1rem !important;
+    font-size: 1.1rem !important;
   }
   #aTagLogin {
     font-size: 0.8rem !important;
   }
 }
 /* ========================================================= */
-@media screen and (max-width: 704px){
-  #signUpButton{
-    transform: translate(42%, 2%);
-    width: 45%;
+@media screen and (max-width: 767px) {
+  #signUpButton {
+    margin-top: 1.4rem;
+    margin-left: 3rem !important;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    transform: translate(-20%, -3%);
   }
 
-  #aTagLogin{
+  /* #loginContainer{
+    width: 90%;
+  } */
+}
+/* ========================================================= */
+@media screen and (max-width: 733px) {
+  #signUpButton {
+    transform: translate(-23%, -3%);
+  }
 
+
+}
+/* ========================================================= */
+@media screen and (max-width: 704px){
+  #signUpButton{
+    transform: translate(-16%, -2.9%);
+  }
+
+    #loginContainer{
+    width: 90%;
+  }
+
+  #account {
+    font-size: 30px !important;
   }
 }
 /* ========================================================== */
