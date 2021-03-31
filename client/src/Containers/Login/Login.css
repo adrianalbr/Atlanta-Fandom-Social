@@ -674,3 +674,87 @@
   }
 }
 /* ========================================================== */
+@media screen and (max-width: 329px){
+  #signUpButton {
+    transform: translate(25%, 163%);
+  }
+}
+/* ========================================================== */
+@media screen and (max-width: 323px){
+  #signUpButton {
+    transform: translate(27.5%, 163%);
+  }
+}
+/* ========================================================== */
+@media screen and (max-width: 313px){
+  #signUpButton {
+    transform: translate(31%, 163%);
+  }
+}
+/* ========================================================== */
+@media screen and (max-width: 307px){
+  #signUpButton {
+    transform: translate(33%, 163%);
+  }
+}
+/* ========================================================== */
+@media screen and (max-width: 299px){
+  #signUpButton {
+    transform: translate(36.6%, 163%);
+  }
+}
+/* ========================================================== */
+@media screen and (max-width: 290px){
+  #signUpButton {
+    transform: translate(38.9%, 163%);
+  }
+}
+/* ========================================================== */
+@media screen and (max-width: 283px){
+  #signUpButton {
+    transform: translate(43%, 163%);
+  }
+}
+/* ========================================================== */
+@media screen and (max-width: 275px){
+  #signUpButton {
+    transform: translate(44.7%, 163%);
+  }
+}
+/* ========================================================== */
+@media screen and (max-width: 267px){
+  #signUpButton {
+    transform: translate(47.6%, 163%);
+  }
+}
+/* ========================================================== */
+@media screen and (max-width: 260px){
+  #signUpButton {
+    transform: translate(50%, 163%);
+  }
+}
+/* ========================================================== */
+@media screen and (max-width: 252px){
+  #signUpButton {
+    transform: translate(53%, 163%);
+  }
+}
+/* ========================================================== */
+@media screen and (max-width: 244px){
+  #signUpButton {
+    transform: translate(57%, 163%);
+  }
+}
+/* ========================================================== */
+@media screen and (max-width: 234px){
+  #signUpButton {
+    transform: translate(60%, 163%);
+  }
+}
+/* ========================================================== */
+@media screen and (max-width: 227px){
+  #signUpButton {
+    transform: translate(63%, 163%);
+  }
+}
+/* ========================================================== */
